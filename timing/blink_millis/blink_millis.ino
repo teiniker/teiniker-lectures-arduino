@@ -4,27 +4,20 @@
  */
 
 const int LED_PIN = 7;
-const unsigned long TIMER_INTERVAL = 500;
-unsigned long last_timestamp = 0;
 
-bool led_flag = false;  // init value
+unsigned long timestamp = 0;
+const unsigned long INTERVAL = 500;
 
-void setup() 
+void setup()
 {
   pinMode(LED_PIN, OUTPUT);
 }
 
-
 void loop() 
 {
-  // Timing 
-  while(millis() - last_timestamp < TIMER_INTERVAL); // wait until intervall is over 
-  last_timestamp = millis();
-
-  // IO 
-  digitalWrite(LED_PIN, led_flag ? HIGH : LOW);
-       
-  // Control Logic
-  led_flag = !led_flag; 
-  //delay(400);  // additional delay (< TIMER_INTERVAL) has no effect!!
+  if(millis() >= timestamp + INTERVAL)
+  {
+      timestamp = millis();
+      digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+  }
 }
