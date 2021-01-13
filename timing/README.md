@@ -1,4 +1,4 @@
-# Timing and Scheduling Tasks
+# Timing and Task Scheduling
 
 ## Hardware Setup
 
@@ -149,6 +149,6 @@ void task_2(void) // INTERVAL_2
 * [Blink Without Delay](https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay)
 * [Using millis() for timing](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing)
 * [Arduino Tutorial: Using millis() Instead of delay()](https://www.norwegiancreations.com/2017/09/arduino-tutorial-using-millis-instead-of-delay/)
-* [Arbeits- und Funktionsweise einer SPS](https://www.sps-lehrgang.de/funktionsweise-arbeitsweise-sps/) 
+* [Scan time of the PLC program](https://www.plcacademy.com/scan-time-of-the-plc-program/) 
 
 *Egon Teiniker, 2020 - 2021, GPL v3.0* 
