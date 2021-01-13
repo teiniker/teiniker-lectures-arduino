@@ -2,7 +2,7 @@
 
 This project collects examplesrelated to Arduino programming.
 
-* [I/O Ports](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/arduino/io-ports)
+* [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
 * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
 
 
