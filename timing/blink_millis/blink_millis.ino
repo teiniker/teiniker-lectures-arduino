@@ -20,4 +20,5 @@ void loop()
       timestamp = millis();
       digitalWrite(LED_PIN, !digitalRead(LED_PIN));
   }
+  // ...
 }
