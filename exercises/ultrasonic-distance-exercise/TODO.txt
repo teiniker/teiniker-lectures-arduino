@@ -1,0 +1,18 @@
+Exercise: Entfernungsmessung mit dem HC-SR04 Sensor
+-------------------------------------------------------------------------------
+
+i) Bauen Sie die gegebene Schaltung (ultrasonicdistance.png) auf. 
+
+ii) Messen Sie die Entfernung mit dem Sensor HC-SR04 und zeigen Sie die Abstands- 
+intervalle durch die drei LEDs an:
+
+    CLOSE: [0,10)cm     ROT, GELB, GRÜN
+    NEAR : [10,20)cm         GELB, GRÜN
+    FAR  : [20,30)cm               GRÜN 
+    AWAY : [30,...)cm   
+
+iii) Implementieren Sie ein Cyclic Processing: 
+    - CYCLE_TIME = 100ms
+    - IO: Abstand messen, LEDs (abhängig vom Abstandsintervall) setzen
+    - Controller: Abstandsintervall berechnen (CLOSE, NEAR, FAR, AWAY) 
+
