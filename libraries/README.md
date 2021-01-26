@@ -31,7 +31,17 @@ We can do the same steps as in "Inport a ZIP File" but manually.
 * Start the Arduino IDE, go to **Sketch > Include Library**. Verify that the library we just added 
   is available in the list.
 
+## Used Libraries
 
+Examples in this repository use the following libraries:
+
+* **Sensors**
+  * Ultrasonic Sensor: [HC-SR](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/HC-SR04)
+  * Temperature + Humidity Sensor: [DHT11](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11)
+
+* **Actuators**
+  * Servo Motor: [SG90](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/SG90) (Library already installed!!)
+  
 ## References
 
 * [Arduino Standard Libraries](https://www.arduino.cc/en/reference/libraries)
