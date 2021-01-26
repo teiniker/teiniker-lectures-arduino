@@ -10,9 +10,9 @@ This project collects examplesrelated to Arduino programming.
   * [Temperature + Humidity DHT11](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/dht11)
   
 * Actuators
- * [Servo Motor](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/servo/servo)
+  * [Servo Motor](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/servo/servo)
  
-* [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+ * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
 
 * State Machines
 
