@@ -7,8 +7,13 @@ This project collects examplesrelated to Arduino programming.
   * [Serial](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
 * Sensors
   * [Ultrasonic Sensor HC-SR04](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/hc-sr04)
+  * [Temperature + Humidity DHT11](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/dht11)
   
-* [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+* Actuators
+  * [Servo Motor](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/servo/servo)
+ 
+ * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+
 * State Machines
 
 In addition to the examples, the required **libraries** and **data sheets** are also made available in the 
