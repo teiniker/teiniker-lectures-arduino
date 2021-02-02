@@ -25,4 +25,5 @@ void loop(void)
 
   myservo.write(180); // 180°
   delay(1000);
+
 }
