@@ -3,14 +3,17 @@
 This project collects examplesrelated to Arduino programming.
 
 * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
+
 * Interfaces
   * [Serial](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
+  
 * Sensors
   * [Ultrasonic Sensor HC-SR04](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/hc-sr04)
   * [Temperature + Humidity DHT11](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/dht11)
   
 * Actuators
   * [Servo Motor SG90](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/sg90)
+  * [DC Motor via L293D](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/L293)
  
  * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
 
