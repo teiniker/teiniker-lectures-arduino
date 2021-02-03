@@ -1,7 +1,5 @@
 #include <Servo.h>
 
-#include <Servo.h>
-
 const int SERVO_PWM_PIN = 9;
 
 Servo myservo;
@@ -25,5 +23,4 @@ void loop(void)
 
   myservo.write(180); // 180°
   delay(1000);
-
 }

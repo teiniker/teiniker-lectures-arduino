@@ -9,7 +9,7 @@
  */
 
 //#define LED_PIN  13
-const int LED_PIN = 7;
+const int LED_PIN = 13;
 
 void setup() 
 {
