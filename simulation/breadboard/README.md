@@ -16,7 +16,7 @@ It is important to know **how the pins on the breadboard are wired** in order to
 
 ## References
 
-* [How to Use a Breadboard](https://youtu.be/6WReFkfrUIk)
+* [YouTube: How to Use a Breadboard](https://youtu.be/6WReFkfrUIk)
 
 * [Thinkercad](https://www.tinkercad.com/)
 
