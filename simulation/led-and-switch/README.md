@@ -8,10 +8,10 @@ The following example shows the usage of LEDs and a switch.
 * The power supply is used to provide a 5V operating voltage.
   At the same time the current is measured.
 
-* Every **LED** has its own **resistor** (470 Ohm) to reduce the current.
+* Every **LED** has its own **resistor** (470 Ohm) to limit the current.
 
-* Every **switch** has a 10 KOhm **pull-doen resistor** which pulls the potential to GND.
-  When we flip the switch, the potential is changed to 5V.
+* Every **switch** has a 10 KOhm **pull-down resistor** which pulls the potential to GND.
+  When we flip the switch, the potential is changed to 5V - what makes the LED shine.
 
 
 ## References
