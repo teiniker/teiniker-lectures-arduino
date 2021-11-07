@@ -1,7 +1,7 @@
 /* Cycle Time Scheduling
  */
 
-const int LED1_PIN = 7;
+const int LED1_PIN = 13;
 const int LED2_PIN = 8;
 
 const unsigned long CYCLE_TIME = 200;

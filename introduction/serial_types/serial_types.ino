@@ -12,12 +12,16 @@ void setup()
   Serial.println(sizeof(int));                  
   Serial.print("long : "); 
   Serial.println(sizeof(long));                  
+  Serial.print("long long: "); 
+  Serial.println(sizeof(long long));                  
 
   // Floating point types
   Serial.print("float : "); 
   Serial.println(sizeof(float));                  
   Serial.print("double: "); 
   Serial.println(sizeof(double));                  
+  Serial.print("long double: "); 
+  Serial.println(sizeof(long double));                  
   
 }
 
