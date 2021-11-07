@@ -1,4 +1,4 @@
-# Breadboard
+# Simulation: Breadboard
 
 A breadboard is used to to hold the electronic components.
 In a real breadboard, we can simply plug the components in and pull them out without the help of tools.

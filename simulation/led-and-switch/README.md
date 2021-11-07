@@ -1,4 +1,4 @@
-# LEDs and Switch
+# Simulation: LEDs and Switch
 
 The following example shows the usage of LEDs and a switch.
 
