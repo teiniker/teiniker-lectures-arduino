@@ -7,12 +7,11 @@ It is important to know **how the pins on the breadboard are wired** in order to
 
 ![Breadboard](breadboard.png)
 
-* The **outermost tracks**, which are marked with + and - are connected horizontally (indicated by the black and red wires).
+* The **outermost tracks** (or busses) which are marked with `+` and `-` are connected horizontally - indicated by the black and red wires.
 
-* The **inner tracks** are each connected vertically (shown by the green wires).
+* The **inner tracks** (or rows) are each connected vertically - shown by the green wires.
 
 * If you point to a lane with the mouse, the connection is briefly displayed.
-
 
 
 ## References
