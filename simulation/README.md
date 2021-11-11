@@ -21,8 +21,9 @@ To see a view of our Circuit designs, simply click the **Circuits** link in the 
 
 
 ## References
+* [Tinkercad](https://www.tinkercad.com/)
+* [Learn how to Tinker](https://www.tinkercad.com/learn/circuits/learning)
+* [Official Guide to Tinkercad Circuits](https://blog.tinkercad.com/official-guide-to-tinkercad-circuits)
+ 
 * [YouTube: Introduction to Tinkercad with a Series DC circuit](https://youtu.be/enoAt9dX4Dk)
 
-* [Learn how to Tinker](https://www.tinkercad.com/learn/circuits/learning)
-
-* [Official Guide to Tinkercad Circuits](https://blog.tinkercad.com/official-guide-to-tinkercad-circuits)
