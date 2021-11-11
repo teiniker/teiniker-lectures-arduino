@@ -8,16 +8,16 @@ By default, this dashboard will showcase designs made with Tinkercad’s 3D edit
 To see a view of our Circuit designs, simply click the **Circuits** link in the left menu.
 
 * **Introduction**
-    * [Breadboard]()
-    * [LEDs and Switches]()
+    * [Breadboard](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/introduction/breadboard)
+    * [LEDs and Switches](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/introduction/led-and-switch)
 
 * **Digital Design**
-    * [AND Gate: 74HC08]()
-    * [OR Gate: 74HC32]()
-    * [4bit Adder: 74HC283]()
+    * [AND Gate: 74HC08](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/gate-and)
+    * [OR Gate: 74HC32](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/gate-or)
+    * [4bit Adder: 74HC283](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/adder-4bit)
 
 * **Arduino Projects**
-    * [LED Blink]()
+    * [LED Blink](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/arduino/arduino-blink)
 
 
 ## References
