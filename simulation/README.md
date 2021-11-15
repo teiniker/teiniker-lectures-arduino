@@ -15,6 +15,8 @@ To see a view of our Circuit designs, simply click the **Circuits** link in the 
     * [AND Gate: 74HC08](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/gate-and)
     * [OR Gate: 74HC32](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/gate-or)
     * [4bit Adder: 74HC283](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/adder-4bit)
+    * [2-to-4 Decoder](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/decoder)
+    * [4-to-2 Encoder](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/encoder)
 
 * **Arduino Projects**
     * [LED Blink](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/arduino/arduino-blink)
