@@ -1,6 +1,6 @@
 # Simulation: AND Gate
 
-This circuit shows the use of an AND gate **75HC08**.
+This circuit shows the use of an AND gate **74HC08**.
 
 ![AND Gate](and-gate.png)
 
