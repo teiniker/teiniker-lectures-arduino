@@ -2,7 +2,7 @@
 
 This circuit shows the use of an OR gate **75HC32**.
 
-![OR Gate](or-gate.png)
+![OR Gate](or-gate-using-nand.png)
 
 
 
