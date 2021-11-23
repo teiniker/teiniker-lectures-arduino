@@ -1,6 +1,6 @@
 # Simulation: 4-bit Adder
 
-This circuit shows the use of a 4-bit adder 75HC283.
+This circuit shows the use of a 4-bit adder 74HC283.
 
 ![4bit Adder](4bit-adder.png)
 
