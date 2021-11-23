@@ -7,6 +7,6 @@ This circuit shows the use of an OR gate **75HC32**.
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/)
+* [Thinkercad](https://www.tinkercad.com/things/bsNNxH4XZwC)
 
 *Egon Teiniker, 2020-2021, GPL v3.0* 

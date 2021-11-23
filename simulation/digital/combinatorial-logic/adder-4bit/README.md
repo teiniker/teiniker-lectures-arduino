@@ -7,7 +7,7 @@ This circuit shows the use of a 4-bit adder 74HC283.
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/)
+* [Thinkercad](https://www.tinkercad.com/things/glZiXUbPldk)
 
 * [Electronics Hub: Binary Adder and Subtractor](https://www.electronicshub.org/binary-adder-and-subtractor/)
 
