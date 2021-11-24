@@ -5,7 +5,7 @@
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/things/jCPAfEFIv5M)
+* [Tinkercad](https://www.tinkercad.com/things/jCPAfEFIv5M)
 
 * [Electronics Hub: SR Flip Flop-Designing using Gates and Applications](https://www.electronicshub.org/sr-flip-flop-design-with-nor-and-nand-logic-gates/)
 
