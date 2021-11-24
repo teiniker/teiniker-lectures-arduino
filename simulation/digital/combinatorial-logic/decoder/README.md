@@ -5,7 +5,7 @@
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/things/ga2CvBVTqgL)
+* [Tinkercad](https://www.tinkercad.com/things/ga2CvBVTqgL)
 
 * [Electronics Hub: Types of Binary Decoders,Applications](https://www.electronicshub.org/binary-decoder/)
 
