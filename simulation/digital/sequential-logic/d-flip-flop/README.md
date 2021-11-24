@@ -5,7 +5,7 @@
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/things/3NlWHkeMYlp)
+* [Tinkercad](https://www.tinkercad.com/things/3NlWHkeMYlp)
 
 * [Electronics Hub: Designing of D Flip Flop](https://www.electronicshub.org/d-flip-flop/)
 
