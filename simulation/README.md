@@ -11,13 +11,21 @@ To see a view of our Circuit designs, simply click the **Circuits** link in the 
     * [Breadboard](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/introduction/breadboard)
     * [LEDs and Switches](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/introduction/led-and-switch)
 
-* **Digital Design**
-    * [AND Gate: 74HC08](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/gate-and)
-    * [OR Gate: 74HC32](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/gate-or)
-    * [4bit Adder: 74HC283](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/adder-4bit)
-    * [2-to-4 Decoder](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/decoder)
-    * [4-to-2 Encoder](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/encoder)
+* **Combinatorial Logic**
+ 
+    * [AND Gate: 74HC08](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/combinatorial-logic/gate-and)
+    * [OR Gate: 74HC32](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/combinatorial-logic/gate-or)
+    * [4bit Adder: 74HC283](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/combinatorial-logic/adder-4bit)
+    * [2-to-4 Decoder](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/combinatorial-logic/decoder)
+    * [4-to-2 Encoder](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/combinatorial-logic/encoder)
 
+
+* **Sequential Logic**
+   * [RS Latch (NAND)](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/sequential-logic/rs-latch-nand)
+   * [D Flip-Flop: 74HC74](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/sequential-logic/d-flip-flop)
+   * [Schmitt-Trigger Oscillator: 74HC14](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/digital/sequential-logic/schmitt-trigger-oscillator)
+   
+   
 * **Arduino Projects**
     * [LED Blink](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/simulation/arduino/arduino-blink)
 

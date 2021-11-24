@@ -15,7 +15,7 @@ The following example shows the usage of LEDs and a switch.
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/)
+* [Thinkercad](https://www.tinkercad.com/things/edBOW4fxukG)
 
 *Egon Teiniker, 2020-2021, GPL v3.0* 
 
