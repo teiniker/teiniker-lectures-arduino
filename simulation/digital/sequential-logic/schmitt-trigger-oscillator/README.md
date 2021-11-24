@@ -5,7 +5,7 @@
 
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/things/2DMFrjuPJ2t)
+* [Tinkercad](https://www.tinkercad.com/things/2DMFrjuPJ2t)
 
 * [Exactly How Schmitt Trigger Oscillators Work](https://www.allaboutcircuits.com/technical-articles/exactly-how-schmitt-trigger-oscillators-work/)
 
