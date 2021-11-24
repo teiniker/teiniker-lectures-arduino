@@ -3,7 +3,7 @@
 ![Encoder](encoder.png)
 
 ## References
-* [Thinkercad](https://www.tinkercad.com/things/2eObGT5jGVY)
+* [Tinkercad](https://www.tinkercad.com/things/2eObGT5jGVY)
 
 * [Electronics Hub: Binary Encoders And Their Applications](https://www.electronicshub.org/binary-encoder/)
 
