@@ -25,7 +25,7 @@ void loop()
 
 ## References
 
-* [Thinkercad](https://https://www.tinkercad.com/things/bkjRath17ow)
+* [Tinkercad](https://https://www.tinkercad.com/things/bkjRath17ow)
  
 * [YouTube: Blink an LED With Arduino in Tinkercad](https://youtu.be/yyG0koj9nNY)
 
