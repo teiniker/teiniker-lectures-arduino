@@ -4,12 +4,12 @@ The I/O ports of the Arduino Uno board can be seen in the following figure:
 
 ![Arduino Uno Board](doc/UNOpins.png)
 
-* Analog Reference pin (orange)
-* Digital Ground (light green)
-* **Digital Pins 2-13** (green)
-* Digital Pins 0-1/Serial In/Out - TX/RX (dark green) - These pins cannot be used for digital i/o (digitalRead and digitalWrite) if you are also using serial communication (e.g. Serial.begin).
-* **Analog In Pins 0-5** (light blue)
-* Power and Ground Pins (power: orange, grounds: light orange)
+* Analog Reference pin 
+* Digital Ground 
+* **Digital Pins 2-13** 
+* Digital Pins 0-1/Serial In/Out - TX/RX  - These pins cannot be used for digital i/o (digitalRead and digitalWrite) if you are also using serial communication (e.g. Serial.begin).
+* **Analog In Pins 0-5** 
+* Power and Ground Pins 
 
 ## Digital Ports
 
