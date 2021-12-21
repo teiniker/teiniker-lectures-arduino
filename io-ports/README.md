@@ -35,6 +35,8 @@ For this reason it is a good idea to connect OUTPUT pins to other devices with
  **470Ω or 1k resistors**, unless maximum current draw from the pins is required for 
  a particular application.
 
+_Example:_ [Arduino: Digital Output](https://www.tinkercad.com/things/bkjRath17ow)
+
 
 ### Digital Input
 
@@ -56,12 +58,17 @@ This can be done by adding a **pullup resistor** (to +5V), or a **pulldown resis
 (resistor to ground) on the input. 
 A **10K resistor** is a good value for a pullup or pulldown resistor.
 
+_Example:_ [Arduino: Digital Input](https://www.tinkercad.com/things/8h5n9K4RhFb)
+
 
 ### Digital Input (Internal Pull-Up Resistor)
 There are **20K pullup resistors built into the Atmega chip** that can be accessed from software. 
 These built-in pullup resistors are accessed by setting the `pinMode()` as **INPUT_PULLUP**. 
 This effectively **inverts the behavior of the INPUT mode**, where HIGH means the sensor is off, 
 and LOW means the sensor is on.
+
+_Example:_ [Arduino: Digital Input - Pull-Up](https://www.tinkercad.com/things/flh9FVVJClZ)
+
 
 
 # Analog Ports
@@ -78,6 +85,9 @@ digital pin 14 through analog input 5 as digital pin 19.
  
 Analog inputs 6 and 7 (present on the Mini and BT) cannot be used as digital pins.
  
+_Example:_ [Arduino: Analog Input](https://www.tinkercad.com/things/0TfvqHrWhPL)
+
+
 ## Analog Output (PWM) 
 **Pulse Width Modulation**, or PWM, is a technique for getting analog results with digital 
 means. Digital control is used to create a square wave, a signal switched between 
@@ -95,6 +105,10 @@ With Arduino's **PWM frequency at about 500Hz**, the green lines would measure
 A call to `analogWrite()` is on a **scale of 0 - 255**, such that `analogWrite(255)` 
 requests a 100% duty cycle (always on), and `analogWrite(127)` is a 50% duty cycle 
 (on half the time) for example.
+
+_Example:_ [Arduino: Analog Output PWM](https://www.tinkercad.com/things/fdDWIa9yNet)
+
+_Example:_ [Arduino: Digital Output PWM](https://www.tinkercad.com/things/i2TnbxIPZ47)
 
 
 ## References
