@@ -1,15 +1,9 @@
-/* Serial
- * https://www.arduino.cc/reference/en/language/functions/communication/serial/
- * Used for communication between the Arduino board and a computer or other devices.
- */
-
-int counter;
+uint32_t counter;
 
 void setup() 
 {
   Serial.begin(9600);
-
-  Serial.println("Initialize my Arduino!");
+  Serial.println("Initialize my Arduino counter!");
   counter = 0;
 }
 

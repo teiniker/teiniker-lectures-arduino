@@ -2,7 +2,7 @@
 
 This project collects examples related to Arduino programming.
 
-* [Serial](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
+* [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
 
 * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
 
