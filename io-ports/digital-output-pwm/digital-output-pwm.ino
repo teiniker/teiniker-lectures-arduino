@@ -1,8 +1,5 @@
 /*
  * Digital Output PWD
- * 
- * Pin 13: (on-board LED)
- * 
  */
 
 const int LED_PIN = 9;
