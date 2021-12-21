@@ -57,6 +57,13 @@ This can be done by adding a **pullup resistor** (to +5V), or a **pulldown resis
 A **10K resistor** is a good value for a pullup or pulldown resistor.
 
 
+### Digital Input (With Internal Pull-Up Resistor)
+There are **20K pullup resistors built into the Atmega chip** that can be accessed from software. 
+These built-in pullup resistors are accessed by setting the `pinMode()` as **INPUT_PULLUP**. 
+This effectively **inverts the behavior of the INPUT mode**, where HIGH means the sensor is off, 
+and LOW means the sensor is on.
+
+
 # Analog Ports
 
 The analog pins can be used identically to the digital pins, using the aliases A0 
