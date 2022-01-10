@@ -61,9 +61,9 @@ In many programmable logic controllers (PLC) a **cyclic program processing** wil
 program is processed in **fixed cycles**.
 
 A processing cycle usually consists of: 
-* **Reading inputs**: Read digital or analog pins
-* **Sequentially processing program commands**: Execute the control logic
-* **Outputting results**: Write digital or analog pins
+* **Outputting results**: Write digital or analog pins from pre-calculated variables.
+* **Reading inputs**: Read digital or analog pins into variables.
+* **Sequentially processing program commands**: Execute the control logic using these variables.
 
 ```C
 void loop() 
