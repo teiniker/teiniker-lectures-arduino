@@ -6,7 +6,7 @@ Given a simple circuit with which an LED can be switched on and off using two bu
 
 The functionality is defined by a **UML State Machine Diagram**. 
 
-![State Machine Diagram]()
+![State Machine Diagram](sm-led-diagram.png)
 
 
 _Simulation (Tinkercad):_ [Arduino: LED State Machine](https://www.tinkercad.com/things/47lGqM81tf0)
