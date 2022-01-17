@@ -29,6 +29,9 @@ The disadvantage of `delay()` is that it is a **blocking function**.
 Blocking functions prevent a program from doing anything else until that particular task has completed.
 However, it is very often necessary to execute another task during the waiting time.
 
+_Example:_ [Arduino: Blink delay()](https://www.tinkercad.com/things/7TIAkPiA0M0)
+
+
 ## millis() Function
 These restrictions can be avoided with the `millis()` function which is a **non-blocking operation**.
 Instead of waiting for a certain time, we can always check whether a certain time has already passed.
@@ -50,14 +53,17 @@ void loop()
 Whenever the value of `millis()` is as large as the last timestamp plus the desired interval, 
 the status of the LED is changed and the current value of `millis()` is saved as a timestamp.
 
+_Example:_ [Arduino: Blink millis()](https://www.tinkercad.com/things/gsCB4b6UFDm)
+
+
 ## Cyclic Processing
 In many programmable logic controllers (PLC) a **cyclic program processing** will be used - the 
 program is processed in **fixed cycles**.
 
 A processing cycle usually consists of: 
-* **Reading inputs**: Read digital or analog pins
-* **Sequentially processing program commands**: Execute the control logic
-* **Outputting results**: Write digital or analog pins
+* **Outputting results**: Write digital or analog pins from pre-calculated variables.
+* **Reading inputs**: Read digital or analog pins into variables.
+* **Sequentially processing program commands**: Execute the control logic using these variables.
 
 ```C
 void loop() 
@@ -145,6 +151,9 @@ void task_2(void) // INTERVAL_2
 }
 ```
 
+_Example:_ [Arduino: Blink Scheduler](https://www.tinkercad.com/things/hBWwhvLwV6O)
+
+
 ## References 
 * [Blink Without Delay](https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay)
 * [Using millis() for timing](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing)
@@ -152,4 +161,4 @@ void task_2(void) // INTERVAL_2
 * [Scan time of the PLC program](https://www.plcacademy.com/scan-time-of-the-plc-program/) 
 * [YouTube: Arduino Tutorial - Multitasking](https://youtu.be/YP9xQWqFOKg)
 
-*Egon Teiniker, 2020 - 2021, GPL v3.0* 
+*Egon Teiniker, 2020 - 2022, GPL v3.0* 
