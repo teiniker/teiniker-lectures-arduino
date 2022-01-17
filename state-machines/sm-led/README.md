@@ -9,7 +9,7 @@ The functionality is defined by a **UML State Machine Diagram**.
 ![State Machine Diagram](sm-led-diagram.png)
 
 
-_Simulation (Tinkercad):_ [Arduino: LED State Machine](https://www.tinkercad.com/things/47lGqM81tf0)
+_Simulation:_ [Arduino: LED State Machine](https://www.tinkercad.com/things/47lGqM81tf0)
 
 The implementation takes place on the Arduino board in C and begins with the definition of the 
 possible **events** and **states** as enums,  the state machine function prototype, and the 
