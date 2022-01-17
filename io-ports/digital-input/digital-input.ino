@@ -1,14 +1,14 @@
 /*
  * Digital Input (Taster + LED)
  * 
- * Pin 7: ---[1K]--|>|--(GND) 
+ * Pin 2: ---[1K]--|>|--(GND) 
  *            
- * Pin 8: -+-o\o--------(+)
+ * Pin 4: -+-o\o--------(+)
  *         +------[10K]-(GND)
  */
 
-const int LED_PIN    = 7;
-const int TASTER_PIN = 8;
+const int LED_PIN    = 2;
+const int TASTER_PIN = 4;
 
 void setup() 
 {
