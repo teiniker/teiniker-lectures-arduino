@@ -14,7 +14,7 @@ and a **digital input (D2)** (including pull-up resistor) to read the button pin
 
 ## Source Code
 
-In this program, the analog and the digital pins are read and their values
+In this program, the related analog and digital pins are read and their values
 will be logged to the `Serial` interface.
 
 ```C
