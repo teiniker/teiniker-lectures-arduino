@@ -4,7 +4,7 @@ The ELEGOO thumb stick is analog and should provide more accurate readings than 
 or mechanical switches. Additionally, we can press the joystick down (rather hard on mine) to activate a _press to select_
 push-button.
 
-## Circuit Diagram 
+## Wiring Diagram 
 The module has 5 pins: VCC, Ground, X, Y, Key. 
 
 ![Joystick](joystick_circuit_diagram.png)
