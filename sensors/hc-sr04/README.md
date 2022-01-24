@@ -56,38 +56,39 @@ void loop()
 }
 ```
 
-
-
 ## Library Operations
 
 This library is used for measuring distance with the HC-SR04 that measures distances from 2 to 400cm. 
 
-* void begin(uint8_t triggerPin, uint8_t echoPin)
+* **SR04(int echoPin, int triggerPin)**\
+    Constructor for Ultrasonic sensor SR04, four connections pins VCC, ECHO, TRIGGER, GND
+	* echoPin: digital INPUT-Pin for measuring distance
+	* triggerPin: if 10us high a trigger signal is generated from SR04
 
-* double* measureDistanceCm()
+* **long Distance()**\
+    Do a measurment for this sensor. Return distance as long in centimenter.
 
-* double* measureDistanceMm()
+* **long DistanceAvg(int wait=DEFAULT_DELAY, int count=DEFAULT_PINGS)**\
+	Do count measurents, calculate the average and return the distance in centimeter as long. 
+	To avoid defilement from ow/high peaks, min/max values are substracted from the average.
+	* wait: delay between measurements, default = DEFAULT_DELAY/ms
+	* count: number of measurements, default DEFAULT_PINGS
 
+* **void Ping()**\         
+    Do only a ping. Get result with methode `getDistance()`.
 
+* **long getDistance()**\    
+    Return latest distance in centimeters. 
+    Methode `Ping()` should be called before.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Note that **there are many different libraries for the HC-SR04 sensor**. 
+We use the one shipped with the Elegoo set because it has a simple API.
+If you pick another library, make sure you use the right operations as defined in the corresponding 
+header file.
 
 ## References
 
-* [Arduino: HC-SR04](https://www.arduino.cc/reference/en/libraries/hc-sr04/)
 * [GitHub: Arduino/ESP8266/ESP32 library for HC-SR04 ultrasonic distance sensor](https://github.com/d03n3rfr1tz3/HC-SR04)
+* [Arduino: HC-SR04](https://www.arduino.cc/reference/en/libraries/hc-sr04/)
 
 *Egon Teiniker, 2020 - 2022, GPL v3.0* 
