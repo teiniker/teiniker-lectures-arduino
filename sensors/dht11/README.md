@@ -60,7 +60,7 @@ values every 2 seconds from the sensor module.
 
 ## Library Operations
 
-* **DHT(uint8_t pin, uint8_t type, uint8_t count = 6)**
+* **DHT(uint8_t pin, uint8_t type, uint8_t count = 6)**\
     Constructor of the DHT class.
     * pin: pin number that sensor is connected
     * type: type of sensor
