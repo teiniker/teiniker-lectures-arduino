@@ -66,25 +66,25 @@ values every 2 seconds from the sensor module.
     * type: type of sensor
     * count: number of sensors
 
-* **void begin(uint8_t usec = 55)**
+* **void begin(uint8_t usec = 55)**\
     Setup sensor pins and set pull timings
     *  usec: Optionally pass pull-up time (in microseconds) before DHT reading starts. 
         Default is 55.
 
-* **float readTemperature(bool S = false, bool force = false)**
+* **float readTemperature(bool S = false, bool force = false)**\
     Read temperature and return the Temperature value in selected scale.
     * S: Scale. Boolean value (true = Fahrenheit; false = Celcius)
     * force: true if in force mode
  
-* **float readHumidity(bool force = false)**
+* **float readHumidity(bool force = false)**\
     Read Humidity and return a float value - humidity in percent.
     * force: force read mode
 
-* **float convertCtoF(float c)**
+* **float convertCtoF(float c)**\
     Converts Celcius to Fahrenheit and return a float value in Fahrenheit. 
     * c: value in Celcius
 
-* **float convertFtoC(float f)** 
+* **float convertFtoC(float f)**\
     Converts Fahrenheit to Celcius and float value in Celcius.
     * f: value in Fahrenheit
  
