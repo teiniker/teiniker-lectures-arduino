@@ -16,8 +16,8 @@ The connections are: Voltage, Ground and Signal which can be connected to any di
 
 ## Source Code
 
-First, we have to make sure that we have installed the **DHT11 library**.
-Thus, we can include the `DHT.h` header file.
+We have to install the [**DHT11 library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) 
+to use the `DHT.h` header file.
 
 In the used library a cass named `DHT` has been implemented.
 To use the sensor module, we hav to create an instance of that class.
