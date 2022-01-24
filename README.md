@@ -6,9 +6,11 @@ This project collects examples related to Arduino programming.
 
 * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
 
- * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+* [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
 
-* State Machines
+* [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
+
+* [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
 
 * Sensors
   * [Ultrasonic Sensor HC-SR04](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/hc-sr04)
