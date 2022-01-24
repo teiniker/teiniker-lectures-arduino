@@ -74,10 +74,10 @@ This library is used for measuring distance with the HC-SR04 that measures dista
 	* wait: delay between measurements, default = DEFAULT_DELAY/ms
 	* count: number of measurements, default DEFAULT_PINGS
 
-* **void Ping()**\         
+* **void Ping()**\
     Do only a ping. Get result with methode `getDistance()`.
 
-* **long getDistance()**\    
+* **long getDistance()**\
     Return latest distance in centimeters. 
     Methode `Ping()` should be called before.
 
