@@ -1,10 +1,9 @@
-#include "SR04.h"
+#include <SR04.h>
 
 const int TRIG_PIN = 9;
 const int ECHO_PIN = 8; 
 
-SR04 sensor = SR04(ECHO_PIN,TRIG_PIN);
-long distance;
+SR04 sr04(ECHO_PIN,TRIG_PIN);
 
 void setup() 
 {
@@ -13,8 +12,8 @@ void setup()
 
 void loop() 
 {
-   distance = sensor.Distance();
-   Serial.print(distance);
-   Serial.println("cm");    
+   long distances = sr04.Distance();
+   Serial.print(distances);
+   Serial.println(" cm");    
    delay(250); 
 }
