@@ -14,12 +14,13 @@ This project collects examples related to Arduino programming.
 
 * Sensors
   * [Analog Joystick](sensors/joystick)
-  * [Ultrasonic Sensor HC-SR04](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/hc-sr04)
-  * [Temperature + Humidity DHT11](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/dht11)
+  * [Button Debouncing](sensors/button-debouncing)
+  * [Ultrasonic Sensor HC-SR04](sensors/hc-sr04)
+  * [Temperature + Humidity DHT11](sensors/dht11)
   
 * Actuators
-  * [Servo Motor SG90](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/sg90)
-  * [DC Motor via L293D](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/actuators/L293)
+  * [Servo Motor SG90](actuators/sg90)
+  * [DC Motor via L293D](actuators/L293)
  
 * [**Computer Architecture Simulation**](https://github.com/teiniker/teiniker-lectures-arduino/blob/main/simulation)
 
