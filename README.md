@@ -13,6 +13,7 @@ This project collects examples related to Arduino programming.
 * [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
 
 * Sensors
+  * [Analog Joystick](sensors/joystick)
   * [Ultrasonic Sensor HC-SR04](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/hc-sr04)
   * [Temperature + Humidity DHT11](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/sensors/dht11)
   
