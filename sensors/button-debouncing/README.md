@@ -73,6 +73,7 @@ to the `Serial` monitor.
 
 
 ## References
+* [Debouncing a Button with Arduino](https://www.programmingelectronics.com/debouncing-a-button-with-arduino/)
 * [Debounce on a Pushbutton](https://docs.arduino.cc/built-in-examples/digital/Debounce)
 * [GitHub: Debounce](https://github.com/wkoch/Debounce)
 
