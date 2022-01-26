@@ -10,8 +10,6 @@ This project collects examples related to Arduino programming.
 
 * [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
 
-* [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
-
 * Sensors
   * [Analog Joystick](sensors/joystick)
   * [Button Debouncing](sensors/button-debouncing)
@@ -22,6 +20,9 @@ This project collects examples related to Arduino programming.
   * [Servo Motor SG90](actuators/sg90)
   * [DC Motor via L293D](actuators/L293)
  
+* [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
+
+
 * [**Computer Architecture Simulation**](https://github.com/teiniker/teiniker-lectures-arduino/blob/main/simulation)
 
 In addition to the examples, the required **libraries** and **data sheets** are also made available in the 
