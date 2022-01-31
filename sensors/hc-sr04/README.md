@@ -20,9 +20,8 @@ d = distance [m], t = duration [s], v = speed of sound = 343 [m/s]
 v = s / t = 2*d / t in [m/s];  
 => d = 1/2 * v + t
      = 343/2 * t             in [m]
-     = 171.5 * t * 10^(-4)   in [cm]; t in [us]
-     = 0.01715 * t           
-     = 1/58 * t              
+     = 0.01715 * t           in [cm]; t in [us]
+     = 1/58 * t              in [cm]; t in [us]
 ```
 we suggest to use over 60ms measurement cycle, in order to prevent trigger signal to the echo signal.
 
@@ -101,6 +100,8 @@ If you pick another library, make sure you use the right operations as defined i
 header file.
 
 ## References
+* [YouTube (Paul McWhorter): Arduino Tutorial 53: Understanding and Connecting the HC-SR04 Sensor](https://youtu.be/M-UKXCUI0rE)
+* [YouTube (DroneBot Workshop): Using the HC-SR04 Ultrasonic Distance Sensor with Arduino](https://youtu.be/6F1B_N6LuKw)
 
 * [GitHub: Arduino/ESP8266/ESP32 library for HC-SR04 ultrasonic distance sensor](https://github.com/d03n3rfr1tz3/HC-SR04)
 * [Arduino: HC-SR04](https://www.arduino.cc/reference/en/libraries/hc-sr04/)
