@@ -6,7 +6,7 @@ A standard hobby servo typically consists of a **small electric motor, a potenti
 The position of the output shaft is constantly measured by the internal potentiometer and compared with the target position 
 set by the controller (e.g. the Arduino).
 
-![Servo Motor](ServoConcept.png)
+![Servo Motor](ServoConcept.jpg)
 
 According to the error, the control electronics adjust the actual position of the output shaft so that it matches the 
 target position. This is known as a closed-loop control system.
