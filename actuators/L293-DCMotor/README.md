@@ -71,7 +71,10 @@ void loop()
 ```
 Note that we need a **delay between the commands** to give the DC motor some time to move to follow.
 
-**Simulation (Tinkercad)**: [Arduino: L293D + DC Motor](https://www.tinkercad.com/things/cquv6WcyB61) 
+
+## Simulation
+
+**Tinkercad**: [Arduino: L293D + DC Motor](https://www.tinkercad.com/things/cquv6WcyB61) 
 
 
 ## References
