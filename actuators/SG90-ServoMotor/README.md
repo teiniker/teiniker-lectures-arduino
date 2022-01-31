@@ -11,14 +11,14 @@ set by the controller (e.g. the Arduino).
 According to the error, the control electronics adjust the actual position of the output shaft so that it matches the 
 target position. This is known as a closed-loop control system.
 
-![Servo Motor](ServoControl.png)
-
 Servo motors are controlled by sending a **PWM (pulse-width modulation) signal to the signal line of the servo**. 
 
 The width of the pulses determines the position of the output shaft:
 * When we send the servo a signal with a pulse width of **1.5 milliseconds (ms)**, 
     the servo will move to the **neutral position (90 degrees)**. 
 * The min **(0 degrees) and max (180 degrees)** position typically correspond to a pulse width of **1 ms and 2 ms** respectively. 
+
+![Servo Motor](ServoControl.png)
 
 Note this can vary slightly between different types and brands of servo motors (e.g. 0.5 and 2.5 ms). Many servos only rotate through about 170 degrees (or even only 90) but the middle position is almost always at 1.5 ms.
 
@@ -70,7 +70,7 @@ In the first part of the **loop()** function, we simply tell the servo motor to 
 function `write()`. 
 Note that we need a delay between the commands to give the servo motor some time to move to the set position.
 
-_Simulation (Tinkercad)_: [Arduino: Motor Servo](https://www.tinkercad.com/things/0q3C1mj7NeS) 
+**Simulation (Tinkercad)**: [Arduino: Motor Servo](https://www.tinkercad.com/things/0q3C1mj7NeS) 
 
 
 ## Library Operations
@@ -78,29 +78,29 @@ _Simulation (Tinkercad)_: [Arduino: Motor Servo](https://www.tinkercad.com/thing
 A servo is activated by creating an instance of the `Servo` class passing the desired pin to the `attach()` method.
 The servos are pulsed in the background using the value most recently written using the `write()` method.
 
-*  **uint8_t attach(int pin)**\  
+*  **uint8_t attach(int pin)**\
     Attaches a servo motor to an I/O pin which provides PWM (attach the given pin to the next free channel, sets pinMode)
     Returns channel number or INVALID_SERVO if failure.
 
-* **uint8_t attach(int pin, int min, int max)**\ 
+* **uint8_t attach(int pin, int min, int max)**\
     Attaches to a pin setting min and max values in microseconds default min is 544, max is 2400. 
 
 *  **void write(int value)**\
     Sets the servo angle in degrees (if value is < 200 its treated as an angle, otherwise as pulse width in microseconds).
 
-* **void writeMicroseconds(int value)**\ 
+* **void writeMicroseconds(int value)**\
     Sets the servo pulse width in microseconds. 
 
-* **int read()**\      
+* **int read()**\
     Gets the last written servo pulse width as an angle between 0 and 180 degrees. 
 
-* **int readMicroseconds()**\   
+* **int readMicroseconds()**\
     Gets the last written servo pulse width in microseconds. 
 
 * **bool attached()**\
     Returns true if there is a servo attached, otherwise false. 
 
-* **void detach()**\    
+* **void detach()**\
     Stops an attached servos from pulsing its I/O pin. 
 
 Note that `analogWrite()` of PWM on pins associated with the timer are disabled when the first servo is attached.
