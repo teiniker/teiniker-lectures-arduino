@@ -80,8 +80,4 @@ Note that we need a **delay between the commands** to give the DC motor some tim
 * [YouTube: Arduino for Beginners 20 Using a Motor Shield](https://youtu.be/cqfkH7pyyfY)
 
 
-* []()
-
-
-
 *Egon Teiniker, 2020 - 2022, GPL v3.0*
