@@ -7,6 +7,7 @@ The position of the output shaft is constantly measured by the internal potentio
 set by the controller (e.g. the Arduino).
 
 ![Servo Motor](ServoConcept.jpg)
+_([Makerguides](https://www.makerguides.com/servo-arduino-tutorial/))_
 
 According to the error, the control electronics adjust the actual position of the output shaft so that it matches the 
 target position. This is known as a closed-loop control system.
@@ -19,6 +20,7 @@ The width of the pulses determines the position of the output shaft:
 * The min **(0 degrees) and max (180 degrees)** position typically correspond to a pulse width of **1 ms and 2 ms** respectively. 
 
 ![Servo Motor](ServoControl.png)
+_([Makerguides](https://www.makerguides.com/servo-arduino-tutorial/))_
 
 Note this can vary slightly between different types and brands of servo motors (e.g. 0.5 and 2.5 ms). Many servos only rotate through about 170 degrees (or even only 90) but the middle position is almost always at 1.5 ms.
 
