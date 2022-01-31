@@ -29,7 +29,7 @@ Reverse the outputs to LOW and HIGH, and the motor will spin in the other direct
 
 ![DC Motor](DC-Motor-L293D.png)
 
-Note that the **DC motor needs its own voltage source** (more current and voltage).
+Note that the **DC motor needs its own power supply** (more current and sometimes higher voltage).
 In this case, the two **GND potentials must be connected** to each other (see circuit).
 
 
