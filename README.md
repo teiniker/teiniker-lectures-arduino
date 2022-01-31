@@ -18,7 +18,7 @@ This project collects examples related to Arduino programming.
   
 * Actuators
   * [Servo Motor SG90](actuators/SG90-ServoMotor)
-  * [DC Motor via L293D](actuators/L293)
+  * [DC Motor via L293D](actuators/L293-DCMotor)
  
 * [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
 
