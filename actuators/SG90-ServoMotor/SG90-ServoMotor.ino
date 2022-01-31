@@ -1,12 +1,11 @@
 #include <Servo.h>
 
-const int SERVO_PWM_PIN = 9;
+const int SERVO_PWM_PIN = 3;
 
 Servo myservo;
 
 void setup(void)
 {
-  //connect pin 9 with the control line of the Servo
   myservo.attach(SERVO_PWM_PIN); 
 } 
 

@@ -116,3 +116,6 @@ _Example:_ [Arduino: Digital Output PWM](https://www.tinkercad.com/things/i2Tnbx
 * [Digital Pins](https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins)
 * [Analog Input Pins](https://www.arduino.cc/en/Tutorial/Foundations/AnalogInputPins)
 * [PWM](https://www.arduino.cc/en/Tutorial/Foundations/PWM)
+
+
+*Egon Teiniker, 2020 - 2022, GPL v3.0*
