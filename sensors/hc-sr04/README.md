@@ -65,7 +65,7 @@ void loop()
 
 ## Simulation
 
-This simulation doesn't use a library, thus, the distance is calculated manually.
+The following simulation doesn't use a library. Instead, the distance is calculated manually.
 
 **Tinkercad**: [Arduino: Sensor HC-SR04](https://www.tinkercad.com/things/2SftYn3fIlA) 
 
