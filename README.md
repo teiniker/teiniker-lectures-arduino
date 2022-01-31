@@ -17,7 +17,7 @@ This project collects examples related to Arduino programming.
   * [Temperature + Humidity DHT11](sensors/dht11)
   
 * Actuators
-  * [Servo Motor SG90](actuators/sg90)
+  * [Servo Motor SG90](actuators/SG90-ServoMotor)
   * [DC Motor via L293D](actuators/L293)
  
 * [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
