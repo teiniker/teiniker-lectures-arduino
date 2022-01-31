@@ -63,6 +63,9 @@ void loop()
 }
 ```
 
+**Simulation (Tinkercad)**: [Arduino: Sensor HC-SR04](https://www.tinkercad.com/things/2SftYn3fIlA) 
+
+
 ## Library Operations
 
 This library is used for measuring distance with the HC-SR04 that measures distances from 2 to 400cm. 
