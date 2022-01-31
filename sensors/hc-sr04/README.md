@@ -14,9 +14,16 @@ input to start the ranging, and then the module will send out an 8 cycle burst o
 The Echo pulse width is proportional to the distance of the object, or range. 
 We can calculate through the time interval between sending trigger signal and receiving 
 echo signal: 
+```
+d = distance [m], t = duration [s], v = speed of sound = 343 [m/s] 
 
-us / 58 = centimeters or: the range = high level time * velocity (340M/S) / 2; 
-
+v = s / t = 2*d / t in [m/s];  
+=> d = 1/2 * v + t
+     = 343/2 * t             in [m]
+     = 171.5 * t * 10^(-4)   in [cm]; t in [us]
+     = 0.01715 * t           
+     = 1/58 * t              
+```
 we suggest to use over 60ms measurement cycle, in order to prevent trigger signal to the echo signal.
 
 
