@@ -63,7 +63,11 @@ void loop()
 }
 ```
 
-**Simulation (Tinkercad)**: [Arduino: Sensor HC-SR04](https://www.tinkercad.com/things/2SftYn3fIlA) 
+## Simulation
+
+This simulation doesn't use a library, thus, the distance is calculated manually.
+
+**Tinkercad**: [Arduino: Sensor HC-SR04](https://www.tinkercad.com/things/2SftYn3fIlA) 
 
 
 ## Library Operations
