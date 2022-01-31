@@ -45,6 +45,19 @@ The following bit manipulation functions are declared in the `wiring_private.h` 
 ## Digital I/O
 
 
+* **unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout)**\
+  **unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L)**\
+    Reads a pulse (either HIGH or LOW) on a pin. 
+    For example, if `value` is `HIGH`, `pulseIn()` waits for the `pin` to go from `LOW` to `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. 
+    
+    `timeout` specifies the number of microseconds to wait for the pulse to start - default is one second. 
+
+    Returns the **length of the pulse in microseconds** or gives up and returns 0 if no complete pulse was received within the timeout.
+
+    The timing of this function has been determined empirically and will probably show errors in longer pulses. Works on pulses from 10 microseconds to 3 minutes in length.
+
+
+
 ## Analogue I/O
 
 
