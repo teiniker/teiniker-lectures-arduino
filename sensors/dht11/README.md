@@ -91,6 +91,11 @@ values every 2 seconds from the sensor module.
 Note that reading temperature or humidity takes about **250 milliseconds**!
 
 ## References
+* [YouTube (Circuit Basics):](https://youtu.be/oZ-oFY6TiPw)
+* [YouTube (Paul McWhorter): Arduino Tutorial 50: How to Connect and Use the DHT11 Temperature and Humidity Sensor](https://youtu.be/-AvF2TsB2GI)
+* [YouTube (DroneBot Workshop): Measuring Temperature with Arduino - 5 Sensors](https://youtu.be/fjVbcaKW2r0)
+
+
 * [DHT11, DHT22 and AM2302 Sensors](https://learn.adafruit.com/dht)
 * [Arduino: DHT sensor library](https://www.arduino.cc/reference/en/libraries/dht-sensor-library/)
 * [GitHub: DHT sensor library](https://github.com/adafruit/DHT-sensor-library)
