@@ -16,7 +16,8 @@ The connections are: Voltage, Ground and Signal which can be connected to any di
 
 ## Source Code
 
-We have to install the [**DHT11 library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) 
+We have to install the [**Adafruit_Sensor library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) and the 
+[**DHT11 library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) 
 to use the `DHT.h` header file.
 
 In the used library a cass named `DHT` has been implemented.
@@ -98,6 +99,8 @@ Note that reading temperature or humidity takes about **250 milliseconds**!
 
 * [DHT11, DHT22 and AM2302 Sensors](https://learn.adafruit.com/dht)
 * [Arduino: DHT sensor library](https://www.arduino.cc/reference/en/libraries/dht-sensor-library/)
+* 
+* [GitHub: Adafruit Unified Sensor Driver](https://github.com/adafruit/Adafruit_Sensor)
 * [GitHub: DHT sensor library](https://github.com/adafruit/DHT-sensor-library)
 
 *Egon Teiniker, 2020 - 2022, GPL v3.0* 
