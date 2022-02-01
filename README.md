@@ -2,6 +2,9 @@
 
 This project collects examples related to Arduino programming.
 
+* Introduction
+  * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
+
 * [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
 
 * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
