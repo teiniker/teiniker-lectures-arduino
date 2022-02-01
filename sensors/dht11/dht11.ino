@@ -1,6 +1,6 @@
 #include "DHT.h"
 
-const int DHT_SENSOR_PIN = 3;
+const int DHT_SENSOR_PIN = 2;
 
 DHT dht(DHT_SENSOR_PIN, DHT11);
 
