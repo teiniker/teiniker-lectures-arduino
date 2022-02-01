@@ -16,7 +16,8 @@ The connections are: Voltage, Ground and Signal which can be connected to any di
 
 ## Source Code
 
-We have to install the [**DHT11 library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) 
+We have to install the [**Adafruit_Sensor library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) and the 
+[**DHT11 library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/DHT11) 
 to use the `DHT.h` header file.
 
 In the used library a cass named `DHT` has been implemented.
