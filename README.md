@@ -5,13 +5,14 @@ This project collects examples related to Arduino programming.
 * **Introduction**
   * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
 
-* [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
+* **Basics**
+  * [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
 
-* [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
+  * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
 
-* [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+  * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
 
-* [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
+  * [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
 
 * **Sensors**
   * [Analog Joystick](sensors/joystick)
@@ -23,11 +24,7 @@ This project collects examples related to Arduino programming.
   * [Servo Motor SG90](actuators/SG90-ServoMotor)
   * [DC Motor via L293D](actuators/L293-DCMotor)
  
-* [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
-
-
-In addition to the examples, the required **libraries** and **data sheets** are also made available in the 
-[libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries) directory.
+* [**Arduino Libraries**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
 
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
