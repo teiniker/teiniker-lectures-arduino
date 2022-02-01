@@ -15,10 +15,10 @@ void loop()
     digitalWrite(DIR_A,HIGH); 
     digitalWrite(DIR_B,LOW);
 
-    for(int i=250; i > 0; i -= 25)
+    for(int i=250; i > 50; i -= 25)
     {
-      analogWrite(ENABLE,i);  
       delay(1000);
+      analogWrite(ENABLE,i);       
     }
 }
    
