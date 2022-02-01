@@ -18,7 +18,7 @@ echo signal:
 d = distance [m], t = duration [s], v = speed of sound = 343 [m/s] 
 
 v = s / t = 2*d / t in [m/s];  
-=> d = 1/2 * v + t
+=> d = 1/2 * v * t
      = 343/2 * t             in [m]
      = 0.01715 * t           in [cm]; t in [us]
      = 1/58 * t              in [cm]; t in [us]
