@@ -2,7 +2,7 @@
 
 This project collects examples related to Arduino programming.
 
-* Introduction
+* **Introduction**
   * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
 
 * [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
@@ -13,20 +13,18 @@ This project collects examples related to Arduino programming.
 
 * [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
 
-* Sensors
+* **Sensors**
   * [Analog Joystick](sensors/joystick)
   * [Button Debouncing](sensors/button-debouncing)
   * [Temperature + Humidity DHT11](sensors/dht11)
   * [Ultrasonic Sensor HC-SR04](sensors/hc-sr04)
   
-* Actuators
+* **Actuators**
   * [Servo Motor SG90](actuators/SG90-ServoMotor)
   * [DC Motor via L293D](actuators/L293-DCMotor)
  
 * [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
 
-
-* [**Computer Architecture Simulation**](https://github.com/teiniker/teiniker-lectures-arduino/blob/main/simulation)
 
 In addition to the examples, the required **libraries** and **data sheets** are also made available in the 
 [libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries) directory.
