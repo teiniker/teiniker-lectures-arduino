@@ -44,6 +44,21 @@ The following bit manipulation functions are declared in the `wiring_private.h` 
 
 ## Digital I/O
 
+* **void pinMode(uint8_t pin, uint8_t mode)**\
+    The `pinMode()` function sets the direction of a specific pin so that it can be used for input or output. 
+    The three possible modes are:
+    * `INPUT`: The pin state is terminated by the voltage applied to it. The pin's state would be read using `digitalRead()` 
+    and will result in a returned value `HIGH` or `LOW`. 
+    * `INPUT_PULLUP`: Input with the internal pullup resistor enabled, where the pin is used again for input, but the default state is pulled to `HIGH` when nothing else attached to the pin is attempting to pull it `LOW`.  
+    * `OUTPUT`: The pin state is set to `HIGH` or `LOW` by a call to `digitalWrite()`. 
+
+* **void digitalWrite(uint8_t pin, uint8_t val)**\
+
+* **int digitalRead(uint8_t pin)**\
+
+* **int analogRead(uint8_t pin)**\
+
+* **void analogWrite(uint8_t pin, int val)**\
 
 * **unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout)**\
   **unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L)**\
