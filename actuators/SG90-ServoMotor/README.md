@@ -44,25 +44,25 @@ To control the servo motor we will be using the `Servo.h` library which comes **
 
 const int SERVO_PWM_PIN = 3;
 
-Servo myservo;
+Servo servo;
 
 void setup(void)
 {
-    myservo.attach(SERVO_PWM_PIN); 
+    servo.attach(SERVO_PWM_PIN); 
 } 
 
 void loop(void)
 {
-    myservo.write(90);  // 90°
+    servo.write(90);  // 90°
     delay(1000);
 
-    myservo.write(0);   // 0°
+    servo.write(0);   // 0°
     delay(1000);
 
-    myservo.write(90);  // 90°
+    servo.write(90);  // 90°
     delay(1000);
 
-    myservo.write(180); // 180°
+    servo.write(180); // 180°
     delay(1000);
 }
 ```
