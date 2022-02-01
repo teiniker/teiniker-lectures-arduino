@@ -2,31 +2,29 @@
 
 This project collects examples related to Arduino programming.
 
-* [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
+* **Introduction**
+  * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
 
-* [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
+* **Basics**
+  * [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
 
-* [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+  * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
 
-* [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
+  * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
 
-* Sensors
+  * [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
+
+* **Sensors**
   * [Analog Joystick](sensors/joystick)
   * [Button Debouncing](sensors/button-debouncing)
   * [Temperature + Humidity DHT11](sensors/dht11)
   * [Ultrasonic Sensor HC-SR04](sensors/hc-sr04)
   
-* Actuators
+* **Actuators**
   * [Servo Motor SG90](actuators/SG90-ServoMotor)
   * [DC Motor via L293D](actuators/L293-DCMotor)
  
-* [Arduino Libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
-
-
-* [**Computer Architecture Simulation**](https://github.com/teiniker/teiniker-lectures-arduino/blob/main/simulation)
-
-In addition to the examples, the required **libraries** and **data sheets** are also made available in the 
-[libraries](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries) directory.
+* [**Arduino Libraries**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
 
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 

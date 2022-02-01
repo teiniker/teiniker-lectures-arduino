@@ -1,4 +1,4 @@
-# Arduino Tutorial
+# Arduino Video Tutorials
 
 This is simply a **list of existing video tutorials** for the Arduino platform created by **Paul McWhorter**.
 
