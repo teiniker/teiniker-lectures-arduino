@@ -17,7 +17,7 @@ void loop()
     delay(1000);
 
     digitalWrite(ENABLE,LOW); 
-    delay(3000);    
+    delay(1000);    
 
     digitalWrite(ENABLE,HIGH); 
     digitalWrite(DIR_A,LOW); 
@@ -25,6 +25,6 @@ void loop()
     delay(1000);
 
     digitalWrite(ENABLE,LOW); 
-    delay(3000);    
+    delay(1000);    
 }
    
