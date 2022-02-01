@@ -96,10 +96,9 @@ Note that reading temperature or humidity takes about **250 milliseconds**!
 * [YouTube (Paul McWhorter): Arduino Tutorial 50: How to Connect and Use the DHT11 Temperature and Humidity Sensor](https://youtu.be/-AvF2TsB2GI)
 * [YouTube (DroneBot Workshop): Measuring Temperature with Arduino - 5 Sensors](https://youtu.be/fjVbcaKW2r0)
 
-
 * [DHT11, DHT22 and AM2302 Sensors](https://learn.adafruit.com/dht)
 * [Arduino: DHT sensor library](https://www.arduino.cc/reference/en/libraries/dht-sensor-library/)
-* 
+ 
 * [GitHub: Adafruit Unified Sensor Driver](https://github.com/adafruit/Adafruit_Sensor)
 * [GitHub: DHT sensor library](https://github.com/adafruit/DHT-sensor-library)
 
