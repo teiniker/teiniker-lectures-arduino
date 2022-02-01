@@ -98,6 +98,8 @@ Note that reading temperature or humidity takes about **250 milliseconds**!
 
 * [DHT11, DHT22 and AM2302 Sensors](https://learn.adafruit.com/dht)
 * [Arduino: DHT sensor library](https://www.arduino.cc/reference/en/libraries/dht-sensor-library/)
+* 
+* [GitHub: Adafruit Unified Sensor Driver](https://github.com/adafruit/Adafruit_Sensor)
 * [GitHub: DHT sensor library](https://github.com/adafruit/DHT-sensor-library)
 
 *Egon Teiniker, 2020 - 2022, GPL v3.0* 
