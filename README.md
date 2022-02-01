@@ -13,8 +13,8 @@ This project collects examples related to Arduino programming.
 * Sensors
   * [Analog Joystick](sensors/joystick)
   * [Button Debouncing](sensors/button-debouncing)
-  * [Ultrasonic Sensor HC-SR04](sensors/hc-sr04)
   * [Temperature + Humidity DHT11](sensors/dht11)
+  * [Ultrasonic Sensor HC-SR04](sensors/hc-sr04)
   
 * Actuators
   * [Servo Motor SG90](actuators/SG90-ServoMotor)
