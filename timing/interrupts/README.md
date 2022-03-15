@@ -84,7 +84,7 @@ The following simulation shows how a long running task (blinking the green LED) 
 ## Library Operations
 
 There are some functions in the Arduino framework which help in setting up and using these ISR 
-(see `Arduini.h`):
+(see `Arduino.h`):
 
 * **#define interrupts() sei()**\
     Its purpose is to **enable global interrupts** which is done by calling the `sei()` function, which sets the interrupt flag in the status register to enable interrupts.
