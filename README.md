@@ -6,13 +6,13 @@ This project collects examples related to Arduino programming.
   * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
 
 * **Basics**
-  * [Serial Logging](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/interfaces/serial)
+  * [Serial Logging](interfaces/uart/serial)
 
-  * [I/O Ports](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/io-ports)
+  * [I/O Ports](io-ports)
 
-  * [Timing and Scheduling](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/timing)
+  * [Timing and Scheduling](timing)
 
-  * [State Machines](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/state-machines)
+  * [State Machines](state-machines)
 
 * **Sensors**
   * [Analog Joystick](sensors/joystick)
@@ -24,7 +24,7 @@ This project collects examples related to Arduino programming.
   * [Servo Motor SG90](actuators/SG90-ServoMotor)
   * [DC Motor via L293D](actuators/L293-DCMotor)
  
-* [**Arduino Libraries**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries)
+* [**Arduino Libraries**](libraries)
 
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
