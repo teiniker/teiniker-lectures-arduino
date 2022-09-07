@@ -7,6 +7,11 @@ includes both software and hardware aspects.
   * [Arduino IDE Setup](introduction/ArduinoSetup.md)
   * [Using a Breadboard](introduction/UsingBreadboard.md)
 
+* **Digital Circuits**
+ * Combinatorial Logic
+ 
+ * Sequential Logic
+
 * **Basics**
   * [Serial](basics/uart/serial)
   * [I/O Ports](basics/io-ports)
