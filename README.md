@@ -4,6 +4,7 @@ This project collects examples related to Arduino programming.
 
 * **Introduction**
   * [Arduino IDE Setup](introduction/ArduinoSetup.md)
+  * [Using a Breadboard](introduction/UsingBreadboard.md)
 
 * **Basics**
   * [Serial](basics/uart/serial)
