@@ -1,7 +1,7 @@
 void setup() 
 {
   Serial.begin(9600);                     
-  Serial.println("Arduino: standard types");  
+  Serial.println("Arduino: standard integer types");  
 
   // Signed integer types 
   Serial.print("int8_t : "); 
@@ -22,8 +22,6 @@ void setup()
   Serial.println(sizeof(uint32_t));                  
   Serial.print("uint64_t: "); 
   Serial.println(sizeof(uint64_t));                  
-
-
 }
 
 void loop() 
