@@ -54,6 +54,39 @@ Sensor-signal values can be written as well as **debug information**.
 
     Returns the first byte of incoming serial data available (or -1 if no data is available).
 
+* **long Serial.parseInt()**\
+  **long Serial.parseInt(LookaheadMode lookahead)**\
+  **long Serial.parseInt(LookaheadMode lookahead, char ignore)**\
+    Looks for the next valid integer in the incoming serial. The function terminates if it times out (see Serial.setTimeout()).
+
+    Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read;
+    If no valid digits were read when the time-out (see Serial.setTimeout()) occurs, 0 is returned.
+
+    `lookahead`: The mode used to look ahead in the stream for an integer. 
+    Allowed lookahead values:
+    * `SKIP_ALL`: all characters other than digits or a minus sign are ignored when scanning the stream for an integer. This is the default mode.
+    * `SKIP_NONE`: Nothing is skipped, and the stream is not touched unless the first waiting character is valid.
+    * `SKIP_WHITESPACE`: Only tabs, spaces, line feeds, and carriage returns are skipped.
+
+    `ignore`: Used to skip the indicated char in the search. Used for example to skip thousands divider. 
+
+    Returns the next valid integer.
+
+
+* **float Serial.parseFloat()**\
+  **float Serial.parseFloat(LookaheadMode lookahead)**\
+  **float Serial.parseFloat(LookaheadMode lookahead, char ignore)**\
+    `Serial.parseFloat()` returns the first valid floating point number from the Serial buffer. 
+    `parseFloat()` is terminated by the first character that is not a floating point number. 
+    The function terminates if it times out (see `Serial.setTimeout()`).
+
+    `lookahead`: The mode used to look ahead in the stream for a floating point number. 
+    Allowed lookahead values:
+    * `SKIP_ALL`: all characters other than a minus sign, decimal point, or digits are ignored when scanning the stream for a floating point number. This is the default mode.
+    * `SKIP_NONE`: Nothing is skipped, and the stream is not touched unless the first waiting character is valid.
+    * `SKIP_WHITESPACE`: Only tabs, spaces, line feeds, and carriage returns are skipped.
+
+    `ignore`: used to skip the indicated char in the search. Used for example to skip thousands divider. 
 
 ## References
 
