@@ -1,7 +1,7 @@
 # Serial
 
 Serial is used for communication between the Arduino board and a computer or other devices. 
-All Arduino boards have at least one serial port (also known as a UART or USART): Serial. 
+All Arduino boards have at least one serial port (also known as a UART or USART). 
 
 It communicates on **digital pins 0 (RX)** and **1 (TX)** as well as with the computer via **USB**. 
 Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input or output.
@@ -13,6 +13,8 @@ A main area of application for Serial is the **logging of data or events** durin
 execution for **debugging purposes**.
 
 _Example:_ [Arduino: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDxK) 
+
+![Serial output](figures/Serial-Output.png)
 
 
 
