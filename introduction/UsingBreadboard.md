@@ -3,7 +3,8 @@
 In electronics, breadboards are used to create quick **prototypes**.
 Instead of soldering connections, they can simply be made with **jumper wires**.
 
-Breadboards come in different sizes. It is important to remember how the individual tracks are connected internally - see illustration.
+Breadboards come in different sizes. It is important to remember how the individual tracks are connected internally:
+
 ![Breadboards](figures/Breadboards.png)
 The larger breadboards have their own power supply tracks on the side.
 
