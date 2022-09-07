@@ -3,16 +3,17 @@
 This project collects examples related to Arduino programming.
 
 * **Introduction**
+  * [Setup](introduction/ArduinoSetup.md)
   * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
 
 * **Basics**
-  * [Serial Logging](interfaces/uart/serial)
+  * [Serial](basics/uart/serial)
 
-  * [I/O Ports](io-ports)
+  * [I/O Ports](basics/io-ports)
 
-  * [Timing and Scheduling](timing)
+  * [Timing and Scheduling](basics/timing)
 
-  * [State Machines](state-machines)
+  * [State Machines](basics/state-machines)
 
 * **Sensors**
   * [Analog Joystick](sensors/joystick)
