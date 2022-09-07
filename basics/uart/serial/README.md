@@ -42,6 +42,17 @@ _Example:_ [Arduino: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDx
     character (ASCII 13, or `'\r'`) and a **newline** character (ASCII 10, or `'\n'`). 
     This command takes the same forms as `Serial.print()`.
 
+* **int Serial.available()**\
+    Get the number of bytes available for reading from the serial port. 
+    This is data that’s already arrived and stored in the serial receive buffer (which holds 64 bytes).
+
+    Returns the number of bytes available to read.
+
+* **int Serial.read()**\
+    Reads incoming serial data (one byte out of the serial receive buffer).
+
+    Returns the first byte of incoming serial data available (or -1 if no data is available).
+
 
 ## References
 
@@ -52,4 +63,4 @@ _Example:_ [Arduino: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDx
 * [Arduino Core: HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
 * [Arduino Core: Print.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Print.h)
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
