@@ -17,6 +17,7 @@ For practice, it is advisable to set up simple circuits on the breadboard withou
 In the example shown, 4 LEDs are controlled via 4 different DIP switches. 
 Important in this circuit is the use of **series resistors (470 ohms) for the LEDs** and **pull-down resistors (10 KOhm) for the switches**.
 
+This example can be simulated via [Tinkercad](https://www.tinkercad.com/things/edBOW4fxukG).
 
 ## References
 
