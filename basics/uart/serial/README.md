@@ -72,7 +72,6 @@ Sensor-signal values can be written as well as **debug information**.
 
     Returns the next valid integer.
 
-
 * **float Serial.parseFloat()**\
   **float Serial.parseFloat(LookaheadMode lookahead)**\
   **float Serial.parseFloat(LookaheadMode lookahead, char ignore)**\
@@ -88,12 +87,31 @@ Sensor-signal values can be written as well as **debug information**.
 
     `ignore`: used to skip the indicated char in the search. Used for example to skip thousands divider. 
 
+* **String Serial.readString()**\
+    `Serial.readString()` reads characters from the serial buffer into a String. The function terminates if it times out (see `setTimeout()`).
+
+    Returns a `String` read from the serial buffer.
+
+
+* **void Serial.setTimeout(long time)**\
+    `Serial.setTimeout()` sets the maximum milliseconds to wait for serial data. 
+    It defaults to 1000 milliseconds.
+
+    `time`: timeout duration in milliseconds. 
+
+
 ## References
 
-* [YouTube: Arduino Tutorial 11: Understanding the Arduino Serial Port and Print Commands](https://youtu.be/b5kndEtAKl8)
+* [YouTube (Paul McWhorter): Arduino Tutorial 11: Understanding the Arduino Serial Port and Print Commands](https://youtu.be/b5kndEtAKl8)
+
+* [YouTube (Paul McWhorter): Arduino Tutorial 18: Reading Numbers from the Serial Monitor](https://youtu.be/7aP5KL5clWA)
+
+* [YouTube (Paul McWhorter): Arduino Tutorial 19: Reading Strings from the Serial Monitor](https://youtu.be/MAnAc_t0OrM)
+
+
+
 
 * [Arduino references: Serial](https://www.arduino.cc/en/reference/serial&gt)
-
 * [Arduino Core: HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
 * [Arduino Core: Print.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Print.h)
 
