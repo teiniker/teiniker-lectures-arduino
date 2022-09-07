@@ -16,7 +16,8 @@ _Example:_ [Arduino: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDx
 
 ![Serial output](figures/Serial-Output.png)
 
-
+The `Serial` object is very useful for sending information back from the Arduino board to the PC. 
+Sensor-signal values can be output as well as **debug information**.
 
 ## Arduino Library Functions
 
