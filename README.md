@@ -25,6 +25,6 @@ This project collects examples related to Arduino programming.
 * [**Arduino Libraries**](libraries)
 
 ## References
-* [YouTube (Paul McWhorter): Arduino Tutorials](tutorials/ArduinoTutorials.md) 
+* [YouTube (Paul McWhorter): Arduino Tutorials](tutorials/ArduinoTutorials-McWhorter.md) 
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
