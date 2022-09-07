@@ -4,15 +4,11 @@ This project collects examples related to Arduino programming.
 
 * **Introduction**
   * [Setup](introduction/ArduinoSetup.md)
-  * [Arduino Video Tutorials](introduction/ArduinoTutorials.md) 
 
 * **Basics**
   * [Serial](basics/uart/serial)
-
   * [I/O Ports](basics/io-ports)
-
   * [Timing and Scheduling](basics/timing)
-
   * [State Machines](basics/state-machines)
 
 * **Sensors**
@@ -27,5 +23,7 @@ This project collects examples related to Arduino programming.
  
 * [**Arduino Libraries**](libraries)
 
+## References
+* [Arduino Tutorials](introduction/ArduinoTutorials.md) 
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
