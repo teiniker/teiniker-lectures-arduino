@@ -1,6 +1,6 @@
 void setup() 
 {
-  Serial.begin(9600);                     
+  Serial.begin(115200);                     
   Serial.println("Arduino: gcc types");  
 
   // Integer types 
