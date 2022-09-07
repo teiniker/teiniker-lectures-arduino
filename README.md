@@ -8,9 +8,9 @@ includes both software and hardware aspects.
   * [Using a Breadboard](introduction/UsingBreadboard.md)
 
 * **Digital Circuits**
- * Combinatorial Logic
+  * Combinatorial Logic
  
- * Sequential Logic
+  * Sequential Logic
 
 * **Basics**
   * [Serial](basics/uart/serial)
