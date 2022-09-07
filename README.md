@@ -1,6 +1,7 @@
 # Arduino Programming
 
-This project collects examples related to Arduino programming.
+This project collects examples related to programming on the Arduino platform which
+includes both software and hardware aspects.
 
 * **Introduction**
   * [Arduino IDE Setup](introduction/ArduinoSetup.md)
