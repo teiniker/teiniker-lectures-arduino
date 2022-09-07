@@ -1,9 +1,11 @@
 # Arduino Programming
 
-This project collects examples related to Arduino programming.
+This project collects examples related to programming on the Arduino platform which
+includes both software and hardware aspects.
 
 * **Introduction**
   * [Arduino IDE Setup](introduction/ArduinoSetup.md)
+  * [Using a Breadboard](introduction/UsingBreadboard.md)
 
 * **Basics**
   * [Serial](basics/uart/serial)
@@ -24,6 +26,6 @@ This project collects examples related to Arduino programming.
 * [**Arduino Libraries**](libraries)
 
 ## References
-* [YouTube (Paul McWhorter): Arduino Tutorials](tutorials/ArduinoTutorials.md) 
+* [YouTube (Paul McWhorter): Arduino Tutorials](tutorials/ArduinoTutorials-McWhorter.md) 
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
