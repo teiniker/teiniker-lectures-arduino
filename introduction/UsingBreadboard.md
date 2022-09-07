@@ -16,7 +16,7 @@ For practice, it is advisable to set up simple circuits on the breadboard withou
 
 In this circuit, a pushbutton is used to turn an LED on and off.
 Each **LED needs a series resistor (330 ohms) to limit the current**.
-In order to give the button's output a defined logical level, it is pulled to GND with a pull-down resistor (10K ohms). The push-down resistor is not necessary for the LED control, for Arduino inputs it is.
+In order to give the button's output a defined logical level, it is pulled to GND with a **pull-down resistor (10K ohms)**. The push-down resistor is not necessary for the LED control, for Arduino inputs it is.
 
 
 This example can be simulated via [Tinkercad](https://www.tinkercad.com/things/8kKVf82GV4V).
