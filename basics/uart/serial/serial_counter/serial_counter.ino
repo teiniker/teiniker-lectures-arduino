@@ -10,5 +10,5 @@ void setup()
 void loop() 
 {
   Serial.print("Counter = ");
-  Serial.println(counter++);
+  Serial.println(counter++, BIN);
 }
