@@ -10,7 +10,12 @@ There is a one-to-one relationship between **Boolean functions** and electronic 
     * [OR Gate](gate-or)
     * [NAND Gate (implementing OR)](gate-nand-or)
 
-
+* **Combinatorial Logic**
+   * [Adder](adder-4bit)
+   * [Decoder](decoder)
+   * [Encoder](encoder)
+   
+   
 ## References
 
 * Randall Hyde. **Writing Great Code / Volume 1: Understanding the Machine**. No Starch Press, 2020
