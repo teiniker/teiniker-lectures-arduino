@@ -12,7 +12,7 @@ includes both software and hardware aspects.
   * [Combinatorial Logic](digital_circuits/combinatorial-logic)
   * [Sequential Logic](digital_circuits/sequential-logic)
 
-* **Basics**
+* **Arduino Basics**
   * [Serial](basics/uart/serial)
   * [I/O Ports](basics/io-ports)
   * [Timing and Scheduling](basics/timing)
