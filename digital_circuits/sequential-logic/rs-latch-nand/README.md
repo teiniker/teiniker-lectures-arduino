@@ -1,13 +1,15 @@
-# Simulation: RS Latch using NAND Gates
+# RS Latch
 
+
+
+_Example:_ [RS Latch using NAND Gates (Tinkercad)](https://www.tinkercad.com/things/jCPAfEFIv5M)
 
 ![RS Latch](rs-latch.png)
 
 
 ## References
-* [Tinkercad](https://www.tinkercad.com/things/jCPAfEFIv5M)
 
 * [Electronics Hub: SR Flip Flop-Designing using Gates and Applications](https://www.electronicshub.org/sr-flip-flop-design-with-nor-and-nand-logic-gates/)
 
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
