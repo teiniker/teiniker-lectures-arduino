@@ -24,7 +24,7 @@ Sensor-signal values can be written as well as **debug information**.
 * **void Serial.begin(long speed)**\
     Sets the data rate in bits per second (baud) for serial data transmission.
 
-    The parameter `speed` in bits per second (a common value is 9600).
+    The parameter `speed` in bits per second (a common value is 115200).
 
 * **size_t Serial.print(value)**\
     Prints data to the serial port as human-readable ASCII text. 
