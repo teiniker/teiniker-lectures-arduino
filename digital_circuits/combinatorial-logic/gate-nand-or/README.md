@@ -4,7 +4,7 @@ This circuit shows the use of an NAND gates **75HC00** to implement an OR operat
 
 _Example:_ [NAND Gates:75HC00 (Tinkercad)](https://www.tinkercad.com/things/jQcxMTTbqIi)
 
-![OR Gate]gate-or-using-nand.png)
+![OR Gate](gate-or-using-nand.png)
 
 
 
