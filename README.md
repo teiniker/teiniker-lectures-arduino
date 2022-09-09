@@ -8,6 +8,7 @@ includes both software and hardware aspects.
   * [Using a Breadboard](introduction/UsingBreadboard.md)
 
 * **Digital Circuits**
+  * [Introduction](digital_circuits/introduction)
   * [Combinatorial Logic](digital_circuits/combinatorial-logic)
   * [Sequential Logic](digital_circuits/sequential-logic)
 
