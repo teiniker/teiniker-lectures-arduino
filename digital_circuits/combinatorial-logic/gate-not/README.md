@@ -2,7 +2,8 @@
 
 This circuit shows the use of a NOT gate **75HC04**.
 
-_Example_: * [Tinkercad](https://www.tinkercad.com/things/0oDD4h7NjYh) 
+_Example_: [NOT Gate - 74HC04 (Tinkercad)](https://www.tinkercad.com/things/0oDD4h7NjYh) 
+
 ![NOT Gate](gate-not.png)
 
 

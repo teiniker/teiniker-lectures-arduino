@@ -2,8 +2,9 @@
 
 This circuit shows the use of an OR gate **75HC32**.
 
-_Example:_ [Tinkercad](https://www.tinkercad.com/things/bsNNxH4XZwC)
-![OR Gate](or-gate.png)
+_Example:_ [OR Gate: 74HC32 (Tinkercad)](https://www.tinkercad.com/things/bsNNxH4XZwC)
+
+![OR Gate](gate-or.png)
 
 
 
