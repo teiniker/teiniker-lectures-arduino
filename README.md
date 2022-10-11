@@ -4,9 +4,9 @@ This project collects examples related to programming on the Arduino platform wh
 includes both software and hardware aspects.
 
 * **Introduction**
+  * [Arduino IDE Setup](introduction/ArduinoSetup.md)
   * [Using a Breadboard](introduction/UsingBreadboard.md)
   * [Using Tinkercad](introduction/UsingTinkercad.md)
-  * [Arduino IDE Setup](introduction/ArduinoSetup.md)
 
 * **Digital Circuits**
   * [Combinatorial Logic](digital_circuits/combinatorial-logic)
