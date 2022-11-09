@@ -1,5 +1,16 @@
 # Computer Architecture
 
+The basic operational design of a computer system is called architecture.
+
+The von Neumann Architecture (VNA) described the principal architecture used today which has three major components:
+* **Central Processing Unit (CPU)**: performs all computations
+* **Memory**: stores data and instructions
+* **Input / Output Devices**: interact with the outside world
+
+Data and machine instructions reside in memory until the CPU requests them.
+To the CPU, most I/O devices look like memory.
+
+In the following sections the basic mechanisms and components of computer architectures are examined.
 
 * [Introduction](introduction/)
     * [Using a Breadboard](introduction/UsingBreadboard.md)
