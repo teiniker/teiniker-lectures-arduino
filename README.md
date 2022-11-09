@@ -7,7 +7,7 @@ includes both software and hardware aspects.
   * [Arduino IDE Setup](introduction/ArduinoSetup.md)
   * [Run an Arduino Sketch](introduction/RunSketches.md)
 
-* **Digital Circuits**
+* **Computer Architectures**
   * [Introduction](digital_circuits/introduction/)
   * [Combinatorial Logic](digital_circuits/combinatorial-logic)
   * [Sequential Logic](digital_circuits/sequential-logic)
