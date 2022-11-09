@@ -6,10 +6,9 @@ includes both software and hardware aspects.
 * **Introduction**
   * [Arduino IDE Setup](introduction/ArduinoSetup.md)
   * [Run an Arduino Sketch](introduction/RunSketches.md)
-  * [Using a Breadboard](introduction/UsingBreadboard.md)
-  * [Using Tinkercad](introduction/UsingTinkercad.md)
 
 * **Digital Circuits**
+  * [Introduction](digital_circuits/introduction/)
   * [Combinatorial Logic](digital_circuits/combinatorial-logic)
   * [Sequential Logic](digital_circuits/sequential-logic)
 
