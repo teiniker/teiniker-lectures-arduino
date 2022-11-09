@@ -8,9 +8,9 @@ includes both software and hardware aspects.
   * [Run an Arduino Sketch](introduction/RunSketches.md)
 
 * **Computer Architectures**
-  * [Introduction](digital_circuits/introduction/)
-  * [Combinatorial Logic](digital_circuits/combinatorial-logic)
-  * [Sequential Logic](digital_circuits/sequential-logic)
+  * [Introduction](computer-architecture/introduction/)
+  * [Combinatorial Logic](computer-architecture/combinatorial-logic)
+  * [Sequential Logic](computer-architecture/sequential-logic)
 
 * **Arduino Basics**
   * [Serial](basics/uart/serial)
