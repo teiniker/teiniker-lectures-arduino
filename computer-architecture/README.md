@@ -20,9 +20,6 @@ In the following sections the basic mechanisms and components of computer archit
 
 * [Sequential Logic](sequential-logic/)
 
-* Online Tutorials
-    * [Crash Course: Computer Science](tutorials/CrashCourse-ComputerScience.md)
-
 ## References
 
 * Randall Hyde. **Writing Great Code / Volume 1: Understanding the Machine**. No Starch Press, 2020
