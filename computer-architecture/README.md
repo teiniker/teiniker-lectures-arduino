@@ -13,8 +13,6 @@ To the CPU, most I/O devices look like memory.
 In the following sections the basic mechanisms and components of computer architectures are examined.
 
 * [Introduction](introduction/)
-    * [Using a Breadboard](introduction/UsingBreadboard.md)
-    * [Using TinkerCAD](introduction/UsingTinkercad.md)
     
 * [Combinatorial Logic](combinatorial-logic/)
 
