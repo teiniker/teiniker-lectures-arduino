@@ -1,5 +1,7 @@
 # Crash Course: Computer Science
 
+This is an excerpt from a series of YouTube videos on computer science:
+
 * [Electronic Computing](https://youtu.be/LN0ucKNX0hc)
 * [Boolean Logic & Logic Gates](https://youtu.be/gI-qXk7XojA)
 * [Representing Numbers and Letters with Binary](https://youtu.be/1GSjbWt0c9M)
