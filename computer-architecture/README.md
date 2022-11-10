@@ -1,4 +1,4 @@
-# Computer Architecture
+# Computer Architectures
 
 The basic operational design of a computer system is called architecture.
 
