@@ -13,6 +13,7 @@ The sequential circuit receives binary information from external **inputs** whic
 * **Register**
 
 * **Counter**   
+   * [Ripple Counter](ripple-counter-4bit)  
    
 
 
