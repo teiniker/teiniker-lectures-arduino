@@ -24,6 +24,7 @@ _Example:_ [Shift Register 74HC595 (Tinkercad)](https://www.tinkercad.com/things
 
 ## References
 
+* [How to use a 74hc595 shift register](https://www.marginallyclever.com/2017/02/use-74hc595-shift-register/)
 * [YouTube (DroneBot Workshop): 74HC595 & 74HC165 Shift Registers with Arduino](https://youtu.be/Ys2fu4NINrA)
 
 
