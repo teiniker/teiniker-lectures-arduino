@@ -11,7 +11,7 @@ The sequential circuit receives binary information from external **inputs** whic
     * [D Flip-Flop](d-flip-flop)
 
 * **Register**
-   * [Shift Register](74HC595)(shift-register)
+   * [Shift Register (74HC595)](shift-register)
    
 * **Counter**   
    * [Ripple Counter (74HC93)](ripple-counter-4bit)  
