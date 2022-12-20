@@ -5,7 +5,7 @@ includes both software and hardware aspects.
 
 * [Introduction](introduction/)
 
-* [Computer Architectures](compuper-architecture/)
+* [Computer Architectures](computer-architecture/)
 
 * [Arduino Basics](basics/)
 
