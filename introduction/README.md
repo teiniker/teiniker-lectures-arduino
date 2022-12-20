@@ -1,14 +1,14 @@
 # Introduction
 
-* Setup
+* **Setup**
   * [Arduino IDE Setup](ArduinoSetup.md)
 
-* First Steps with Arduino
+* **First Steps with Arduino**
   * [Run an Arduino Sketch](RunSketches.md)
   * [Hello World - Serial](serial_hello)
   * [Hello World - Blink](blink_hello)
 
-* YouTube Tutorials 
+* **Arduino Video Tutorials** 
   * [McWhorter](tutorials/ArduinoTutorials-McWhorter.md) 
 
 
