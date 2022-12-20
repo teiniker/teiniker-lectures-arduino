@@ -3,34 +3,19 @@
 This project collects examples related to programming on the Arduino platform which
 includes both software and hardware aspects.
 
-* **Introduction**
-  * [Arduino IDE Setup](introduction/ArduinoSetup.md)
-  * [Run an Arduino Sketch](introduction/RunSketches.md)
+* [Introduction](introduction/)
 
-* **Computer Architectures**
-  * [Introduction](computer-architecture/introduction/)
-  * [Combinatorial Logic](computer-architecture/combinatorial-logic)
-  * [Sequential Logic](computer-architecture/sequential-logic)
+* [Computer Architectures](compuper-architecture/)
 
-* **Arduino Basics**
-  * [Serial](basics/uart/serial)
-  * [I/O Ports](basics/io-ports)
-  * [Timing and Scheduling](basics/timing)
-  * [State Machines](basics/state-machines)
+* [Arduino Basics](basics/)
 
-* **Sensors**
-  * [Analog Joystick](sensors/joystick)
-  * [Button Debouncing](sensors/button-debouncing)
-  * [Temperature + Humidity DHT11](sensors/dht11)
-  * [Ultrasonic Sensor HC-SR04](sensors/hc-sr04)
+* [Sensors](sensors/)
   
-* **Actuators**
-  * [Servo Motor SG90](actuators/SG90-ServoMotor)
-  * [DC Motor via L293D](actuators/L293-DCMotor)
+* [Actuators](actuators/)
  
-* [**Arduino Libraries**](libraries)
+* [Arduino Libraries](libraries)
 
 ## References
-* [YouTube (Paul McWhorter): Arduino Tutorials](tutorials/ArduinoTutorials-McWhorter.md) 
+
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
