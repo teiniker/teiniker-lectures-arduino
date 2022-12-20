@@ -18,6 +18,10 @@ In the following sections the basic mechanisms and components of computer archit
 
 * [Sequential Logic](sequential-logic/)
 
+* Microcontroller
+    * [ATmega328p](microcontroller/ATmega328P_Datasheet.pdf)
+
+
 ## References
 
 * Randall Hyde. **Writing Great Code / Volume 1: Understanding the Machine**. No Starch Press, 2020
