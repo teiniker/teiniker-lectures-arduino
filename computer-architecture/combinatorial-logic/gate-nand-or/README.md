@@ -2,7 +2,7 @@
 
 This circuit shows the use of an NAND gates **75HC00** to implement an OR operation.
 
-_Example:_ [NAND Gates:75HC00 (Tinkercad)](https://www.tinkercad.com/things/jQcxMTTbqIi)
+_Example:_ [NAND Gates:74HC00 (Tinkercad)](https://www.tinkercad.com/things/jQcxMTTbqIi)
 
 ![OR Gate](gate-or-using-nand.png)
 
