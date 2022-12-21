@@ -1,9 +1,9 @@
 # Arduino Basics
 
-* [Serial](basics/uart/serial)
-* [I/O Ports](basics/io-ports)
-* [Timing and Scheduling](basics/timing)
-* [State Machines](basics/state-machines)
+* [Serial](uart/serial)
+* [I/O Ports](io-ports)
+* [Timing and Scheduling](timing)
+* [State Machines](state-machines)
 
 
 ## References
