@@ -19,17 +19,12 @@ This is simply a **list of existing video tutorials** for the Arduino platform c
         * [Understanding Pulse Width Modulation (PWM) and the Arduino Analog Write Command](https://youtu.be/YfV-vYT3yfQ)
         * [Understanding How To Read Analog Voltage using analogRead Command](https://youtu.be/5TitZmA66bI)
 
-* **Sensors**
+* **Sensors and Actuators**
     * [Using a Pushbutton as a Toggle Switch](https://youtu.be/aMato4olzi8)
     * [Understanding How to Control Servos with a Joystick](https://youtu.be/KCdoRDDLWgo)
     * [How to Connect and Use the DHT11 Temperature and Humidity Sensor](https://youtu.be/-AvF2TsB2GI)
     * [Understanding and Connecting the HC-SR04 Sensor](https://youtu.be/M-UKXCUI0rE)
-
-* **Actuators**
     * [Understanding and Using Servos in Projects](https://youtu.be/aFHu65LiFok)
     * [Understanding How to Control DC Motors in Projects](https://youtu.be/fPLEncYrl4Q)
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
-
-
-

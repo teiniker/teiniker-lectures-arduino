@@ -10,6 +10,7 @@
 
 * **Arduino Video Tutorials** 
   * [McWhorter](tutorials/ArduinoTutorials-McWhorter.md) 
+  * [DroneBot Workshop](tutorials/ArduinoTutorials-DroneBotWorkshop.md)
 
 
 ## References

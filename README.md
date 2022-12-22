@@ -5,7 +5,7 @@ includes both software and hardware aspects.
 
 * [Introduction](introduction/)
 
-* [Computer Architectures](computer-architecture/)
+* [Computer Architectures](computer-architectures/)
 
 * [Arduino Basics](basics/)
 
@@ -14,6 +14,8 @@ includes both software and hardware aspects.
 * [Actuators](actuators/)
  
 * [Arduino Libraries](libraries)
+    * [AVR Core](libraries/avr-core/)
+    * [Logging](libraries/logging/)
 
 ## References
 
