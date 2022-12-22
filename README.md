@@ -9,10 +9,8 @@ includes both software and hardware aspects.
 
 * [Arduino Basics](basics/)
 
-* [Sensors](sensors/)
+* [Sensors and Actuators](sensors-and-actuators/)
   
-* [Actuators](actuators/)
- 
 * [Arduino Libraries](libraries)
     * [AVR Core](libraries/avr-core/)
     * [Logging](libraries/logging/)
