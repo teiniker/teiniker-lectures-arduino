@@ -6,10 +6,11 @@ It is organized as a separate data space, in which single bytes can be read and 
 The EEPROM has an endurance of at least 100,000 write/erase cycles. 
 
 _Example_: [Arduino EEPROM Calibration](https://www.tinkercad.com/things/hYf9OOX57nT)
-![Arduino EEPROM](EEPROM.png)
 
 In the given example, an analog value will be read from `A0` and the measured voltage
 is extended by an amplification factor (`gain`) and an `offset`.
+
+![Arduino EEPROM](EEPROM.png)
 
 The values for `gain` and `offset` are first written into the EEPROM using the `put()`
 operation.
@@ -81,7 +82,6 @@ Write a byte to the EEPROM. **The value is written only if differs from the one 
 The parameter `address` specifies the location to read from, starting from 0. 
 The second parameter is the `value` to write, from 0 to 255.
 
-
 * **uint16_t length(void)**\
 This operation returns an unsigned int containing the number of cells in the EEPROM.
 
@@ -93,7 +93,6 @@ The second parameter is the `value` to write, which can be a primitive type (e.g
 or a custom struct.
 
 The operation returns a reference to the data passed in.
-
 
 * **T &get(int address, T &value)**\
 Read any data type or object from the EEPROM.
