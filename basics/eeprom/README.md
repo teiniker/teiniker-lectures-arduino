@@ -7,6 +7,7 @@ The EEPROM has an endurance of at least 100,000 write/erase cycles.
 
 _Example_: [Arduino EEPROM Calibration](https://www.tinkercad.com/things/hYf9OOX57nT)
 ![Arduino EEPROM](EEPROM.png)
+
 In the given example, an analog value will be read from `A0` and the measured voltage
 is extended by an amplification factor (`gain`) and an `offset`.
 
