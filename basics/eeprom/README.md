@@ -5,6 +5,9 @@ The ATmega328P contains 1 Kbyte of data EEPROM memory.
 It is organized as a separate data space, in which single bytes can be read and written. 
 The EEPROM has an endurance of at least 100,000 write/erase cycles. 
 
+_Example_: [Arduino EEPROM (get, put)](https://www.tinkercad.com/things/hYf9OOX57nT)
+
+
 
 ## Arduino Library Functions
 
