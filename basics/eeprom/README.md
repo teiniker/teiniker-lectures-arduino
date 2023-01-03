@@ -25,6 +25,7 @@ that can store **1024 bytes**.
 
 
 _Example:_ [Arduino EEPROM Bytes](https://www.tinkercad.com/things/kVW7oh3rndY)
+
 This example shows how to write and read single bytes into and from the EEPROM.
 
 We can either use the `EEPROM.write()` and `EEPROM.read()` operations:
