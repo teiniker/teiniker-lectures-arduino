@@ -5,6 +5,77 @@ The ATmega328P contains 1 Kbyte of data EEPROM memory.
 It is organized as a separate data space, in which single bytes can be read and written. 
 The EEPROM has an endurance of at least 100,000 write/erase cycles. 
 
+_Example:_ Arduino EEPROM Size 
+With the help of the operation `EEPROM.length()` we can query the size of the 
+available EEPROM memory. This size may vary between different Arduino boards.
+
+```C
+void setup() 
+{
+    Serial.begin(9600);    
+  
+    Serial.print("EEPROM size: ");
+    Serial.println(EEPROM.length());
+}
+```
+
+The Arduino UNO uses the **ATmega328P** microcontroller with an EEPROM 
+that can store **1024 bytes**.
+
+
+_Example:_ [Arduino EEPROM Bytes](https://www.tinkercad.com/things/kVW7oh3rndY)
+This example shows how to write and read single bytes into and from the EEPROM.
+
+We can either use the `EEPROM.write()` and `EEPROM.read()` operations:
+```C
+void setup() 
+{
+    Serial.begin(9600);    
+
+    // Write bytes into EEPROM
+    int address = 0x0000;
+    for(int i=0; i<=0xf; i++)
+    {
+        EEPROM.write(address+i, i); 
+    }
+  
+    // Read bytes from EEPROM
+    for(int i=0; i<=0xf; i++)
+    {
+        uint8_t byte;
+        byte = EEPROM.read(address+i); 
+  	    Serial.println(byte, HEX);
+    }
+}
+```
+
+or the `index operator []`:
+```C
+void setup() 
+{
+    Serial.begin(9600);    
+
+    // Write bytes into EEPROM (using index operator[])
+    int address = 0x0000;
+    for(int i=0; i<=0xf; i++)
+    {
+        EEPROM[address+i] = 0xf - i; 
+    }
+  
+    // Read bytes from EEPROM (using index operator[])
+    for(int i=0; i<=0xf; i++)
+    {
+        uint8_t byte;
+        byte = EEPROM[address+i]; 
+  	    Serial.println(byte, HEX);
+    }
+}
+```
+
+Note that instead of `EEPROM.write()` we can also use `EEPROM.update()` 
+to overwrite stored values only if they need to be changed (maximum write/erase cycles).
+
+
 _Example_: [Arduino EEPROM Calibration](https://www.tinkercad.com/things/hYf9OOX57nT)
 
 In the given example, an analog value will be read from `A0` and the measured voltage
@@ -59,6 +130,10 @@ The EEPROM memory is very useful for storing calibration values or other configu
 The `EEPROM.h` header file declares the following operation which can be used to access the 
 integrated EEPROM.
 
+* **uint16_t length(void)**\
+This operation returns an unsigned int containing the number of cells in the EEPROM.
+
+
 * **uint8_t read(int address)**\
 Reads a byte from the EEPROM. Locations that have never been written to have the value of 255.
 
@@ -82,8 +157,10 @@ Write a byte to the EEPROM. **The value is written only if differs from the one 
 The parameter `address` specifies the location to read from, starting from 0. 
 The second parameter is the `value` to write, from 0 to 255.
 
-* **uint16_t length(void)**\
-This operation returns an unsigned int containing the number of cells in the EEPROM.
+* **operator[]**\
+This operator allows using the identifier EEPROM like an array. 
+EEPROM cells can be read and written directly using this method.
+
 
 * **T &put(int address, const T &value)**\
 Write any data type or object to the EEPROM.
