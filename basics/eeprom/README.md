@@ -6,6 +6,7 @@ It is organized as a separate data space, in which single bytes can be read and 
 The EEPROM has an endurance of at least 100,000 write/erase cycles. 
 
 _Example:_ Arduino EEPROM Size 
+
 With the help of the operation `EEPROM.length()` we can query the size of the 
 available EEPROM memory. This size may vary between different Arduino boards.
 
