@@ -2,12 +2,12 @@
 
 * [Serial](serial/)
 * [I/O Ports](io-ports/)
-* [EEPROM Data Memory](eeprom/)
+* [Memory](memory/)
 * [Timing and Scheduling](timing/)
-* [State Machines](state-machines)
+* [State Machines](state-machines/)
 
 
 ## References
 
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

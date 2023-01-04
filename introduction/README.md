@@ -5,7 +5,7 @@
 
 * **First Steps with Arduino**
   * [Run an Arduino Sketch](RunSketches.md)
-  * [Hello World - Serial](serial_hello)
+  * [Hello World - Serial](serial_print)
   * [Hello World - Blink](blink_hello)
 
 * **Arduino Video Tutorials** 
@@ -15,4 +15,4 @@
 
 ## References
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
