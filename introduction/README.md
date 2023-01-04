@@ -5,8 +5,8 @@
 
 * **First Steps with Arduino**
   * [Run an Arduino Sketch](RunSketches.md)
-  * [Hello World - Serial](serial_print)
-  * [Hello World - Blink](blink_hello)
+  * [Hello World - Serial](serial_hello/)
+  * [Hello World - Blink](blink_hello/)
 
 * **Arduino Video Tutorials** 
   * [McWhorter](tutorials/ArduinoTutorials-McWhorter.md) 
