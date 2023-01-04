@@ -80,5 +80,6 @@ Make sure the **baud rates** in Sketch and in the Monitor window are the same!
 
 * [Getting Started with Arduino products](https://www.arduino.cc/en/Guide)
 * [YouTube (Paul McWhorter): Arduino Tutorial 1: Setting Up and Programming the Arduino for Absolute Beginners](https://youtu.be/fJWR7dBuc18)
+* [ArduinoCore-avr/cores/arduino/main.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp)
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
