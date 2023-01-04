@@ -18,4 +18,4 @@ includes both software and hardware aspects.
 ## References
 
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
