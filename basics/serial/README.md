@@ -33,6 +33,14 @@ In order to be able to exchange C code more easily between different platforms, 
 _Example:_ [Tinkercad: Serial Standard-Types](https://www.tinkercad.com/things/22O87tJn9Mm)
 
 
+## Read Data via Serial
+Data can not only be written via the serial interface. It is also possible to **send data from the PC to the Arduino board**.
+
+_Example:_ [Tinkercad: Serial Parse Integer](https://www.tinkercad.com/things/d7wQDoFj5OQ) 
+
+_Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1H4Gq5DF)
+
+
 ## Arduino Library Functions
 
 * **void Serial.begin(long speed)**\
