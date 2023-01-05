@@ -12,12 +12,16 @@ In the monitor, we select the same baud rate used in the call to `begin()`
 A main area of application for Serial is the **logging of data or events** during program 
 execution for **debugging purposes**.
 
-_Example:_ [Arduino: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDxK) 
+_Example:_ [Tinkercad: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDxK) 
 
 ![Serial output](figures/Serial-Output.png)
 
 The `Serial` object is very useful for **sending information back from the Arduino board to the PC**. 
 Sensor-signal values can be written as well as **debug information**.
+
+_Example:_ [Tinkercad: Serial Types](https://www.tinkercad.com/things/gUoxB4xOBp1)
+
+
 
 ## Arduino Library Functions
 
@@ -115,4 +119,4 @@ Sensor-signal values can be written as well as **debug information**.
 * [Arduino Core: HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
 * [Arduino Core: Print.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Print.h)
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
