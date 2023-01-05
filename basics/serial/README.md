@@ -20,7 +20,7 @@ The `Serial` object is very useful for **sending information back from the Ardui
 Sensor-signal values can be written as well as **debug information**.
 
 
-# Examine C Data Types
+## Examine C Data Types
 
 The data types in C have **different sizes** (number of bytes used for representation) **on different platforms**.
 
