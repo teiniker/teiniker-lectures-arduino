@@ -2,7 +2,7 @@
 
 The I/O ports of the Arduino Uno board can be seen in the following figure:
 
-![Arduino Uno Board](doc/UNOpins.png)
+![Arduino Uno Board](figures/UNOpins.png)
 
 * Analog Reference pin 
 * Digital Ground 
@@ -35,7 +35,9 @@ For this reason it is a good idea to connect OUTPUT pins to other devices with
  **470Ω or 1k resistors**, unless maximum current draw from the pins is required for 
  a particular application.
 
-_Example:_ [Arduino: Digital Output](https://www.tinkercad.com/things/bkjRath17ow)
+_Example:_ [Tinkercad: Digital Output](https://www.tinkercad.com/things/bkjRath17ow)
+
+![Digital Output](figures/Arduino-Digital-Output.png)
 
 
 ### Digital Input
@@ -58,7 +60,7 @@ This can be done by adding a **pullup resistor** (to +5V), or a **pulldown resis
 (resistor to ground) on the input. 
 A **10K resistor** is a good value for a pullup or pulldown resistor.
 
-_Example:_ [Arduino: Digital Input](https://www.tinkercad.com/things/8h5n9K4RhFb)
+_Example:_ [Tinkercad: Digital Input](https://www.tinkercad.com/things/8h5n9K4RhFb)
 
 
 ### Digital Input (Internal Pull-Up Resistor)
@@ -67,7 +69,7 @@ These built-in pullup resistors are accessed by setting the `pinMode()` as **INP
 This effectively **inverts the behavior of the INPUT mode**, where HIGH means the sensor is off, 
 and LOW means the sensor is on.
 
-_Example:_ [Arduino: Digital Input - Pull-Up](https://www.tinkercad.com/things/flh9FVVJClZ)
+_Example:_ [Tinkercad: Digital Input - Pull-Up](https://www.tinkercad.com/things/flh9FVVJClZ)
 
 
 
@@ -85,7 +87,7 @@ digital pin 14 through analog input 5 as digital pin 19.
  
 Analog inputs 6 and 7 (present on the Mini and BT) cannot be used as digital pins.
  
-_Example:_ [Arduino: Analog Input](https://www.tinkercad.com/things/0TfvqHrWhPL)
+_Example:_ [Tinkercad: Analog Input](https://www.tinkercad.com/things/0TfvqHrWhPL)
 
 
 ## Analog Output (PWM) 
@@ -96,7 +98,7 @@ and off (0 Volts) by changing the portion of the time the signal spends on versu
 time that the signal spends off. 
 The duration of "on time" is called the **pulse width**. 
 
-![PWM](doc/pwm.gif)
+![PWM](figures/pwm.gif)
 
 This duration or period is the inverse of the PWM frequency. 
 With Arduino's **PWM frequency at about 500Hz**, the green lines would measure 
@@ -106,9 +108,9 @@ A call to `analogWrite()` is on a **scale of 0 - 255**, such that `analogWrite(2
 requests a 100% duty cycle (always on), and `analogWrite(127)` is a 50% duty cycle 
 (on half the time) for example.
 
-_Example:_ [Arduino: Analog Output PWM](https://www.tinkercad.com/things/fdDWIa9yNet)
+_Example:_ [Tinkercad: Analog Output PWM](https://www.tinkercad.com/things/fdDWIa9yNet)
 
-_Example:_ [Arduino: Digital Output PWM](https://www.tinkercad.com/things/i2TnbxIPZ47)
+_Example:_ [Tinkercad: Analog Output PWM (Software)](https://www.tinkercad.com/things/i2TnbxIPZ47)
 
 
 ## References
@@ -118,4 +120,4 @@ _Example:_ [Arduino: Digital Output PWM](https://www.tinkercad.com/things/i2Tnbx
 * [PWM](https://www.arduino.cc/en/Tutorial/Foundations/PWM)
 
 
-*Egon Teiniker, 2020 - 2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
