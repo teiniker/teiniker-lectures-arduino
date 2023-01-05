@@ -48,7 +48,7 @@ _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1
 
     The parameter `speed` in bits per second (a common value is 115200).
 
-* **size_t Serial.print(value)**\
+* **size_t Serial.print(T value)**\
     Prints data to the serial port as human-readable ASCII text. 
     This command can take many forms. 
     **Integer** Numbers are printed using an ASCII character for each digit. 
@@ -56,15 +56,22 @@ _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1
     **Bytes** are sent as a single character. 
     **Characters** and **strings** are sent as is.
 
-    The parameter `value` is the value to print, which can be of any type.
+    The parameter `value` is the value to print, which can be of any type `T`.
 
-    Returns the number of bytes written, though reading that number is optional.
+     The `format` parameter specifies the number base (for integer numbers) or number of decimal places (for floating point types).
+     Possible `format` values  for integer numbers are: `DEC`, `HEX`, `OCT`, `BIN`. 
+     For floating point values, `format` specifies the number of decimal places: `Serial.print(1.23456, 2)` gives `"1.23"`
 
-* **size_t Serial.println(value)**\
+     Returns the number of bytes written, though reading that number is optional.
+
+* **size_t Serial.println(T value)**\
+  **size_t print(T value, int format)**\
     Prints data to the serial port as human-readable ASCII text followed by a **carriage return** 
     character (ASCII 13, or `'\r'`) and a **newline** character (ASCII 10, or `'\n'`). 
     This command takes the same forms as `Serial.print()`.
 
+     Prints data to the serial port as human-readable ASCII text (including `\r\n`).
+     
 * **int Serial.available()**\
     Get the number of bytes available for reading from the serial port. 
     This is data that’s already arrived and stored in the serial receive buffer (which holds 64 bytes).
@@ -129,9 +136,6 @@ _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1
 * [YouTube (Paul McWhorter): Arduino Tutorial 18: Reading Numbers from the Serial Monitor](https://youtu.be/7aP5KL5clWA)
 
 * [YouTube (Paul McWhorter): Arduino Tutorial 19: Reading Strings from the Serial Monitor](https://youtu.be/MAnAc_t0OrM)
-
-
-
 
 * [Arduino references: Serial](https://www.arduino.cc/en/reference/serial&gt)
 * [Arduino Core: HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
