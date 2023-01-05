@@ -20,6 +20,8 @@ There are three types of Arduino memory that you should be aware of:
     * The **Heap** exists next to static data and is used for dynamically allocated data items, such as variables created by executing code.
     * **Stack**: The stack is used to keep track of **function parameters**, including **local variables** for interrupts, and function calls. Each function call will increase the size of the stack, while returning from a function will return that memory to the free memory pool.
     
+    ![Arduino SRAM](ArduinoSRAM.png)
+
     The stack and heap segments are located on opposite ends of the free memory.
     Most memory problems are the result of the **stack and heap colliding**, which can cause a corruption of the data held in memory.
 

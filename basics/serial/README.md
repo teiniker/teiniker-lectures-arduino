@@ -1,7 +1,9 @@
 # Serial
 
-Serial is used for communication between the Arduino board and a computer or other devices. 
-All Arduino boards have at least one serial port (also known as a UART or USART). 
+The `Serial` object is used for communication between the Arduino board and a computer or other devices. 
+All Arduino boards have at least one serial port (also known as a **UART** or USART). 
+
+![Connection: PC <=> Arduino](figures/PC2Arduino.png)
 
 It communicates on **digital pins 0 (RX)** and **1 (TX)** as well as with the computer via **USB**. 
 Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input or output.
@@ -115,4 +117,4 @@ Sensor-signal values can be written as well as **debug information**.
 * [Arduino Core: HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
 * [Arduino Core: Print.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Print.h)
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
