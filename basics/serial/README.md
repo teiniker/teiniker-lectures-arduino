@@ -21,6 +21,7 @@ Sensor-signal values can be written as well as **debug information**.
 
 _Example:_ [Tinkercad: Serial Types](https://www.tinkercad.com/things/gUoxB4xOBp1)
 
+_Example:_ [Tinkercad: Serial Standard-Types](https://www.tinkercad.com/things/22O87tJn9Mm)
 
 
 ## Arduino Library Functions
