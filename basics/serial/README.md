@@ -19,7 +19,16 @@ _Example:_ [Tinkercad: Serial Logging](https://www.tinkercad.com/things/geaAqDXb
 The `Serial` object is very useful for **sending information back from the Arduino board to the PC**. 
 Sensor-signal values can be written as well as **debug information**.
 
+
+# Examine C Data Types
+
+The data types in C have **different sizes** (number of bytes used for representation) **on different platforms**.
+
+We can use the serial port to determine the size of C data types on the Arduino platform.
+
 _Example:_ [Tinkercad: Serial Types](https://www.tinkercad.com/things/gUoxB4xOBp1)
+
+In order to be able to exchange C code more easily between different platforms, one should use the **C standard types**.
 
 _Example:_ [Tinkercad: Serial Standard-Types](https://www.tinkercad.com/things/22O87tJn9Mm)
 
