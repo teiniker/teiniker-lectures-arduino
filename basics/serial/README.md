@@ -1,7 +1,7 @@
-# Serial
+# Serial Communication
 
 The `Serial` object is used for communication between the Arduino board and a computer or other devices. 
-All Arduino boards have at least one serial port (also known as a **UART** or USART). 
+All Arduino boards have at least one serial port (also known as a **UART**). 
 
 ![Connection: PC <=> Arduino](figures/PC2Arduino.png)
 
