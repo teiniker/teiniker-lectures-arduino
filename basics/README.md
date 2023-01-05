@@ -1,6 +1,6 @@
 # Arduino Basics
 
-* [Serial](serial/)
+* [Serial Communication](serial/)
 * [I/O Ports](io-ports/)
 * [Memory](memory/)
 * [Timing and Scheduling](timing/)
