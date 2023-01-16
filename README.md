@@ -8,14 +8,15 @@ includes both software and hardware aspects.
 * [Computer Architectures](computer-architectures/)
 
 * [Arduino Basics](basics/)
-
-* [Sensors and Actuators](sensors-and-actuators/)
   
 * [Arduino Libraries](libraries)
     * [AVR Core](libraries/avr-core/)
     * [Logging](libraries/logging/)
 
-## References
+* [Sensors and Actuators](sensors-and-actuators/)
 
+
+## References
+* Norman Dunbar. **Arduino Software Internals**. APress, 2020
 
 *Egon Teiniker, 2020-2023, GPL v3.0* 
