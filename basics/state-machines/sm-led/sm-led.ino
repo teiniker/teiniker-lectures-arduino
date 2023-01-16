@@ -19,14 +19,11 @@ enum sm_states
 
 enum sm_states state; 
 void sm_led(enum events event);
-void sm_led_off(enum events event);
-void sm_led_on(enum events event);
+void sm_led_handler_off(enum events event);
+void sm_led_handler_on(enum events event);
 
 // Activities
 int led_status = LOW;
-void led_on();
-void led_off();
-
 
 void setup() 
 {
@@ -57,22 +54,22 @@ void sm_led(enum events event)
     switch(state)
     {
         case OFF:
-            sm_led_off(event);
+            sm_led_handler_off(event);
             break;
 
         case ON:
-            sm_led_on(event);
+            sm_led_handler_on(event);
             break;
     }
 }
 
 // Handle Events in State: OFF
-void sm_led_off(enum events event)
+void sm_led_handler_off(enum events event)
 {
     switch(event)
     {
         case SWITCH_ON:
-            led_on();
+            led_status = HIGH;
             state = ON;
         break;
 
@@ -82,7 +79,7 @@ void sm_led_off(enum events event)
 }
 
 // Handle Events in State: ON
-void sm_led_on(enum events event)
+void sm_led_handler_on(enum events event)
 {
     switch(event)
     {
@@ -90,18 +87,8 @@ void sm_led_on(enum events event)
         break;
 
         case SWITCH_OFF:
-            led_off();
+            led_status = LOW;
             state = OFF;
         break;
     }
-}
-
-void led_on()
-{
-  led_status = HIGH;
-}
-
-void led_off()
-{
-  led_status = LOW;
 }
