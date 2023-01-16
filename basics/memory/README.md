@@ -38,13 +38,13 @@ Before optimisations, we’ll have to begin our diagnosis by measuring the amoun
 
 * **Flash**: Whenever we compile or upload your code, the IDE will show you exactly how much memory is being used by your upload and what percentage of the selected board’s memory that uses.
 
-_Example:_ TODO
-
 * **SRAM**: To measure the usage of our Arduino’s SRAM, we can use a freeMemory() function call from the arduino library which measures the free RAM available.
 
-_Example:_ TODO
-
 * **EEPROM**: We have to write to the EEPROM byte by byte, so we should know exactly which addresses are being used in our program. 
+
+_Example:_ avr-g++ Compiler output
+
+![Compiler Output](CompilerOutput.png)
 
 _Example:_ [EEPROM Data Memory](eeprom/)
 
