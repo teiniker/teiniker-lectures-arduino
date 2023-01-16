@@ -51,6 +51,7 @@ _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1
     The parameter `speed` in bits per second (a common value is 115200).
 
 * **size_t Serial.print(T value)**\
+    **size_t print(T value, int format)**\
     Prints data to the serial port as human-readable ASCII text. 
     This command can take many forms. 
     **Integer** Numbers are printed using an ASCII character for each digit. 
@@ -67,7 +68,7 @@ _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1
      Returns the number of bytes written, though reading that number is optional.
 
 * **size_t Serial.println(T value)**\
-  **size_t print(T value, int format)**\
+  **size_t println(T value, int format)**\
     Prints data to the serial port as human-readable ASCII text followed by a **carriage return** 
     character (ASCII 13, or `'\r'`) and a **newline** character (ASCII 10, or `'\n'`). 
     This command takes the same forms as `Serial.print()`.
