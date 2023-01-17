@@ -115,10 +115,13 @@ Using this pattern, SMs can always be converted into C code using the same imple
 
 ## Types of State Machine
 
-**UML state machines have the characteristics of both Mealy machines and Moore machines**. 
-They support actions that depend on both the state of the system and the triggering event, 
-as in Mealy machines, as well as entry and exit actions, which are associated with states 
-rather than transitions, as in Moore machines.
+**UML state machines have the characteristics of both Mealy machines and Moore machines**: 
+
+They support actions that depend on both the **state** of the system and the **triggering event**, 
+as in **Mealy machines**.
+
+They also support **entry and exit actions**, which are associated with states 
+rather than transitions, as in **Moore machines**.
 
 * A [**Mealy machine**](https://en.wikipedia.org/wiki/Mealy_machine)
 	is a finite-state machine whose **output values are determined both by its current state and the current inputs**. 
