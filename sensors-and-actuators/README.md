@@ -9,9 +9,9 @@
 
 ## Actuators
 
-* [Servo Motor SG90](SG90-ServoMotor)
-* [DC Motor via L293D](L293-DCMotor)
-
+* [Servo Motor SG90](ServoMotor-SG90)
+* [Stepper Motor](StepperMotor-28BYJ-48)
+* [DC Motor via L293D](DCMotor-L293)
 
 ## References
 
