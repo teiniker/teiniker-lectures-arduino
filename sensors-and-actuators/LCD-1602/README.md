@@ -75,6 +75,9 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
 * **void home()**\
   Positions the cursor in the upper-left of the LCD. That is, use that location in outputting subsequent text to the display. To also clear the display, use the `clear()` function instead.
   
+* **void setCursor(uint8_t, uint8_t)**\
+  Position the LCD cursor; that is, set the location at which subsequent text written to the LCD will be displayed.
+  
 * **size_t Serial.print(T value)**\
   **size_t print(T value, int BASE)**\  
   Prints data as text to the LCD. `print()` will return the number of bytes written.
@@ -88,15 +91,44 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
 * **void display()**\
   Turns on the LCD display, after it’s been turned off with `noDisplay()`. This will restore the text (and cursor) that was on the display.
   
-* **void noBlink()**\
-  
-* **void blink()**\
-  
-  
 * **void noCursor()**\
-
+  Hides the LCD cursor.
+ 
 * **void cursor()**\
+  Display the LCD cursor: an underscore (line) at the position to which the next character will be written.
+   
+* **void noBlink()**\
+  Turns off the blinking LCD cursor.
+ 
+* **void blink()**\
+  Display the blinking LCD cursor. If used in combination with the `cursor()` function, the result will depend on the particular display.  
   
+* **void createChar(uint8_t num, uint8_t data[])**\
+ Create a custom character (glyph) for use on the LCD. Up to eight characters of 5x8 pixels are supported (numbered 0 to 7). 
+ The appearance of each custom character is specified by an array of eight bytes, one for each row. 
+ The five least significant bits of each byte determine the pixels in that row. To display a custom character on the screen, `write()` its number.
+ * `num`: which character to create (0 to 7)
+ * `data`: the character’s pixel data
+ 
+* **virtual size_t write(uint8_t num)**\
+  Write a character to the LCD.
+  Returns the number of bytes written.
+  * `data`: The character to write to the display.
+  
+* **void noAutoscroll()**\
+  Turns off automatic scrolling of the LCD.
+  
+* **void autoscroll()**\
+   Turns on automatic scrolling of the LCD. 
+   This causes each character output to the display to push previous characters over by one space. 
+   If the current text direction is left-to-right (the default), the display scrolls to the left; 
+   if the current direction is right-to-left, the display scrolls to the right. 
+   This has the effect of outputting each new character to the same location on the LCD.
+
+* **void scrollDisplayLeft()**\
+* **void scrollDisplayRight()**\
+* **void leftToRight()**\
+* **void rightToLeft()**\
   
 ## References
 
