@@ -57,11 +57,46 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
   **LiquidCrystal(rs, enable, d0, d1, d2, d3, d4, d5, d6, d7)**\
   **LiquidCrystal(rs, rw, enable, d0, d1, d2, d3, d4, d5, d6, d7)**\
   Creates a variable of type LiquidCrystal. The display can be controlled using 4 or 8 data lines.
-  * rs: the number of the Arduino pin that is connected to the RS pin on the LCD
-  * rw: the number of the Arduino pin that is connected to the RW pin on the LCD (optional)
-  * enable: the number of the Arduino pin that is connected to the enable pin on the LCD
-  * d0, d1, d2, d3, d4, d5, d6, d7: the numbers of the Arduino pins that are connected to the corresponding data pins on the LCD.
-  d0, d1, d2, and d3 are optional; if omitted, the LCD will be controlled using only the four data lines (d4, d5, d6, d7).
+  * `rs`: The number of the Arduino pin that is connected to the RS pin on the LCD
+  * `rw`: The number of the Arduino pin that is connected to the RW pin on the LCD (optional)
+  * `enable`: The number of the Arduino pin that is connected to the enable pin on the LCD
+  * `d0`, `d1`, `d2`, `d3`, `d4`, `d5`, `d6`, `d7`: The numbers of the Arduino pins that are connected to the corresponding data pins on the LCD.
+    `d0`, `d1`, `d2`, and `d3` are optional; if omitted, the LCD will be controlled using only the four data lines (`d4`, `d5`, `d6`, `d7`).
+  
+* **void begin(uint8_t cols, uint8_t rows)**\
+  Initializes the interface to the LCD screen, and specifies the dimensions (width and height) of the display. 
+  `begin()` needs to be called before any other LCD library commands.
+  * `cols`: The number of columns that the display has
+  * `rows`: The number of rows that the display has  
+  
+* **void clear()**\
+  Clears the LCD screen and positions the cursor in the upper-left corner.
+
+* **void home()**\
+  Positions the cursor in the upper-left of the LCD. That is, use that location in outputting subsequent text to the display. To also clear the display, use the `clear()` function instead.
+  
+* **size_t Serial.print(T value)**\
+  **size_t print(T value, int BASE)**\  
+  Prints data as text to the LCD. `print()` will return the number of bytes written.
+  * `data`: the data to print (`char`, `byte`, `int`, `long`, or `string`)
+  * `BASE` (optional): the base in which to print numbers: `BIN` for binary (base 2), `DEC` for decimal (base 10), 
+    `OCT` for octal (base 8), `HEX` for hexadecimal (base 16).
+    
+* **void noDisplay()**\
+ Turns off the LCD display, without losing the text currently shown on it.
+ 
+* **void display()**\
+  Turns on the LCD display, after it’s been turned off with `noDisplay()`. This will restore the text (and cursor) that was on the display.
+  
+* **void noBlink()**\
+  
+* **void blink()**\
+  
+  
+* **void noCursor()**\
+
+* **void cursor()**\
+  
   
 ## References
 
