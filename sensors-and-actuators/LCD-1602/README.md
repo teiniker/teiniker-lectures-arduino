@@ -1,6 +1,6 @@
 # LCD Display Module
 
-Liquid Crystal displays or LCDs have been used in electronics equipment since the late 1970s.   LCD displays have the advantage of consuming very little current.
+**Liquid Crystal Displays** or LCDs have been used in electronics equipment since the late 1970s.   LCD displays have the advantage of consuming very little current.
 
 LCD displays do not emit light. Instead they block the passage of light, like little windows which open and shut the let light through. The liquid crystals used inside LCD displays are sandwiched between two layers of polarized material. By changing the orientation of the liquid crystals they allow light to pass or they block the light entirely.
 
@@ -52,8 +52,17 @@ void loop()
 
 The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid Crystal Displays (LCDs) based on the **Hitachi HD44780** chipset, which is found on most text-based LCDs. The library works with in either **4- or 8-bit mode**.
 
-
-
+* **LiquidCrystal(rs, enable, d4, d5, d6, d7)**\
+  **LiquidCrystal(rs, rw, enable, d4, d5, d6, d7)**\
+  **LiquidCrystal(rs, enable, d0, d1, d2, d3, d4, d5, d6, d7)**\
+  **LiquidCrystal(rs, rw, enable, d0, d1, d2, d3, d4, d5, d6, d7)**\
+  Creates a variable of type LiquidCrystal. The display can be controlled using 4 or 8 data lines.
+  * rs: the number of the Arduino pin that is connected to the RS pin on the LCD
+  * rw: the number of the Arduino pin that is connected to the RW pin on the LCD (optional)
+  * enable: the number of the Arduino pin that is connected to the enable pin on the LCD
+  * d0, d1, d2, d3, d4, d5, d6, d7: the numbers of the Arduino pins that are connected to the corresponding data pins on the LCD.
+  d0, d1, d2, and d3 are optional; if omitted, the LCD will be controlled using only the four data lines (d4, d5, d6, d7).
+  
 ## References
 
 * [YouTube (DroneBot Workshop): Using LCD Displays with Arduino](https://youtu.be/wEbGhYjn4QI)
@@ -62,5 +71,6 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
 * [Liquid Crystal Displays (LCD) with Arduino](https://docs.arduino.cc/learn/electronics/lcd-displays)
 
 * [Arduino Reference: LiquidCrystal](https://www.arduino.cc/reference/en/libraries/liquidcrystal/)
+* [GitHub: LiquidCrystal Library for Arduino](https://github.com/arduino-libraries/LiquidCrystal)
 
 *Egon Teiniker, 2020 - 2023, GPL v3.0*
