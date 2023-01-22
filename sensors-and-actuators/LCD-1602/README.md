@@ -21,7 +21,14 @@ In 4-wire mode the data is sent a half a byte at a time, thus requiring only 4 d
 ```C
 #include <LiquidCrystal.h>
 
-const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+// LCD wiring
+const int rs = 12;
+const int en = 11;
+const int d4 = 5;
+const int d5 = 4; 
+const int d6 = 3;
+const int d7 = 2;
+
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup() 
@@ -45,8 +52,11 @@ void loop()
 
 ## Simulation
 
-**Tinkercad**: [Arduino: LCD](https://www.tinkercad.com/things/8h7D4nFDaNc) 
+Via **Tinkercad** we can simulate the following examples: 
+* [Arduino: LCD using print()](https://www.tinkercad.com/things/8h7D4nFDaNc) 
+* [Arduino: LCD creating custom characters](https://www.tinkercad.com/things/6uqhYRkPX45)
 
+Note that all examples share the same wiring.
 
 ## Library Operations
 
