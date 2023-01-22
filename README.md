@@ -17,6 +17,7 @@ includes both software and hardware aspects.
 
 
 ## References
+* Michael Margolis, Brian Jepson, Nicholas Robert Weldin. **Arduino Cookbook**. O'Reilly, 2020
 * Norman Dunbar. **Arduino Software Internals**. APress, 2020
 
 *Egon Teiniker, 2020-2023, GPL v3.0* 
