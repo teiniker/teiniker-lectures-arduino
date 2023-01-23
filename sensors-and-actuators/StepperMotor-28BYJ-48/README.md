@@ -6,7 +6,7 @@ Unlike DC motors stepper motors are controlled by applying pulses of DC electric
 A **servo motor** is unique in that it’s motor shaft can be moved to a precise angle, most servos only **rotate 180 or 270 degrees**.
 A servo motor is **aware of its position** and can be moved to a specific angle even if an external force moves the motor shaft.
 
-Steppers, on the other hand, are unaware of their position.  They can be moved to an exact position in reference to where they start stepping but unlike servos they can be misaligned if their shaft is moved by an external force.  
+**Steppers are unaware of their position**.  They can be moved to an exact position in reference to where they start stepping but unlike servos they can be misaligned if their shaft is moved by an external force.  
 In many applications a servo is first moved to a **homing or reference position** before being controlled, printers commonly do this when they are first initialized.
 
 Another advantage stepper motors have over DC motors is the ability to move at very slow speeds without stalling.
