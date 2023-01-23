@@ -113,18 +113,14 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
 * **void blink()**\
   Display the blinking LCD cursor. If used in combination with the `cursor()` function, the result will depend on the particular display.  
   
-* **void createChar(uint8_t num, uint8_t data[])**\
- Create a custom character (glyph) for use on the LCD. Up to eight characters of 5x8 pixels are supported (numbered 0 to 7). 
- The appearance of each custom character is specified by an array of eight bytes, one for each row. 
- The five least significant bits of each byte determine the pixels in that row. To display a custom character on the screen, `write()` its number.
- * `num`: which character to create (0 to 7)
- * `data`: the character’s pixel data
- 
-* **virtual size_t write(uint8_t num)**\
-  Write a character to the LCD.
-  Returns the number of bytes written.
-  * `data`: The character to write to the display.
-  
+* **void leftToRight()**\
+  Set the direction for text written to the LCD to left-to-right, the default. 
+  This means that subsequent characters written to the display will go from left to right, but does not affect previously-output text.
+
+* **void rightToLeft()**\
+  Set the direction for text written to the LCD to right-to-left (the default is left-to-right). 
+  This means that subsequent characters written to the display will go from right to left, but does not affect previously-output text.
+
 * **void noAutoscroll()**\
   Turns off automatic scrolling of the LCD.
   
@@ -136,9 +132,24 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
    This has the effect of outputting each new character to the same location on the LCD.
 
 * **void scrollDisplayLeft()**\
+  Scrolls the contents of the display (text and cursor) one space to the left.
+
 * **void scrollDisplayRight()**\
-* **void leftToRight()**\
-* **void rightToLeft()**\
+  Scrolls the contents of the display (text and cursor) one space to the right.
+
+
+* **void createChar(uint8_t num, uint8_t data[])**\
+ Create a custom character (glyph) for use on the LCD. Up to eight characters of 5x8 pixels are supported (numbered 0 to 7). 
+ The appearance of each custom character is specified by an array of eight bytes, one for each row. 
+ The five least significant bits of each byte determine the pixels in that row. To display a custom character on the screen, `write()` its number.
+ * `num`: which character to create (0 to 7)
+ * `data`: the character’s pixel data
+ 
+* **virtual size_t write(uint8_t num)**\
+  Write a character to the LCD.
+  Returns the number of bytes written.
+  * `data`: The character to write to the display.
+    
   
 ## References
 
