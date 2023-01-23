@@ -8,8 +8,8 @@
 
 ## Actuators
 * [Servo Motor](ServoMotor/)
-* [Stepper Motor](StepperMotor/)
 * [DC Motor](DCMotor-L293/)
+* [Stepper Motor](StepperMotor/)
 
 ## Displays
 * [LCD Display Module](LCD-1602/)
