@@ -1,19 +1,18 @@
-# Sensors and Actuators
+# Sensors, Actuators, and Displays
 
 ## Sensors
-
-* [Analog Joystick](joystick)
-* [Button Debouncing](button-debouncing)
-* [Temperature + Humidity DHT11](dht11)
-* [Ultrasonic Sensor HC-SR04](hc-sr04)
+* [Analog Joystick](joystick/)
+* [Button Debouncing](button-debouncing/)
+* [Temperature + Humidity DHT11](dht11/)
+* [Ultrasonic Sensor HC-SR04](hc-sr04/)
 
 ## Actuators
+* [Servo Motor](ServoMotor/)
+* [Stepper Motor](StepperMotor/)
+* [DC Motor](DCMotor-L293/)
 
-* [Servo Motor SG90](ServoMotor-SG90)
-* [Stepper Motor](StepperMotor-28BYJ-48)
-* [DC Motor via L293D](DCMotor-L293)
-
-## References
+## Displays
+* [LCD Display Module](LCD-1602/)
 
 
 *Egon Teiniker, 2020-2023, GPL v3.0* 
