@@ -1,4 +1,4 @@
-# Stepper Motor
+# Stepper Motors
 
 **Stepper motors** are DC motors that rotate in precise increments or steps. 
 Unlike DC motors stepper motors are controlled by applying pulses of DC electricity to their internal coils. Each pulse advances the motor by one step.
@@ -13,69 +13,30 @@ Another advantage stepper motors have over DC motors is the ability to move at v
 They also pack a lot of torque into a comparably small package.
 
 
-## Wiring Diagram: 28BYJ-48 Stepper Motor
+## Bipolar Stepper Motors
+Bipolar stepper motors consist of two coils of wire (electrically, actually split into several physical coils) and generally have four connections, two per coil.  
 
-The **28BYJ-48** is a **5-wire unipolar stepper motor** that moves **32 steps per rotation internally** but has a **gearing system that moves the shaft by a factor of 64**. The result is a motor that spins at **2048 steps per rotation**.
+![Bipolar](figures/Bipolar.png)
 
-The 28BYJ-48 stepper motor is commonly packaged with a tiny driver board based around the **ULN2003 Darlington transistor array**.  The board has a connector that mates perfectly with the motor wires so it is very easy to use. 
-
-![ULN2003](figures/ULN2003.png)
-
-Each stage of the Darlington transistor array is constructed as follows: 
-
-![Darlington](figures/Darlington.png)
-
-There are also connections for four 5-volt **digital inputs** as well as **power supply** (> 200 mA) connections.
-
-**Always use a separate power supply to power your stepper motors!!!**
-
-![Stepper Motor](figures/StepperMotor.png)
-
-Note that we **connect the GND lines from Arduino board and the power supply**.
+An advantage of bipolar stepper motors is that they make use of the entire coil winding so they are more efficient.  However, they require a more complex controller or driver to operate as **to reverse direction the polarity of the voltage applied to the coils needs to be reversed** (H-Bridge).
 
 
-## Source Code
+## Unipolar Stepper Motors
+A unipolar stepper motor also consists of two coils (electrically) but each coil has a center tap so there are three connections on each coil.  This results in six connections, however many unipolar stepper motors have only five connections as the two center taps are internally connected.
 
-The **28BYJ-48 stepper motors** have internal gearing which reduces the output rotation by a factor of 64. So we define three constants to handle motor rotation:
-* `STEPS_PER_REV` is the number of steps the actual motor takes per revolution. This is set at 32.
-* `GEAR_RED` is the amount of gear reduction. I set mine to 64 but you may need to adjust this if your motor is different.
-* `STEPS_PER_OUT_REV` is the final output of the motor shaft after gear reduction. It is the multiple of the above two numbers.
+![Unipolar](figures/Unipolar.png)
 
-```C
-#include <Stepper.h>
+In a unipolar stepper motor only half of each coil is used at one time. In most configurations, a positive voltage is applied to the center tap and left there. A negative voltage is then applied to one side of the coil to attract the motor shaft.
 
-// Connection pins to ULN2003 Motor Driver
-const int IN1 = 8;
-const int IN2 = 9;
-const int IN3 = 10;
-const int IN4 = 11;
+Now to reverse the direction of a unipolar motor you don’t need to reverse polarity. Instead, the negative voltage is applied to the OTHER side of the coil. This causes the current to flow in the opposite direction within the coil and this, in turn, moves the motor shaft in the opposite direction.
 
-// Number of steps per internal motor revolution 
-const int STEPS_PER_REV = 32; 
- 
-//  Amount of Gear Reduction
-const int GEAR_RED = 64;
- 
-// Number of steps per geared output rotation
-const int STEPS_PER_OUT_REV = STEPS_PER_REV * GEAR_RED;
-  
-// Note that the pins entered in sequence 1-3-2-4  
-Stepper steppermotor(STEPS_PER_REV, IN1, IN3, IN2, IN4);
- 
-void setup()
-{
-    steppermotor.setSpeed(1000);   
-}
- 
-void loop()
-{
-    steppermotor.step(STEPS_PER_OUT_REV); // rotate 360° CW
-    delay(1000);
-  
-    steppermotor.step(-STEPS_PER_OUT_REV); // rotate 360° CCW
-    delay(1000);
-}
-```
+**Unipolar stepper motors are easier to control** as there is no requirement to reverse current polarity to change direction. However, as the unipolar stepper motor only makes use of half of the coil windings at any given moment they are not as efficient as half of the wiring is essentially wasted.
+
+
+## Examples
+
+* [Stepper Motor 28BYJ-48 (unipolar)](stepper-28BYJ-48)
+
 
 ## Library Operations 
 
@@ -96,9 +57,11 @@ The stepper library takes care of sequencing the pulses we will be sending to ou
 * **void step(int number_of_steps)**\
     This function turns the motor a specific number of steps, at a speed determined by the most recent call to `setSpeed()`. This function is **blocking** - it will wait until the motor has finished moving to pass control to the next line in your sketch. 
 
+
 ## References
 
 * [YouTube (DroneBot Workshop): Stepper Motors with Arduino - Controlling Bipolar & Unipolar stepper motors](https://youtu.be/0qwrnUeSpYQ)
+
 * [DroneBot Workshop: Stepper Motors with Arduino – Getting Started with Stepper Motors](https://dronebotworkshop.com/stepper-motors-with-arduino/)
 
 * [GitHub: arduino-libraries/Stepper](https://github.com/arduino-libraries/Stepper)

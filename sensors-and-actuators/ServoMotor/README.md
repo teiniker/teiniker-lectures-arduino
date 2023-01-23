@@ -1,4 +1,4 @@
-# Example: Servo Motor SG90
+# Servo Motors
 
 Servo is a type of geared motor that can only **rotate 180 degrees**. 
 
@@ -6,7 +6,7 @@ A standard hobby servo typically consists of a **small electric motor, a potenti
 The position of the output shaft is constantly measured by the internal potentiometer and compared with the target position 
 set by the controller (e.g. the Arduino).
 
-![Servo Motor](ServoConcept.jpg)
+![Servo Motor](figures/ServoConcept.jpg)
 _([Makerguides](https://www.makerguides.com/servo-arduino-tutorial/))_
 
 According to the error, the control electronics adjust the actual position of the output shaft so that it matches the 
@@ -19,66 +19,22 @@ The width of the pulses determines the position of the output shaft:
     the servo will move to the **neutral position (90 degrees)**. 
 * The min **(0 degrees) and max (180 degrees)** position typically correspond to a pulse width of **1 ms and 2 ms** respectively. 
 
-![Servo Motor](ServoControl.png)
+![Servo Motor](figures/ServoControl.png)
 _([Makerguides](https://www.makerguides.com/servo-arduino-tutorial/))_
 
 Note this can vary slightly between different types and brands of servo motors (e.g. 0.5 and 2.5 ms). Many servos only rotate through about 170 degrees (or even only 90) but the middle position is almost always at 1.5 ms.
 
 Servo motors generally expect a pulse every **20 milliseconds or 50 Hz** but many RC servos work fine in a range of 40 to 200 Hz.
 
-## Wiring Diagram 
+## Examples
 
-The Servo has three wires, of which the **brown** one is the **ground wire** and should be connected to the 
-GND port of UNO, the **red** one is the **power wire** and should be connected to the 5V port, and the 
-**orange** one is the **signal wire** and should be connected to the digital pin 3 (use a PWM pin).
+* [Servo Motor SG90](Servo-SG90)
 
-![Servo Motor](SG90-Servo.png)
-
-
-## Source Code
-
-To control the servo motor we will be using the `Servo.h` library which comes **pre-installed** with the Arduino IDE.
-
-```C
-#include <Servo.h>
-
-const int SERVO_PWM_PIN = 3;
-
-Servo servo;
-
-void setup(void)
-{
-    servo.attach(SERVO_PWM_PIN); 
-} 
-
-void loop(void)
-{
-    servo.write(90);  // 90°
-    delay(1000);
-
-    servo.write(0);   // 0°
-    delay(1000);
-
-    servo.write(90);  // 90°
-    delay(1000);
-
-    servo.write(180); // 180°
-    delay(1000);
-}
-```
-In the **setup()** section of the code, we `attach()` the servo object that we created to the pin that will control the servo. 
-
-In the first part of the **loop()** function, we simply tell the servo motor to move to a particular angle with the 
-function `write()`. 
-Note that we need a delay between the commands to give the servo motor some time to move to the set position.
-
-
-## Simulation
-
-**Tinkercad**: [Arduino: Motor Servo](https://www.tinkercad.com/things/0q3C1mj7NeS) 
 
 
 ## Library Operations
+
+We use the **build-in library** related to the `Servo.h` header file.
 
 A servo is activated by creating an instance of the `Servo` class passing the desired pin to the `attach()` method.
 The servos are pulsed in the background using the value most recently written using the `write()` method.
@@ -113,10 +69,13 @@ Note that `analogWrite()` of PWM on pins associated with the timer are disabled 
 
 ## References
 * [YouTube (Paul McWhorter): Arduino Tutorial 30: Understanding and Using Servos in Projects](https://youtu.be/aFHu65LiFok)
+
 * [YouTube (DroneBot Workshop): Using Servo Motors with Arduino](https://youtu.be/kUHmYKWwuWs)
+* [DroneBot Workshop: Using Servo Motors with the Arduino](https://dronebotworkshop.com/servo-motors-with-arduino/)
+
 * [How to control servo motors with Arduino](https://www.makerguides.com/servo-arduino-tutorial/)
 
 * [GitHub: Servo Library for Arduino](https://github.com/arduino-libraries/Servo)
 
 
-*Egon Teiniker, 2020 - 2022, GPL v3.0*
+*Egon Teiniker, 2020 - 2023, GPL v3.0*
