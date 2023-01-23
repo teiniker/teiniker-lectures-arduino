@@ -13,11 +13,19 @@ Another advantage stepper motors have over DC motors is the ability to move at v
 They also pack a lot of torque into a comparably small package.
 
 
-## Wiring Diagram
+## Wiring Diagram: 28BYJ-48 Stepper Motor
 
 The **28BYJ-48** is a **5-wire unipolar stepper motor** that moves **32 steps per rotation internally** but has a **gearing system that moves the shaft by a factor of 64**. The result is a motor that spins at **2048 steps per rotation**.
 
-The 28BYJ-48 stepper motor is commonly packaged with a tiny driver board based around the **ULN2003 Darlington transistor** array.  The board has a connector that mates perfectly with the motor wires so it is very easy to use. There are also connections for four 5-volt **digital inputs** as well as **power supply** (> 200 mA) connections.
+The 28BYJ-48 stepper motor is commonly packaged with a tiny driver board based around the **ULN2003 Darlington transistor array**.  The board has a connector that mates perfectly with the motor wires so it is very easy to use. 
+
+![ULN2003](figures/ULN2003.png)
+
+Each stage of the Darlington transistor array is constructed as follows: 
+
+![Darlington](figures/Darlington.png)
+
+There are also connections for four 5-volt **digital inputs** as well as **power supply** (> 200 mA) connections.
 
 **Always use a separate power supply to power your stepper motors!!!**
 
