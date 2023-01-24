@@ -85,8 +85,10 @@ The library based on `LiquidCrystal.h` allows an Arduino board to control Liquid
 * **void home()**\
   Positions the cursor in the upper-left of the LCD. That is, use that location in outputting subsequent text to the display. To also clear the display, use the `clear()` function instead.
   
-* **void setCursor(uint8_t, uint8_t)**\
+* **void setCursor(uint8_t col, uint8_t row)**\
   Position the LCD cursor; that is, set the location at which subsequent text written to the LCD will be displayed.
+  * `col`: the column at which to position the cursor (with 0 being the first column)
+  * `row`: the row at which to position the cursor (with 0 being the first row)
   
 * **size_t Serial.print(T value)**\
   **size_t print(T value, int BASE)**\  
