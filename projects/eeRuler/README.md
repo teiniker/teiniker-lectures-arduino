@@ -6,7 +6,7 @@ The following examples are based on the [eeRuler project](https://github.com/Ele
 
 * [RGB LED](rgb-led)
 
-* [Temperature Sensor LM75]()temp-lm75
+* [Temperature Sensor LM75](temp-lm75)
 
 
 
