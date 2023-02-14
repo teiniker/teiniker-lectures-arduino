@@ -7,7 +7,7 @@ const int Y_AXIS_PIN = 1;
 void setup() 
 {
   pinMode(SWITCH_PIN, INPUT_PULLUP);
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() 
