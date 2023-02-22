@@ -1,18 +1,19 @@
-# Sensors, Actuators, and Displays
+# Sensors and Actuators
+
+## User Interface 
+* [Button Debouncing](user-interface/button-debouncing/)
+* [Analog Joystick](user-interface/joystick/)
+
+* [Neopixel LEDs](user-interface/neopixel/)
+* [LCD Display Module](user-interface/LCD-1602/)
 
 ## Sensors
-* [Analog Joystick](joystick/)
-* [Button Debouncing](button-debouncing/)
-* [Temperature + Humidity DHT11](dht11/)
-* [Ultrasonic Sensor HC-SR04](hc-sr04/)
+* [Temperature + Humidity DHT11](sensors/dht11/)
+* [Ultrasonic Sensor HC-SR04](sensors/hc-sr04/)
 
-## Actuators
-* [Servo Motor](ServoMotor/)
-* [DC Motor](DCMotor-L293/)
-* [Stepper Motor](StepperMotor/)
-
-## Displays
-* [LCD Display Module](LCD-1602/)
-
+## Motors
+* [Servo Motor](motors/ServoMotor/)
+* [DC Motor](motors/DCMotor-L293/)
+* [Stepper Motor](motors/StepperMotor/)
 
 *Egon Teiniker, 2020-2023, GPL v3.0* 
