@@ -8,7 +8,7 @@ _Example_: Port D of the ATmega328P corresponds to the digital IO ports 0 to 7
 
 ![Arduino Ports](figures/ATmega2ArduinoPorts.png)
 
-Three **I/O memory address locations** are allocated for each port:
+Three **I/O memory address locations** are defined for each port:
 * **DDRx**: Data direction register (read and write)
     * **DDxn = 1**: Pxn is configured as an **output pin**
     * **DDxn = 0**: Pxn is configured as an **input pin**.
@@ -29,7 +29,7 @@ The following registers are responsible for the I/O port D:
 
 ![Arduino Ports](figures/PIND.png)
 
-The programmatic setting and reading of a port pin is therefore carried out by 
+The programmatic writing and reading of a port pin is therefore carried out by 
 specifically setting and reading bits in these registers.
 
 _Example_: Write digital pin 2 (Arduino Uno)
@@ -99,6 +99,8 @@ If the result is nonzero, the pin is high, and if it's zero, the pin is low.
 
 
 ## References
+* [Arduino Core AVR: wiring_digital.c](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/wiring_digital.c)
+
 * [ATmega328P Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
