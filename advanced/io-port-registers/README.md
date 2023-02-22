@@ -101,7 +101,7 @@ If the result is nonzero, the pin is high, and if it's zero, the pin is low.
 ## References
 * [Arduino Core AVR: wiring_digital.c](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/wiring_digital.c)
 
-* [ATmega328P Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
+* [ATmega328P Datasheet: 13. I/O Ports](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
     * Chapter 3: Arduino Language Reference
