@@ -9,12 +9,13 @@ includes both software and hardware aspects.
 
 * [Arduino Basics](basics/)
   
+* [Sensors and Actuators](sensors-and-actuators/)
+
 * [Arduino Libraries](libraries)
     * [AVR Core](libraries/avr-core/)
     * [Logging](libraries/logging/)
 
-* [Sensors and Actuators](sensors-and-actuators/)
-
+* [Advanced Arduino Programming](advanced/)
 
 ## References
 * Michael Margolis, Brian Jepson, Nicholas Robert Weldin. **Arduino Cookbook**. O'Reilly, 2020
