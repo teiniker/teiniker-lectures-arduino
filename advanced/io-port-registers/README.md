@@ -97,6 +97,7 @@ We use a **bitwise AND operation** with a bitmask that has a `1` in the bit posi
 corresponding to `pin 4` (`PIND4`). 
 If the result is nonzero, the pin is high, and if it's zero, the pin is low.
 
+_Example_: [Tinkercad - Native Digital IO](https://www.tinkercad.com/things/gW2rGRv73t4) 
 
 ## References
 * [Arduino Core AVR: wiring_digital.c](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/wiring_digital.c)
