@@ -101,6 +101,7 @@ _Example_: [Tinkercad - Native Digital IO](https://www.tinkercad.com/things/gW2r
 
 ## References
 * [Arduino Core AVR: wiring_digital.c](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/wiring_digital.c)
+* [Arduino Core ESP32: esp32-hal-gpio.c]([arduino-esp32/cores/esp32/esp32-hal-gpio.c](https://github.com/espressif/arduino-esp32/blob/5f427c998a5eff55abf163a4fbeab17fff06e348/cores/esp32/esp32-hal-gpio.c))
 
 * [ATmega328P Datasheet: 13. I/O Ports](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 
