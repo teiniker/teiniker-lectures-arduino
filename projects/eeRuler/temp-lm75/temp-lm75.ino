@@ -13,5 +13,5 @@ void loop()
 {
   float temp = sensor.temp();
   Serial.println(temp);
-  delay(100);
+  delay(500);
 }
