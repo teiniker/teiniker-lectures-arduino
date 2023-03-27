@@ -7,7 +7,7 @@ SR04 sr04(ECHO_PIN,TRIG_PIN);
 
 void setup() 
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() 
