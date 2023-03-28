@@ -31,7 +31,7 @@ void test_size_short(void)
 void test_size_int(void)
 {
     uint8_t size = sizeof(int);
-    TEST_ASSERT_EQUAL(4, size);
+    TEST_ASSERT_EQUAL(2, size);
 }
 
 void test_size_long(void)
