@@ -10,7 +10,7 @@ class Led
         bool _state;
 
     public:
-        Led(uint8_t pin);
+        Led(uint8_t pin, bool state = false);
 
         bool state(void);
         uint8_t pin(void);

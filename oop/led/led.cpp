@@ -1,14 +1,15 @@
 #include <Arduino.h>
 #include "led.h"
 
-Led::Led(uint8_t pin)
+Led::Led(uint8_t pin, bool state)
 {
     if(pin > 1 && pin < 14)
         _pin = pin;
     else 
         _pin = 13; // on-board LED
 
-     pinMode(_pin, OUTPUT); 
+    _state = state; 
+    pinMode(_pin, OUTPUT); 
 }
 
 bool Led::state(void)
