@@ -4,6 +4,10 @@ A **sequential circuit**  consists of a combinatorial circuit and **storage elem
 
 The sequential circuit receives binary information from external **inputs** which together with the **present state** of the storage elements, determine the binary value of the **outputs**.
 
+* **Oscillator Circuits**
+   * [Schmitt-Trigger Oscillator](https://www.tinkercad.com/things/2DMFrjuPJ2t-schmitt-trigger-oscillator)
+   * [Multivibrator - NE555](https://www.tinkercad.com/things/302Onz2PfBb-multivibrator-ne555)    
+
 * **Latches**
     * [SR Latch](rs-latch-nand)
 
