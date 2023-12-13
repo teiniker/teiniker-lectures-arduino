@@ -62,6 +62,7 @@ A **10K resistor** is a good value for a pullup or pulldown resistor.
 
 _Example:_ [Tinkercad: Digital Input](https://www.tinkercad.com/things/8h5n9K4RhFb)
 
+![Digital Input](figures/DigitalInput.png)
 
 ### Digital Input (Internal Pull-Up Resistor)
 There are **20K pullup resistors built into the Atmega chip** that can be accessed from software. 
@@ -71,6 +72,7 @@ and LOW means the sensor is on.
 
 _Example:_ [Tinkercad: Digital Input - Pull-Up](https://www.tinkercad.com/things/flh9FVVJClZ)
 
+![Digital Input](figures/DigitalerInputPullup.png)
 
 
 # Analog Ports
@@ -89,6 +91,7 @@ Analog inputs 6 and 7 (present on the Mini and BT) cannot be used as digital pin
  
 _Example:_ [Tinkercad: Analog Input](https://www.tinkercad.com/things/0TfvqHrWhPL)
 
+![Digital Input](figures/AnalogInput.png)
 
 ## Analog Output (PWM) 
 **Pulse Width Modulation**, or PWM, is a technique for getting analog results with digital 
@@ -109,6 +112,8 @@ requests a 100% duty cycle (always on), and `analogWrite(127)` is a 50% duty cyc
 (on half the time) for example.
 
 _Example:_ [Tinkercad: Analog Output PWM](https://www.tinkercad.com/things/fdDWIa9yNet)
+
+![Digital Input](figures/AnalogOutputPWM.png)
 
 _Example:_ [Tinkercad: Analog Output PWM (Software)](https://www.tinkercad.com/things/i2TnbxIPZ47)
 
