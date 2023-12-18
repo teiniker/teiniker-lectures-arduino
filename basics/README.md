@@ -9,8 +9,7 @@ Programming is done using the Arduino Framework.
 * [Memory](memory/)
 * [Timing and Scheduling](timing/)
 * [State Machines](state-machines/)
-
-## References
+* [Arduino Core and Libraries](libraries/)
 
 
 *Egon Teiniker, 2020-2023, GPL v3.0* 

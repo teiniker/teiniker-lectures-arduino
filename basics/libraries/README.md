@@ -1,7 +1,54 @@
-# Arduino Libraries
+# Arduino Core and Libraries
 
 Arduino Libraries are a **collection of code** that makes it easy for you to connect to a sensor, 
 display, module, etc.
+
+
+## Arduino Core
+
+The Arduino Core is a set of configurations and code libraries that realizes an hardware abstraction 
+layer commonly used to program and interact with Arduino boards. 
+
+It includes definitions for the various I/O functions, as well as the implementation of the Arduino 
+language (a set of C/C++ functions) that simplifies programming for these devices. The core provides 
+essential support for standard Arduino functions like `digitalRead()`, `digitalWrite()`, and `analogRead()`, 
+making it easier for beginners and hobbyists to develop projects involving sensors, motors, and other 
+peripherals. 
+
+The concept of a **Hardware Abstraction Layer (HAL)** is an essential component in both system 
+software and embedded systems design. The HAL acts as an intermediary layer that provides a consistent 
+and simplified interface to interact with hardware. This abstraction allows software applications and 
+higher-level system components to operate independently of specific hardware details. 
+
+Here are some key aspects of a HAL:
+
+* **Simplification of Software Development**: By using a HAL, developers can write code at a higher level 
+  of abstraction without worrying about the intricacies of the hardware. 
+  This makes software development faster and more efficient.
+
+* **Portability**: Software designed with a HAL is more portable across different hardware platforms. 
+  Since the hardware-specific code is confined to the HAL, only this layer needs to be adapted for new 
+  hardware, while the rest of the software remains unchanged.
+
+* **Hardware Independence**: HAL enables software to run on different hardware platforms without requiring 
+  modifications. It achieves this by abstracting the details of the hardware, like CPU architecture or 
+  peripheral devices, behind a uniform interface.
+
+* **Consistency**: It provides a consistent programming interface across various hardware platforms, 
+  which is particularly beneficial in environments where multiple hardware configurations are common, 
+  such as in embedded systems, consumer electronics, or computing devices.
+
+* **Enhanced Security and Stability**: By isolating the hardware from the software, a HAL can also improve 
+  system stability and security. Faults or vulnerabilities at the hardware level can be contained within 
+  the HAL, reducing the risk to the overall system.
+
+
+The Arduino Core is an integral part of the Arduino ecosystem, **ensuring compatibility and ease of use across a wide 
+range of Arduino boards**:
+
+* [avr-core](avr-core/)
+* [arduino-esp32](https://github.com/espressif/arduino-esp32)
+
 
 ## Arduino Library Structure
 
@@ -72,4 +119,4 @@ The Arduino IDE comes with a build-in Library Manager.
 * [Installing Additional Arduino Libraries](https://www.arduino.cc/en/guide/libraries)
 * [Writing a Library for Arduino](https://docs.arduino.cc/hacking/software/LibraryTutorial)
 
-*Egon Teiniker, 2020 - 2022, GPL v3.0* 
+*Egon Teiniker, 2020 - 2023, GPL v3.0* 
