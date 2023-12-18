@@ -127,4 +127,4 @@ long map(long, long, long, long, long);
     * Chapter 2: Arduino Compilation
 
 
-*Egon Teiniker, 2020 - 2022, GPL v3.0*     
+*Egon Teiniker, 2020 - 2023, GPL v3.0*     
