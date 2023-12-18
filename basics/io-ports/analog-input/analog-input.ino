@@ -1,7 +1,7 @@
 
 void setup() 
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() 
@@ -12,4 +12,6 @@ void loop()
   Serial.print(voltage);
   //Serial.println(value);
   Serial.println("[V]");
+
+  delay(500);
 }

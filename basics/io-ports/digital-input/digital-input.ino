@@ -1,7 +1,7 @@
 /*
  * Digital Input (Taster + LED)
  * 
- * Pin 2: ---[1K]--|>|--(GND) 
+ * Pin 2: ---[470]--|>|--(GND) 
  *            
  * Pin 4: -+-o\o--------(+)
  *         +------[10K]-(GND)
