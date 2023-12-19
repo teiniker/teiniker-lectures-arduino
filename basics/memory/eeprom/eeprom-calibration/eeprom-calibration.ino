@@ -2,12 +2,12 @@
 
 void setup() 
 {
-  Serial.begin(9600);    
+  Serial.begin(115200);    
   
   Serial.print("EEPROM size: ");
   Serial.println(EEPROM.length());
   
-  EEPROM.put(0x00, 2.0);	// gain
+  EEPROM.put(0x00, 2.0);	  // gain
   EEPROM.put(0x04, -5.0); 	// offset
 }
 

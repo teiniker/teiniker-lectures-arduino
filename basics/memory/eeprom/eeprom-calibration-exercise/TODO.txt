@@ -1,0 +1,18 @@
+Exercise: ADC Calibration
+-------------------------------------------------------------------------------
+
+Führen Sie eine Spannungsmessung am Analogeingang A0 durch.
+Die gemessene Spannung soll durch ein Potentiometer erzeugt werden.
+
+A) Spannungsmessung 
+    Lesen Sie die Spannung am Pin A0 ein und rechnen Sie sie in einen Wert 
+    zwischen 0V und 5V um und geben Sie diesen Wert über die serielle 
+    Schnittstelle am PC aus.
+
+B) Calibration 
+    Beziehen Sie die Werte "gain" und "offset" in die Berechnung des 
+    Spannungswertes mit ein.
+    Beachten Sie, dass diese Werte aus dem EEPROM gelesen werden sollen.
+
+    Tip: Die Werte brauchen nur einmal im Setup geschrieben werden.
+    
