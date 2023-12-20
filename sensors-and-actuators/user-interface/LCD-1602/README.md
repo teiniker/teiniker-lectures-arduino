@@ -4,6 +4,8 @@
 
 LCD displays do not emit light. Instead they block the passage of light, like little windows which open and shut the let light through. The liquid crystals used inside LCD displays are sandwiched between two layers of polarized material. By changing the orientation of the liquid crystals they allow light to pass or they block the light entirely.
 
+![LCD Pinout](figures/lcd-pinout.png)
+
 
 ## Wiring Diagram
 
@@ -13,7 +15,7 @@ One way of reducing the number of connections required is to use **4-wire mode**
 
 In 4-wire mode the data is sent a half a byte at a time, thus requiring only 4 data connections. The upper half of the data input (D4 to D7) is used while the other pins are not connected to anything.
 
-![LCD](figures/LCD.png)
+![LCD](figures/lcd.png)
 
 
 ## Source Code
