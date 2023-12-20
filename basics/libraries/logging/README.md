@@ -43,12 +43,12 @@ Possible log levels are:
 
 The library allows us to log on different levels by the following operations:
 ```C
-void fatal   (const char *format, va_list logVariables); 
-void error   (const char *format, va_list logVariables);
-void warning (const char *format, va_list logVariables);
-void notice  (const char *format, va_list logVariables);
-void trace   (const char *format, va_list logVariables);
-void verbose (const char *format, va_list logVariables);
+void fatal(const char *format, va_list logVariables); 
+void error(const char *format, va_list logVariables);
+void warning(const char *format, va_list logVariables);
+void info(const char *format, va_list logVariables);
+void trace(const char *format, va_list logVariables);
+void verbose(const char *format, va_list logVariables);
 ```
 
 where the **format string** can be used to format the log-variables:
