@@ -15,8 +15,8 @@ void loop()
 {
   float gain; 
   float offset; 
-  EEPROM.get(0x00, gain);
-  EEPROM.get(0x04, offset);
+  EEPROM.get(0x00, gain);   // call by reference
+  EEPROM.get(0x04, offset); // call by reference
   
   uint16_t adc = analogRead(A0);
   float value = adc * 5.0/1023.0;
