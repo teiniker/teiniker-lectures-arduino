@@ -1,31 +1,19 @@
-# Interrupts 
+# External Interrupts 
 
-The Arduino framework allows to setup functions which will be called automatically, 
-whenever a certain type of event happens.
-They are called **interrupt service routines (ISR)**.
+External interrupts are limited in number on some AVR microcontrollers. 
 
-Each time the interrupt fires, the ISR function will be called.
-The ISR function must not return any value, nor does it receive any parameters.
-The processing it carries out should be kept **as short as possible**. 
-If it requires to access any **variable** in the main part of the sketch, 
-then these must be defined as **volatile**.
-
-**External interrupts** are limited in number on some AVR microcontrollers. 
-The ATmega328P family has only two of them: 
+The **ATmega328P** family has only two of them: 
 * Arduino pin D2 is connected to the AVR controller's **INT0** interrupt 
 * Arduino pin D3 is connected to the AVR controller's **INT1** interrupt 
-These are high-priority interrupts, only REST is higher, and INT0 takes priority if two arrive together.
+These are high-priority interrupts, only REST is higher, and `INT0` takes 
+priority if two arrive together.
 
-
-## Wiring Diagram 
+_Example:_ External Interrupt 
 
 ![External Interrupt](ExternalInterrupt.png)
 
 In practice, switches bounce quite a lot, so we could use the 
 **MC14490 Hex Contact Bounce Eliminator** chip to improve our circuit.
-
-
-## Source Code
 
 The following code lets the green LED blink (one second on, one second off).
 If we push the button, immediately the red LED will switch its state. 
@@ -74,14 +62,11 @@ void loop()
 ```
 
 
-## Simulation
-
-The following simulation shows how a long running task (blinking the green LED) can be interrupted.
-
-**Tinkercad**: [Arduino: External Interrupt](https://www.tinkercad.com/things/3pUnUwfenLv)
+_Example:_ Tinkercad [Arduino: External Interrupt](https://www.tinkercad.com/things/3pUnUwfenLv)
+The given simulation shows how a long running task (blinking the green LED) can be interrupted.
 
 
-## Library Operations
+## Interrupt Library Operations
 
 There are some functions in the Arduino framework which help in setting up and using these ISR 
 (see `Arduino.h`):
@@ -115,7 +100,11 @@ The parameter interruptNum is the number of the interrupt to disable (same as us
 
 ## References
 
+* [YouTube (DroneBot Workshop): Understanding Arduino Interrupts](https://youtu.be/wIcC8-g9Lnw?si=O6zng19j7KYY7zFR)
 * [YouTube (McWhorter): Tutorial for Programming Software Interrupts on Arduino](https://youtu.be/QhIm6e5AH44)
+
+* [Arduino Interrupts Tutorial](https://circuitdigest.com/microcontroller-projects/arduino-interrupt-tutorial-with-examples)
+
 * [Arduino: External interrupts](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/)
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
