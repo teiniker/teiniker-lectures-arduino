@@ -1,10 +1,10 @@
 # Microcontroller Programming Basics
 
 The basic programming techniques for microcontrollers are shown using 
-the ATMega328P. The techniques used can also easily be applied to 
+the **ATMega328P**. The techniques used can also easily be applied to 
 other microcontrollers as well.
 
-The microcontroller directly incorporates the hardware components used:
+The microcontroller directly incorporates the **hardware components** used:
 
 * [Serial Communication (UART)](serial/)
 * [I/O Ports](io-ports/)
@@ -17,12 +17,14 @@ programming:
 
 * [Timing and Scheduling](timing/)
 * [State Machines](state-machines/)
+* [Object-Oriented Programming](oop/)
 
 Finally, the use of **libraries and frameworks** enables an abstraction 
-from the concrete microcontroller. This makes it easy to get applications 
-running on different boards.
+from the concrete microcontroller - **Hardware Abstraction Layer (HAL)**. 
+This makes it easy to get applications running on different boards 
+implementing the same HAL API.
 
-* [Arduino Core and Libraries](libraries/)
+* [Hardware Abstraction](libraries/)
 
 
 *Egon Teiniker, 2020-2024, GPL v3.0* 

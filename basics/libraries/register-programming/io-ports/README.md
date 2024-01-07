@@ -1,4 +1,4 @@
-# Accessing I/O Ports via Memory Addresses
+# Accessing I/O Ports via Registers
 
 The ports of the Arduino Uno Board are connected directly to the pins of 
 the ATmega328P. The microcontroller combines the pins into 8-bit ports.
