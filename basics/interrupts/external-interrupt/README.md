@@ -10,7 +10,7 @@ priority if two arrive together.
 
 _Example:_ External Interrupt 
 
-![External Interrupt](ExternalInterrupt.png)
+![External Interrupt](figures/ExternalInterrupt.png)
 
 In practice, switches bounce quite a lot, so we could use the 
 **MC14490 Hex Contact Bounce Eliminator** chip to improve our circuit.
