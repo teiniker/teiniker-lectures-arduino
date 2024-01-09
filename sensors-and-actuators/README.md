@@ -4,7 +4,6 @@
 * [Button Debouncing](user-interface/button-debouncing/)
 * [Analog Joystick](user-interface/joystick/)
 
-* [Neopixel LEDs](user-interface/neopixel/)
 * [LCD Display Module](user-interface/LCD-1602/)
 
 ## Sensors

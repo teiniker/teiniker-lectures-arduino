@@ -19,7 +19,7 @@ connected to Pin 2 on an Arduino Uno, we will need to set up Timer 1
 in a way that it triggers an interrupt every second. 
 Upon each interrupt, you can then toggle the state of the LED.
 
-_Example:_ TinkerCAD [Timer 1 INterrupt - Toggle LED](https://www.tinkercad.com/things/61XNihYUyhI-timer1-interrupt)
+_Example:_ TinkerCAD [Timer 1 Interrupt - Toggle LED](https://www.tinkercad.com/things/61XNihYUyhI-timer1-interrupt)
 
 ![Timer 1 Interrupt](figures/Timer1Interrupt-LED.png)
 
