@@ -1,8 +1,8 @@
 # Example: L293D + DC Motor
 
 The L293 and L293D are quadruple **high-current half-H drivers**. The **L293** is designed to provide 
-bidirectional drive currents of up to 1 A at voltages from 4.5 V to 36 V. The **L293D** is designed to provide 
-bidirectional drive currents of up to 600-mA at voltages from 4.5 V to 36 V. 
+bidirectional drive currents of up to 1A at voltages from 4.5V to 36V. The **L293D** is designed to provide 
+bidirectional drive currents of up to 600mA at voltages from 4.5V to 36V. 
 Both devices are designed to drive inductive loads such as relays, solenoids, dc and bipolar stepping motors, 
 as well as other high-current/high-voltage loads in positive-supply applications.
 
