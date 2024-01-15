@@ -9,7 +9,6 @@ The microcontroller directly incorporates the **hardware components** used:
 * [Serial Communication (UART)](serial/)
 * [I/O Ports](io-ports/)
 * [Memory](memory/)
-* [Interrupts](interrupts/)
 
 In addition to the use of hardware components, the following 
 **programming techniques** are also used in the context of microcontroller 
@@ -25,6 +24,7 @@ This makes it easy to get applications running on different boards
 implementing the same HAL API.
 
 * [Hardware Abstraction](libraries/)
-
+    * [Register Programming](hardware-abstraction/register-programming/io-ports/)
+    * [Interrupts](hardware-abstraction/interrupts/)
 
 *Egon Teiniker, 2020-2024, GPL v3.0* 
