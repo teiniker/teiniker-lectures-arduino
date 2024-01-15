@@ -33,7 +33,7 @@ Arduino Uno board.
 
 * **Tinkercad**: [Arduino: Motor Servo](https://www.tinkercad.com/things/0q3C1mj7NeS) 
 
-* [Servo Motor SG90](Servo-SG90)
+* **Example**: [Servo Motor SG90](Servo-SG90)
 
 
 
