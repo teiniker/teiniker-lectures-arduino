@@ -51,12 +51,6 @@ function `write()`.
 Note that we need a delay between the commands to give the servo motor some time to move to the set position.
 
 
-## Simulation
-
-**Tinkercad**: [Arduino: Motor Servo](https://www.tinkercad.com/things/0q3C1mj7NeS) 
-
-
-
 ## References
 
 

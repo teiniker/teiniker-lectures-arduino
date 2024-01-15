@@ -28,6 +28,11 @@ Servo motors generally expect a pulse every **20 milliseconds or 50 Hz** but man
 
 ## Examples
 
+The following examples show the use of servo motors together with an 
+Arduino Uno board.
+
+* **Tinkercad**: [Arduino: Motor Servo](https://www.tinkercad.com/things/0q3C1mj7NeS) 
+
 * [Servo Motor SG90](Servo-SG90)
 
 
