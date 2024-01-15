@@ -62,7 +62,7 @@ A class is then a C++ structure whose fields and operations are fundamentally
 **private** (not accessible). Certain operations are explicitly declared as 
 public and form the **programming interface (API)**.
 
-_Example:_ TinkerCAD: [LED Objects]()
+_Example:_ TinkerCAD: [LED Objects](https://www.tinkercad.com/things/blF33lDz986-arduino-oop-led)
 In this example, the control of an LED is to be encapsulated in a class.
 
 ```C++
