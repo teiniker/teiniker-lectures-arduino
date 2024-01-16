@@ -13,7 +13,7 @@ down to the register level.
 This is not only tedious, but also reduces the reusability of the application 
 for different boards.
 
-_Example:_ Register Programming - ![IO Ports](register-programming/io-ports/)
+_Example:_ Register Programming - [IO Ports](register-programming/io-ports/)
 
 
 By abstracting the hardware, application developers don't 
