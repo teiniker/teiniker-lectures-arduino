@@ -289,7 +289,7 @@ _Example:_ Tinkercad - [OOP Port Extension](https://www.tinkercad.com/things/a1W
 
 
 ## References
-* [YouTube (DroneBot Workshop): 74HC595 & 74HC165 Shift Registers with Arduino](https://youtu.be/Ys2fu4NINrA?si=KXkCEs-Rmlfz651G)
+* [DroneBot Workshop: 74HC595 & 74HC165 Shift Registers with Arduino](https://dronebotworkshop.com/shift-registers/)
 
 * [YouTube (Paul McWhorter): Arduino Tutorial 42: Understanding How to Use a Serial to Parallel Shift Register (74HC595)](https://youtu.be/n3qmQHzcgto?si=nxvYTcWlgG3ooIsa)
 
