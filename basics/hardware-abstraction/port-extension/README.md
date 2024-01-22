@@ -21,13 +21,13 @@ The 74HC595 typically comes in a 16-pin package with the following pin assignmen
 
 ![74HC595 Pinout](figures/74HC595-Pinout.png)
 
-* **Serial Data Input (DS)**: Receives the data to be shifted into the register.
+* **Serial Data Input (SER)**: Receives the data to be shifted into the register.
 * **Output Enable (OE)**: When low, enables the output; when high, the outputs are in a high-impedance state.
-* **Master Reset (MR)**: Resets the shift register when low.
-* **Shift Register Clock (SHCP)**: Clock input for the shift register.
-* **Latch Clock (STCP)**: Clock input for the storage register (latch).
-* **Output Data (Q0-Q7)**: Eight parallel outputs.
-* **Serial Output (Q7’)**: Used for daisy-chaining multiple 74HC595s; outputs the serial data.
+* **Shift Register Clear (SRCLR)**: Resets the shift register when low.
+* **Shift Register Clock (SRCLK)**: Clock input for the shift register.
+* **Latch Clock (RCLK)**: Clock input for the storage register (latch).
+* **Output Data (QA-QH)**: Eight parallel outputs.
+* **Serial Output (QA')**: Used for daisy-chaining multiple 74HC595s; outputs the serial data.
 * **Ground (GND) and Vcc**: Power supply pins.
 
 **How It Works**:
@@ -50,7 +50,7 @@ In this example the 74HC595 is used to address 8 LEDs. Only 3 pins on the Arduin
 
 ![74HC595 Example](figures/74HC595-Example.png)
 
-## Source Code 
+## Source Code: Register Programming 
 
 It starts with defining the required Arduino pins.
 
@@ -60,19 +60,32 @@ const int CLOCK_PIN = 6;	// SRCLK (Shit Register Clock) Pin of the 74HC595
 const int DATA_PIN = 4;		// SER (Serial input) Pin of the 74HC595 
 ```
 
-The `update_shift_register()` function sets the latchPin to LOW and then calls the Arduino `shiftOut()` 
-function to shift the contents of the `leds` variable in the shift register before setting the latchPin 
-back to HIGH.
+The `shift_bit_in()` function sets the value data (`HIGH` or `LOW`) to the `DATA_PIN` 
+of the shift register. A clock pulse is then generated (falling edge).
+
+The `update_shift_register()` function gets a byte and shifts this byte bit by bit 
+(LSB first) into the shift register.
+The latch is disabled during the shift process.
 
 ```C++
+void shift_bit_in(int data) 
+{
+    digitalWrite(DATA_PIN,data);
+    digitalWrite(CLOCK_PIN,HIGH);
+    digitalWrite(CLOCK_PIN,LOW);
+}
+
 void update_shift_register(uint8_t leds)
 {
-   digitalWrite(LATCH_PIN, LOW);
-   shiftOut(DATA_PIN, CLOCK_PIN, LSBFIRST, leds);
-   digitalWrite(LATCH_PIN, HIGH);
+  	digitalWrite(LATCH_PIN, LOW);
+  	for(uint8_t i; i<8; i++)
+    {
+      	shift_bit_in(leds & 1);
+		leds >>= 1;
+    }
+   	digitalWrite(LATCH_PIN, HIGH);
 }
 ```
-
 
 At the beginning of the `loop()` function, the shift register is cleared.
 
@@ -98,17 +111,33 @@ void loop()
 
 As a result of this example, the 8 LEDs will be turned on in sequence and then turned off again.
 
-## Simulation
+_Example:_ Tinkercad - [Register Port Extension](https://www.tinkercad.com/things/bJAyWSbxPoe-arduino-digital-port-extension-74hc595-register) 
+
+
+
+## Source Code: Library Function
+
+The Arduino Framework provides functions to work directly with shift registers.
 
 _Example:_ Tinkercad - [Port Extension using 74HC595](https://www.tinkercad.com/things/8iZWKXwZWYk-arduino-digital-port-extension-74hc595)
 
 
-## Library Functions
+IN this version, the `update_shift_register()` function sets the `LATCH_PIN` to `LOW` and 
+then calls the Arduino `shiftOut()` function to shift the contents of the `leds` variable in 
+the shift register before setting the `LATCH_PIN` back to `HIGH`.
 
-This example only uses the following functions from the Arduino Framework:
+```C++
+void update_shift_register(uint8_t leds)
+{
+   digitalWrite(LATCH_PIN, LOW);
+   shiftOut(DATA_PIN, CLOCK_PIN, LSBFIRST, leds);
+   digitalWrite(LATCH_PIN, HIGH);
+}
+```
 
-* **bitSet(value, bit)**\
-    This macro sets the bit at the position `bit` in the given integer `value``.
+
+In the context of shift regsters, we can use the following **library functions** 
+from the Arduino Framework:
 
 * **void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val)**\
     Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) 
@@ -122,16 +151,75 @@ This example only uses the following functions from the Arduino Framework:
     Parameters:
     * `dataPin`: the pin on which to output each bit. 
     * `clockPin`: the pin to toggle once the dataPin has been set to the correct value. 
-    * `bitOrder`: which order to shift out the bits; either `MSBFIRST` or `LSBFIRST`. 
+    * `bitOrder`: which order to shift out the bits; either `MSBFIRST` or `LSBFIRST`    
+        (Most Significant Bit First, or, Least Significant Bit First). 
     * `value`: the data byte to shift out. 
 
+    Here is the implementation of this function
+    (`ArduinoCore-avr/cores/arduino/wiring_shift.c`):
+    
+    ```C++
+    void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val) {
+        uint8_t i;
 
-## Use Object-Oriented Programming 
+        for (i = 0; i < 8; i++)  {
+            if (bitOrder == LSBFIRST) {
+                digitalWrite(dataPin, val & 1);
+                val >>= 1;
+            } else {	
+                digitalWrite(dataPin, (val & 128) != 0);
+                val <<= 1;
+            }
+                
+            digitalWrite(clockPin, HIGH);
+            digitalWrite(clockPin, LOW);		
+        }
+    }   
+    ```
+
+* **uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder)**\
+    Shifts in a byte of data one bit at a time. Starts from either the most 
+    (i.e. the leftmost) or least (rightmost) significant bit. For each bit, the 
+    clock pin is pulled high, the next bit is read from the data line, and 
+    then the clock pin is taken low.
+
+    If you’re interfacing with a device that’s clocked by rising edges, you’ll 
+    need to make sure that the clock pin is low before the first call to `shiftIn()`,
+    e.g. with a call to `digitalWrite(clockPin, LOW)`.
+
+    Parameters:
+    * `dataPin`: the pin on which to input each bit. 
+    * `clockPin`: the pin to toggle to signal a read from dataPin.
+    * `bitOrder`: which order to shift in the bits; either MSBFIRST or LSBFIRST 
+        (Most Significant Bit First, or, Least Significant Bit First).
+
+    The function returns the value read from the shift register. 
+
+   Here is the implementation of this function
+    (`ArduinoCore-avr/cores/arduino/wiring_shift.c`):
+    
+    ```C++
+    uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder) {
+        uint8_t value = 0;
+        uint8_t i;
+
+        for (i = 0; i < 8; ++i) {
+            digitalWrite(clockPin, HIGH);
+            if (bitOrder == LSBFIRST)
+                value |= digitalRead(dataPin) << i;
+            else
+                value |= digitalRead(dataPin) << (7 - i);
+            digitalWrite(clockPin, LOW);
+        }
+        return value;
+    }
+    ```
+
+
+## Source Code: Object-Oriented Programming 
 
 The `PortExtension` class encapsulates all necessary data (pin assignments, data bytes) and 
 provides methods for writing individual bits or bytes.
-
-_Example:_ Tinkercad - [OOP Port Extension]()
 
 ```C++
 class PortExtension
@@ -196,9 +284,16 @@ void loop()
 }
 ```
 
+_Example:_ Tinkercad - [OOP Port Extension](https://www.tinkercad.com/things/a1W8GGV5kMr-arduino-digital-port-extension-74hc595-oop)
+
+
+
 ## References
+* [YouTube (DroneBot Workshop): 74HC595 & 74HC165 Shift Registers with Arduino](https://youtu.be/Ys2fu4NINrA?si=KXkCEs-Rmlfz651G)
+
+* [YouTube (Paul McWhorter): Arduino Tutorial 42: Understanding How to Use a Serial to Parallel Shift Register (74HC595)](https://youtu.be/n3qmQHzcgto?si=nxvYTcWlgG3ooIsa)
 
 * [Arduino Reference: shiftOut()](https://www.arduino.cc/reference/en/language/functions/advanced-io/shiftout/)
-* [Arduino Reference: bitSet()](https://www.arduino.cc/reference/en/language/functions/bits-and-bytes/bitset/)
+* [Arduino Reference: shiftIn()](https://www.arduino.cc/reference/en/language/functions/advanced-io/shiftin/)
 
 Egon Teiniker, 2020-2024, GPL v3.0
