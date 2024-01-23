@@ -1,3 +1,5 @@
+// Hardware Abstraction
+ 
 class Led
 {
     private:
@@ -42,6 +44,7 @@ class Led
 
 };
 
+// Application 
 
 Led led(13);
 
