@@ -130,10 +130,6 @@ The following features are part of the **Arduino Core Library**:
 
 ## References
 
-* [YouTube (Paul McWhorter): Arduino Tutorial 22: Understanding and Using Active Buzzers to Add Sound to Your Project](https://youtu.be/tuRAvlVBEl0?si=yiTdBrp9FtGI8tEX)
-
-* [YouTube (Paul McWhorter): Arduino Tutorial 23: Changing Tone of an Active Buzzer](https://youtu.be/W5AApP9P-b0?si=RxLRGdG5xjQ_7e-S)
-
 * [How to use active and passive buzzers on the arduino](https://www.circuitbasics.com/how-to-use-active-and-passive-buzzers-on-the-arduino/)
 
 *Egon Teiniker, 2020 - 2024, GPL v3.0* 
