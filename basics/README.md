@@ -26,5 +26,7 @@ implementing the same HAL API.
 * [Hardware Abstraction](libraries/)
     * [Register Programming](hardware-abstraction/register-programming/io-ports/)
     * [Interrupts](hardware-abstraction/interrupts/)
+    * [Port Extension (74HC595)](hardware-abstraction/port-extension/)
+    * [Create Arduino Libraries](hardware-abstraction/arduino-library/)
 
 *Egon Teiniker, 2020-2024, GPL v3.0* 
