@@ -35,7 +35,7 @@ The connections are: Voltage, Ground, Trigger and Echo. Trigger and Echo can be 
 
 ## Source Code
 
-We have to install the [**HC-SR04 library**](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/libraries/HC-SR04) to use the `SR04.h` header file.
+We have to install the [**HC-SR04 library**](lib/HC-SR04.zip) to use the `SR04.h` header file.
 
 The library implements a class named `SR04` which we can use to do the measurement.
 We need two digital Arduino pins `ECHO_PIN` and `TRIG_PIN` which are passed into the constructor.
