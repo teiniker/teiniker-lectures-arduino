@@ -17,7 +17,7 @@ enum sm_states
     ON
 };
 
-enum sm_states state; 
+enum sm_states state = OFF; 
 void sm_led(enum events event);
 void sm_led_handler_off(enum events event);
 void sm_led_handler_on(enum events event);
