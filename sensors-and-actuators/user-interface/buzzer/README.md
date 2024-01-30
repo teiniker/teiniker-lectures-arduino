@@ -132,4 +132,6 @@ The following features are part of the **Arduino Core Library**:
 
 * [How to use active and passive buzzers on the arduino](https://www.circuitbasics.com/how-to-use-active-and-passive-buzzers-on-the-arduino/)
 
+* [GitHub: Arduino Songs](https://github.com/robsoncouto/arduino-songs)
+
 *Egon Teiniker, 2020 - 2024, GPL v3.0* 
