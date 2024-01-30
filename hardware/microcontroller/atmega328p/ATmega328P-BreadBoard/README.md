@@ -9,6 +9,11 @@ The following pinout diagram has been relabeled to show the Arduino Uno equivale
 ![ATmega328P-UnoPinout](figures/ATmega328P-UnoPinout.png)
 
 
+The minimum circuit to get an ATmega328P running is shown in the next figure. 
+The entire circuit can easily be built on a bread board.
+
+![ATmega328P BreadBoard](figures/ATmega328P-BreadBoard.png)
+
 
 ## References
 
