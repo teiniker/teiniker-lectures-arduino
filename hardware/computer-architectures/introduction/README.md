@@ -3,6 +3,7 @@
 Before we can talk about computer architecture, we need to look at how we can **build or simulate digital circuits**.
 
 * [Using a Breadboard](UsingBreadboard.md)
+    * [Power Adapter](power-supply/)
 
 * [Using TinkerCAD](UsingTinkercad.md)
 

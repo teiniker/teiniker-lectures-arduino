@@ -60,11 +60,9 @@ The stepper library takes care of sequencing the pulses we will be sending to ou
 
 ## References
 
-* [YouTube (DroneBot Workshop): Stepper Motors with Arduino - Controlling Bipolar & Unipolar stepper motors](https://youtu.be/0qwrnUeSpYQ)
-
 * [DroneBot Workshop: Stepper Motors with Arduino – Getting Started with Stepper Motors](https://dronebotworkshop.com/stepper-motors-with-arduino/)
 
 * [GitHub: arduino-libraries/Stepper](https://github.com/arduino-libraries/Stepper)
 
 
-*Egon Teiniker, 2020 - 2023, GPL v3.0*
+*Egon Teiniker, 2020 - 2024, GPL v3.0*
