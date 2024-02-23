@@ -18,7 +18,7 @@ more complex operating systems.
 
 In FreeRTOS, a task can exist in one of the following **states**:
 
-![Tast States](doc/tskstate.gif)
+![Tast States](figures/tskstate.gif)
 
 * Running: When a task is actually executing it is said to be in the Running state. It is currently 
     utilising the processor. If the processor on which the RTOS is running only has a single core 
