@@ -101,7 +101,7 @@
 int tempo = 80;
 
 // change this to whichever pin you want to use
-int buzzer = 8;
+int buzzer = 3;
 
 // notes of the moledy followed by the duration.
 // a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
