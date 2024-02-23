@@ -1,6 +1,22 @@
-# FRee RTOS Tasks
+# Free RTOS Tasks
 
-A task can exist in one of the following **states**:
+In FreeRTOS, the term **task** is used instead of process or thread.
+
+However, **FreeRTOS tasks are more like threads in traditional operating systems** 
+because they share the same address space and can communicate with each other more directly.
+Tasks in FreeRTOS do not have a separate memory space from each other, similar to threads
+within the same process in a general-purpose operating system. 
+This means all tasks share the same global memory.
+
+FreeRTOS provides mechanisms for **task synchronization and communication**, such as 
+**semaphores**, **queues**, and **mutexes**, which are typically used for thread 
+synchronization in other operating systems.
+
+The scheduler in FreeRTOS is designed to be **preemptive** or cooperative, 
+giving developers control over task execution similar to thread scheduling in 
+more complex operating systems.
+
+In FreeRTOS, a task can exist in one of the following **states**:
 
 ![Tast States](doc/tskstate.gif)
 
