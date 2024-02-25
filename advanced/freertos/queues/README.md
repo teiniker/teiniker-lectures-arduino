@@ -33,13 +33,16 @@ than the queue always storing just a reference to the data:
 
 ## Blocking on Queues
 
-When a task attempts to **read from an empty queue** the task will be placed into the **Blocked state** (so it is not consuming any CPU time and other tasks can run) until either data becomes available on the queue, or the block time expires.
+When a task attempts to **read from an empty queue** the task will be placed 
+into the **Blocked state** (so it is not consuming any CPU time and other tasks 
+can run) until either data becomes available on the queue, or the block time expires.
 
 When a task attempts to **write to a full queue** the task will be placed into 
 the **Blocked state** (so it is not consuming any CPU time and other tasks can run) 
 until either space becomes available in the queue, or the block time expires.
 
-If more than one task block on the same queue then the task with the highest priority will be the task that is unblocked first.
+If more than one task block on the same queue then the task with the highest priority will 
+be the task that is unblocked first.
 
 
 
