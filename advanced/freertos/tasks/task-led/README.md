@@ -24,7 +24,7 @@ void led1_task(void *pvParameter)
 xTaskCreatePinnedToCore(
     led1_task,      // Task Function 
     "LED1Task",     // Task Name
-    1024,           // Stack Depth 
+    128,            // Stack Depth 
     NULL,           // Parameters 
     2,              // Priority 
     NULL,           // Task Handle
@@ -72,37 +72,37 @@ these system tasks.
 It's possible to use resources like Serial (UART) or the I2C bus inside a 
 FreeRTOS task. However, there are important considerations to keep in mind:
 
-* Concurrency Issues: If multiple tasks access the same resource (e.g., Serial 
+* **Concurrency Issues**: If multiple tasks access the same resource (e.g., Serial 
     or I2C bus) simultaneously, it can lead to data corruption or unpredictable 
     behavior. To avoid this, you should use synchronization primitives like 
     semaphores or mutexes. For instance, if two tasks are trying to send data 
     over the same UART line, you'd use a semaphore to ensure that only one task 
     can access the UART at a time.
 
-* Shared Data: If tasks share data (e.g., global variables), you need to ensure 
+* **Shared Data**: If tasks share data (e.g., global variables), you need to ensure 
     that access to that data is thread-safe. This is especially crucial for 
     multi-byte or complex data types. Again, semaphores or mutexes can help here.
 
-* Initial Setup: If a task uses a specific hardware resource, make sure that the 
-    required initialization for that resource (like Serial.begin() for UART) is 
+* **Initial Setup**: If a task uses a specific hardware resource, make sure that the 
+    required initialization for that resource (like `Serial.begin()` for UART) is 
     done before the task starts running. This can be done in the setup() function.
 
-* Task Priority: Be aware of task priorities when accessing shared resources. 
+* **Task Priority**: Be aware of task priorities when accessing shared resources. 
     A high-priority task might preempt a lower-priority task, which could lead 
     to issues if not managed properly.
 
-* RTOS-Safe Libraries: Some libraries might not be safe to use in a multi-threaded 
+* **RTOS-Safe Libraries**: Some libraries might not be safe to use in a multi-threaded 
     environment. If you're using third-party libraries to interact with hardware 
     resources inside a task, ensure that the library is designed to be used with 
     FreeRTOS or a similar RTOS.
 
-* Blocking Calls: Some functions, like Serial.read() when waiting for data, can 
+* **Blocking Calls**: Some functions, like `Serial.read()` when waiting for data, can 
     block for an indefinite time. In a multitasking environment, this can prevent 
     other tasks from running. Consider using non-blocking versions of these 
     functions or timeouts.
 
 
-
-
 ## References
 * [YouTube (Simply Explained): How to Multitask with FreeRTOS](https://youtu.be/WQGAs9MwXno)
+
+*Egon Teiniker, 2020-2024, GPL v3.0*     

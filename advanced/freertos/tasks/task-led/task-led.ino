@@ -31,8 +31,8 @@ void setup()
     pinMode(LED2_PIN, OUTPUT);
 
     // Create the FreeRTOS tasks
-    xTaskCreatePinnedToCore(led1_task, "LED1Task", 1024, NULL, 2, NULL, 1);
-    xTaskCreatePinnedToCore(led2_task, "LED2Task", 1024, NULL, 2, NULL, 1);
+    xTaskCreatePinnedToCore(led1_task, "LED1Task", 128, NULL, 2, NULL, 1);
+    xTaskCreatePinnedToCore(led2_task, "LED2Task", 128, NULL, 2, NULL, 1);
 }
 
 void loop() 
