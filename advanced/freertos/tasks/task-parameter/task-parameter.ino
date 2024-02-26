@@ -8,7 +8,7 @@ struct led_pin
 
 
 led_pin led_1 ={2, 250};
-led_pin led_2 ={4, 500};
+led_pin led_2 ={6, 250};
 
 void setup() 
 {
@@ -31,10 +31,10 @@ void led_task(void *pvParameter)
     // loop
     while(1) 
     {
-        digitalWrite(led->pin, HIGH);  // LED ON
+        digitalWrite(led->pin, HIGH);  
         vTaskDelay(led->delay / portTICK_PERIOD_MS);  
 
-        digitalWrite(led->pin, LOW);  // LED OFF
+        digitalWrite(led->pin, LOW);  
         vTaskDelay(led->delay / portTICK_PERIOD_MS);      
     }
 }
