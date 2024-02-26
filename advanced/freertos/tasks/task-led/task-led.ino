@@ -1,7 +1,7 @@
 #include <Arduino_FreeRTOS.h>
 
 const uint8_t LED1_PIN = 2;
-const uint8_t LED2_PIN = 4;
+const uint8_t LED2_PIN = 6;
 
 void setup() 
 {
@@ -21,11 +21,11 @@ void led1_task(void *pvParameter)
 {
     while(1) 
     {
-        digitalWrite(LED1_PIN, HIGH);  // LED ON
-        vTaskDelay(500 / portTICK_PERIOD_MS);  // Delay for 500ms
+        digitalWrite(LED1_PIN, HIGH);  
+        vTaskDelay(500 / portTICK_PERIOD_MS);  
 
-        digitalWrite(LED1_PIN, LOW);  // LED OFF
-        vTaskDelay(500 / portTICK_PERIOD_MS);  // Delay for 500ms
+        digitalWrite(LED1_PIN, LOW);  
+        vTaskDelay(500 / portTICK_PERIOD_MS);  
     }
 }
 
@@ -33,10 +33,10 @@ void led2_task(void *pvParameter)
 {
     while(1) 
     {
-        digitalWrite(LED2_PIN, HIGH);  // LED ON
-        vTaskDelay(250 / portTICK_PERIOD_MS);  // Delay for 250ms
+        digitalWrite(LED2_PIN, HIGH);  
+        vTaskDelay(250 / portTICK_PERIOD_MS);  
 
-        digitalWrite(LED2_PIN, LOW);  // LED OFF
-        vTaskDelay(250 / portTICK_PERIOD_MS);  // Delay for 250ms
+        digitalWrite(LED2_PIN, LOW);  
+        vTaskDelay(250 / portTICK_PERIOD_MS);  
     }
 }
