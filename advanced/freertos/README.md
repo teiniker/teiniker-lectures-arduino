@@ -27,8 +27,8 @@ Task, which must never be blocked.
 
 
 * [Tasks](tasks/)
+* [Mutex](mutex/)
 * [Queues](queues/)
-* Mutex
 * Semaphore
 
 ## References
