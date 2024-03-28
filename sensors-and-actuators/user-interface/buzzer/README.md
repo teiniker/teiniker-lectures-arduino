@@ -117,7 +117,7 @@ The following features are part of the **Arduino Core Library**:
 
 
 * **void noTone(uint8_t _pin)**\
-    Stops the generation of a square wave triggered by `tone()``. 
+    Stops the generation of a square wave triggered by `tone()`. 
     Has no effect if no tone is being generated.
 
     Parameters:
@@ -134,4 +134,4 @@ The following features are part of the **Arduino Core Library**:
 
 * [GitHub: Arduino Songs](https://github.com/robsoncouto/arduino-songs)
 
-*Egon Teiniker, 2020 - 2024, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
