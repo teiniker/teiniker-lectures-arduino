@@ -33,12 +33,14 @@ Key aspects of the CAN Bus system:
 
 A CAN 2.0 frame consists of several distinct parts, each serving a specific purpose:
 
+![Bus Frame](figures/CAN-BusFrame.png)
+
 1. **Start of Frame (SOF)**
     * A single dominant bit that marks the beginning of a frame. It's used to 
         synchronize all nodes on the network to the start of the message.
 
 2. **Arbitration Field**
-    * **Identifier** (11 bits for standard CAN 2.0A or 29 bits for extended CAN 2.0B): 
+    * **Message Identifier** (11 bits for standard CAN 2.0A or 29 bits for extended CAN 2.0B): 
         Determines the message's priority and its type (data or remote). 
         Lower numerical values have higher priority.
     * **Remote Transmission Request (RTR)** bit (1 bit): Differentiates between data 
@@ -56,7 +58,7 @@ A CAN 2.0 frame consists of several distinct parts, each serving a specific purp
     * Contains the actual **data being transmitted**. Its length is indicated by the 
         DLC and can be up to 8 bytes for CAN 2.0.
 
-5. **CRC Field**
+5. **CRC**
     * **CRC Sequence (15 bits)**: A cyclic redundancy check sequence that allows 
         receiving nodes to detect errors in the message.
     * **CRC Delimiter (1 recessive bit)**: Marks the end of the CRC sequence.
@@ -69,6 +71,10 @@ A CAN 2.0 frame consists of several distinct parts, each serving a specific purp
 
 7. **End of Frame (EOF)**
     * A sequence of 7 recessive bits indicating the end of a frame.
+
+A sequence of 3 recessive bits (**Intermission**) followed by bus idle time. 
+This allows for a brief pause between frames, ensuring that nodes have time 
+to process the received frame and prepare for the next one.
 
 The design of the CAN bus frame, with its detailed structure, ensures efficient 
 use of the network bandwidth, minimizes collision potential through priority-based 
@@ -101,7 +107,7 @@ Here's an overview of the different CAN frames:
     * The transmission of an error frame leads to automatic retransmission of the corrupted 
         frame unless it was deemed as an error passive.
 
-* Overload Frame: Used to request a delay between the transmission of messages. It's mainly 
+* **Overload Frame**: Used to request a delay between the transmission of messages. It's mainly 
     used to manage the receiver's ability to process incoming frames.
     * Similar to the error frame, it includes an Overload Flag followed by an Overload Delimiter.
     * Overload frames are used to manage congestion or to allow for additional processing 
