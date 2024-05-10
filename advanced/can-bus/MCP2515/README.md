@@ -60,9 +60,14 @@ physical and electrical characteristics of the CAN bus.
 
 ## Arduino and MCP2515 Module
 
-### Wiring
+### Wiring (Arduino Nano)
 
-![Arduino and MCP2515](figures/Arduino-Wiring.png)
+![Arduino Uno and MCP2515](figures/ArduinoUno-Wiring.png)
+
+
+### Wiring (Arduino Nano)
+
+![Arduino Nano and MCP2515](figures/Arduino-Wiring.png)
 
 ### Library 
 
@@ -132,9 +137,10 @@ struct can_frame {
 ```
 
 
-
 ## References
 
 * [Arduino MCP2515 CAN interface library](https://github.com/autowp/arduino-mcp2515)
+
+* [Create Your Own CAN Network With MCP2515 Modules and Arduino](https://lastminuteengineers.com/mcp2515-can-module-arduino-tutorial/?utm_content=cmp-true)
 
 *Egon Teiniker, 2020-2024, GPL v3.0* 
