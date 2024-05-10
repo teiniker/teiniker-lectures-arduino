@@ -13,10 +13,11 @@ void setup()
     mcp2515.setBitrate(CAN_500KBPS, MCP_8MHZ);
     mcp2515.setNormalMode();
 
+    Serial.begin(9600);
     dht.begin();
 }
 
-void map_uint32(uint8_t *data, uint32_t value)
+void map_int32(uint8_t *data, int32_t value)
 {
     uint8_t *ptr = (uint8_t *)&value;
     for(uint8_t i=0; i<sizeof(value); i++)
@@ -27,14 +28,13 @@ void map_uint32(uint8_t *data, uint32_t value)
 
 void loop() 
 {
-    uint32_t temperature = (int)(dht.readTemperature()*10.0);
-    uint32_t humidity = (int)(dht.readHumidity()*10.0);    
+    int32_t temperature = (int)(dht.readTemperature()*10.0);
+    int32_t humidity = (int)(dht.readHumidity()*10.0);    
 
     msg.can_id = 0x33;
     msg.can_dlc = 8;
-    map_uint32(msg.data, temperature);
-    map_uint32(msg.data + 4, humidity);
+    map_int32(msg.data, temperature);
+    map_int32(msg.data + 4, humidity);
     mcp2515.sendMessage(&msg);
-
     delay(1000);                            
 }
