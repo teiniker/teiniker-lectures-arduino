@@ -18,8 +18,8 @@ void setup()
     mcp2515.setBitrate(CAN_500KBPS, MCP_8MHZ);
     mcp2515.setNormalMode();
 
-     lcd.init();
-     lcd.backlight();
+    lcd.init();
+    lcd.backlight();
 }
 
 
@@ -41,14 +41,17 @@ void loop()
         if(msg.can_id == LCD_MESSAGE_ID0)
         {
             msg_to_string(&msg, lcd_string);
-            lcd.clear();
+            //lcd.clear();
+            lcd.setCursor(0,0);
+            lcd.print("                ");
             lcd.setCursor(0,0);
             lcd.print(lcd_string);
         }
         else if(msg.can_id == LCD_MESSAGE_ID1)
         {
             msg_to_string(&msg, lcd_string);
-            lcd.clear();
+            lcd.setCursor(0,1);
+            lcd.print("                ");
             lcd.setCursor(0,1);
             lcd.print(lcd_string);
         }
