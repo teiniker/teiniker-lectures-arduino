@@ -22,7 +22,7 @@ const int gH = 784;
 const int gSH = 830;
 const int aH = 880;
  
-const int buzzerPin = 8;
+const int buzzerPin = 3;
 const int ledPin1 = 12;
 const int ledPin2 = 13;
  
