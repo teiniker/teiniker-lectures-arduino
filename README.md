@@ -11,8 +11,6 @@ includes both software and hardware aspects.
   
 * [Sensors and Actuators](sensors-and-actuators/)
 
-* [Advanced Arduino Programming](advanced/)
-
 ## References
 * Michael Margolis, Brian Jepson, Nicholas Robert Weldin. **Arduino Cookbook**. O'Reilly, 2020
 * Norman Dunbar. **Arduino Software Internals**. APress, 2020
