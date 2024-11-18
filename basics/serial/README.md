@@ -144,4 +144,4 @@ _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1
 * [Arduino Core: HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
 * [Arduino Core: Print.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Print.h)
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 

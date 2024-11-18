@@ -1,32 +1,73 @@
 # Microcontroller Programming Basics
 
-The basic programming techniques for microcontrollers are shown using 
-the **ATMega328P**. The techniques used can also easily be applied to 
-other microcontrollers as well.
+This section provides an introduction to **microcontroller programming**
+using the **ATMega328P** microcontroller. The ATMega328P is a popular
+microcontroller used in many embedded systems, including the **Arduino**.
 
-The microcontroller directly incorporates the **hardware components** used:
+
+## CPU vs. Microcontroller
+
+A **CPU (Central Processing Unit)** and a **Microcontroller** are both essential 
+computing devices but are designed for different purposes and contexts.
+
+* **CPU**:
+    * The CPU is the central component of a computer system, responsible for 
+        **executing instructions**.
+    * It is part of a larger system that includes other components like RAM, 
+        storage, and input/output devices.
+
+* **Microcontroller**:
+    * A microcontroller is an **integrated system** that combines a **CPU**, 
+        **memory (RAM and ROM)**, and **input/output peripherals** on 
+        a single chip.
+    * Designed for specific, dedicated tasks in **embedded systems**.
+
+![CPU vs. Microcontroller](figures/CPUvsMicorcontroller.png)
+
+
+## Peripherals
+
+Microcontrollers directly incorporates some **I/O hardware components**:
 
 * [Serial Communication (UART)](serial/)
+
 * [I/O Ports](io-ports/)
-* [Memory](memory/)
+
+* [Memory (Flash, SRAM, EEPROM)](memory/)
+
+* ...
+
+
+## Hardware Abstraction
+
+The use of **libraries and frameworks** enables an abstraction from the concrete 
+microcontroller hardware - **Hardware Abstraction Layer (HAL)**. 
+
+This makes it easy to get **applications running on different boards** 
+implementing the same HAL.
+
+* [Register Programming](hardware-abstraction/register-programming/io-ports/)
+    * Example: [Port Extension (74HC595)](hardware-abstraction/port-extension/)
+
+* [Interrupts](hardware-abstraction/interrupts/)
+
+* [Arduino Libraries](hardware-abstraction/arduino-library/)
+
+* [Arduino FRamework and Standard Libraries](libraries/)
+
+
+
+## Programming Techniques
 
 In addition to the use of hardware components, the following 
-**programming techniques** are also used in the context of microcontroller 
+**programming techniques** are commonly used in the context of microcontroller 
 programming:
 
 * [Timing and Scheduling](timing/)
+
 * [State Machines](state-machines/)
+
 * [Object-Oriented Programming](oop/)
 
-Finally, the use of **libraries and frameworks** enables an abstraction 
-from the concrete microcontroller - **Hardware Abstraction Layer (HAL)**. 
-This makes it easy to get applications running on different boards 
-implementing the same HAL API.
-
-* [Hardware Abstraction](libraries/)
-    * [Register Programming](hardware-abstraction/register-programming/io-ports/)
-    * Example: [Port Extension (74HC595)](hardware-abstraction/port-extension/)
-    * [Interrupts](hardware-abstraction/interrupts/)
-    * [Create Arduino Libraries](hardware-abstraction/arduino-library/)
 
 *Egon Teiniker, 2020-2024, GPL v3.0* 
