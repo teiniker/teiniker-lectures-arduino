@@ -5,7 +5,7 @@ includes both software and hardware aspects.
 
 * [Introduction](introduction/)
 
-* [Computer Architectures](hardware/computer-architectures)
+* [Computer Architectures](computer-architectures/)
 
 * [Microcontroller Programming Basics](basics/)
   
