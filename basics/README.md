@@ -70,4 +70,9 @@ programming:
 * [Object-Oriented Programming](oop/)
 
 
+## References
+
+* Daniele Lacamera. **Embedded Systems Architecture**. Packt Publishing, 2023.
+
+
 *Egon Teiniker, 2020-2024, GPL v3.0* 
