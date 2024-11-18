@@ -53,7 +53,7 @@ implementing the same HAL.
 
 * [Arduino Libraries](hardware-abstraction/arduino-library/)
 
-* [Arduino FRamework and Standard Libraries](libraries/)
+* [Arduino Framework and Standard Libraries](libraries/)
 
 
 
