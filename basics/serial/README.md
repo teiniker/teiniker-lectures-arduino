@@ -11,7 +11,7 @@ Thus, if you use these functions, you cannot also use pins 0 and 1 for digital i
 We can use the Arduino environment's built-in **serial monitor** to communicate with an Arduino board. 
 In the monitor, we select the same baud rate used in the call to `begin()`
 
-A main area of application for Serial is the **logging of data or events** during program 
+A main area of application for `Serial` is the **logging of data or events** during program 
 execution for **debugging purposes**.
 
 _Example:_ [Tinkercad: Serial Logging](https://www.tinkercad.com/things/geaAqDXbDxK) 
