@@ -1,28 +1,27 @@
 # Timer Interrupts 
 
 Timer interrupts don’t use external signals. Instead, these interrupts are 
-generated in software, and their timing is based upon the Arduino Uno’s 16 MHz 
-clock oscillator.
+generated in software, and their timing is based upon the Arduino Uno’s 16 MHz clock oscillator.
 
 The Arduino Uno has three internal timers:
 * Timer0 (8bits)
 * Timer1 (16bits) 
 * Timer2 (8bits)
 
-The number of bits determines the maximum number that the timer can count to, 
-256 for the 8-bit timers and 65,536 for the 16-bit one.
+The number of bits determines the maximum number that the timer can count
+to, 256 for the 8-bit timers and 65,536 for the 16-bit one.
 
 ## Timer 1
 
 To create a delay of 1 second using Timer 1 and to toggle an LED 
-connected to Pin 2 on an Arduino Uno, we will need to set up Timer 1 
-in a way that it triggers an interrupt every second. 
-Upon each interrupt, you can then toggle the state of the LED.
+connected to Pin 2 on an Arduino Uno, we will need to **set up Timer 1 
+in a way that it triggers an interrupt every second**.
 
-_Example:_ TinkerCAD [Timer 1 Interrupt - Toggle LED](https://www.tinkercad.com/things/61XNihYUyhI-timer1-interrupt)
+Upon each interrupt, we can then toggle the state of the LED.
+
+_Example:_ [TinkerCAD: Timer 1 Interrupt - Toggle LED](https://www.tinkercad.com/things/61XNihYUyhI-timer1-interrupt)
 
 ![Timer 1 Interrupt](figures/Timer1Interrupt-LED.png)
-
 
 ```C++
 void setup() 
