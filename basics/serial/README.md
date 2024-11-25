@@ -42,6 +42,9 @@ _Example:_ [Tinkercad: Serial Parse Integer](https://www.tinkercad.com/things/d7
 
 _Example:_ [Tinkercad: Serial Parse Float](https://www.tinkercad.com/things/aAU1H4Gq5DF)
 
+_Example:_ [Tinkercad: Serial Parse String](https://www.tinkercad.com/things/iZkRJYklDiq-serial-parse-string)
+
+
 
 ## Arduino Library Functions
 
