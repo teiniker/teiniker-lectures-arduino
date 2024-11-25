@@ -42,8 +42,7 @@ _Example:_ [Tinkercad: Digital Output](https://www.tinkercad.com/things/bkjRath1
 
 ### Digital Input
 
-Arduino (Atmega) pins **default to inputs**, so they don't need to be explicitly 
-declared as inputs with `pinMode()` when you're using them as inputs. 
+Arduino (Atmega) pins **default to inputs**. 
 
 Pins configured this way are said to be in a **high-impedance state**. 
 Input pins make extremely small demands on the circuit that they are sampling, 
@@ -77,27 +76,26 @@ _Example:_ [Tinkercad: Digital Input - Pull-Up](https://www.tinkercad.com/things
 
 # Analog Ports
 
-The analog pins can be used identically to the digital pins, using the aliases A0 
-(for analog input 0), A1, etc. 
+The analog pins can be used identically to the digital pins, using the aliases `A0` 
+(for analog input 0), `A1`, etc. 
 
 ## Analog Input
 The analog input pins support **10-bit analog-to-digital conversion (ADC)** using the 
 `analogRead()` function. The converter is returning integers from **0 to 1023**. 
  
-Most of the analog inputs can also be used as digital pins: analog input 0 as 
-digital pin 14 through analog input 5 as digital pin 19. 
- 
-Analog inputs 6 and 7 (present on the Mini and BT) cannot be used as digital pins.
+Most of the analog inputs can also be used as digital pins: analog input `0` as 
+digital pin `14` through analog input `5` as digital pin `19`. 
  
 _Example:_ [Tinkercad: Analog Input](https://www.tinkercad.com/things/0TfvqHrWhPL)
 
-![Digital Input](figures/AnalogInput.png)
+![Analog Input](figures/AnalogInput.png)
+
 
 ## Analog Output (PWM) 
 **Pulse Width Modulation**, or PWM, is a technique for getting analog results with digital 
 means. Digital control is used to create a square wave, a signal switched between 
-on and off. This on-off pattern can simulate voltages in between the full Vcc of the board
-and off (0 Volts) by changing the portion of the time the signal spends on versus the 
+on and off. This on-off pattern can simulate voltages in between the full `Vcc` of the board
+and off (`0` Volts) by changing the portion of the time the signal spends on versus the 
 time that the signal spends off. 
 The duration of "on time" is called the **pulse width**. 
 
@@ -125,4 +123,4 @@ _Example:_ [Tinkercad: Analog Output PWM (Software)](https://www.tinkercad.com/t
 * [PWM](https://www.arduino.cc/en/Tutorial/Foundations/PWM)
 
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2024, GPL v3.0*
