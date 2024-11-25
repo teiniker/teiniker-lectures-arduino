@@ -29,11 +29,15 @@ computing devices but are designed for different purposes and contexts.
 
 Microcontrollers directly incorporates some **I/O hardware components**:
 
-* [Serial Communication (UART)](serial/)
-
-* [I/O Ports](io-ports/)
-
 * [Memory (Flash, SRAM, EEPROM)](memory/)
+
+* [Interrupts and Timers](peripherals/interrupts/)
+
+* [I/O Ports](peripherals/io-ports/)
+
+* [Serial Communication (UART)](peripherals/serial/)
+
+* [I2C Bus](peripherals/i2c/)
 
 * ...
 
@@ -47,9 +51,8 @@ This makes it easy to get **applications running on different boards**
 implementing the same HAL.
 
 * [Register Programming](hardware-abstraction/register-programming/io-ports/)
+    * Example: [Digital I/O](hardware-abstraction/register-programming/io-ports/)
     * Example: [Port Extension (74HC595)](hardware-abstraction/port-extension/)
-
-* [Interrupts](hardware-abstraction/interrupts/)
 
 * [Arduino Libraries](hardware-abstraction/arduino-library/)
 
