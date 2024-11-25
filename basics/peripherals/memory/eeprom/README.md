@@ -24,7 +24,7 @@ The Arduino UNO uses the **ATmega328P** microcontroller with an EEPROM
 that can store **1024 bytes**.
 
 
-_Example:_ [Arduino EEPROM Bytes](https://www.tinkercad.com/things/kVW7oh3rndY)
+_Example:_ [TinkerCAD: EEPROM Bytes](https://www.tinkercad.com/things/kVW7oh3rndY)
 
 This example shows how to write and read single bytes into and from the EEPROM.
 
@@ -78,10 +78,10 @@ Note that instead of `EEPROM.write()` we can also use `EEPROM.update()`
 to overwrite stored values only if they need to be changed (maximum write/erase cycles).
 
 
-_Example_: [Arduino EEPROM Calibration](https://www.tinkercad.com/things/hYf9OOX57nT)
+_Example_: [TinkerCAD: EEPROM Calibration](https://www.tinkercad.com/things/hYf9OOX57nT)
 
 In the given example, an analog value will be read from `A0` and the measured voltage
-is extended by an amplification factor (`gain`) and an `offset`.
+is extended by an amplification factor `gain` and an `offset`.
 
 ![Arduino EEPROM](EEPROM.png)
 
@@ -99,15 +99,15 @@ void setup()
     Serial.print("EEPROM size: ");
     Serial.println(EEPROM.length());
   
-    EEPROM.put(0x00, 2.0);	// gain
+    EEPROM.put(0x00, 2.0);	    // gain
     EEPROM.put(0x04, -5.0); 	// offset
 }
 ```
-In practice, the values would only be written to the EEPROM once (e.g. via the serial interface) 
-and not with each `setup()`.
+In practice, the values would only be written to the EEPROM once 
+(e.g. via the serial interface) and not with each `setup()`.
 
-In the `loop()` function, we read the values for `gain` and `offset` from the EEPROM
-using the `get()` operation.
+In the `loop()` function, we read the values for `gain` and `offset` 
+from the EEPROM using the `get()` operation.
 ```C
 void loop() 
 {
@@ -191,4 +191,4 @@ The operation returns a reference to the data passed in.
 
 * [EEPROM Library V2.0 for Arduino](https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/EEPROM)
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
