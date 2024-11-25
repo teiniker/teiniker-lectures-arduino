@@ -8,12 +8,12 @@ The **ATmega328P** family has only two of them:
 These are high-priority interrupts, only REST is higher, and `INT0` takes 
 priority if two arrive together.
 
-_Example:_ External Interrupt 
+_Example:_ [TinkerCAD: External Interrupt](https://www.tinkercad.com/things/3pUnUwfenLv)
+
+The given simulation shows how a long running task (blinking the green LED) 
+can be interrupted.
 
 ![External Interrupt](figures/ExternalInterrupt.png)
-
-In practice, switches bounce quite a lot, so we could use the 
-**MC14490 Hex Contact Bounce Eliminator** chip to improve our circuit.
 
 The following code lets the green LED blink (one second on, one second off).
 If we push the button, immediately the red LED will switch its state. 
@@ -49,22 +49,16 @@ void setup()
 
 void loop()
 {
-  	// Cyclic Timing
-    while(millis() < timestamp + CYCLE_TIME);  
-    timestamp = millis();
-  
   	// IO Handling
-  	digitalWrite(LED_GREEN_PIN, led_green);  
+  	digitalWrite(LED_GREEN_PIN, led_green);
+  
+  	// wait
+  	delay(1000);
   
   	// Processing
   	led_green = !led_green;
 }
 ```
-
-
-_Example:_ Tinkercad [Arduino: External Interrupt](https://www.tinkercad.com/things/3pUnUwfenLv)
-
-The given simulation shows how a long running task (blinking the green LED) can be interrupted.
 
 
 ## Interrupt Library Operations

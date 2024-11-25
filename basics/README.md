@@ -31,9 +31,9 @@ Microcontrollers directly incorporates some **I/O hardware components**:
 
 * [Memory (Flash, SRAM, EEPROM)](memory/)
 
-* [Interrupts and Timers](peripherals/interrupts/)
-
 * [I/O Ports](peripherals/io-ports/)
+
+* [Interrupts and Timers](peripherals/interrupts/)
 
 * [Serial Communication (UART)](peripherals/serial/)
 

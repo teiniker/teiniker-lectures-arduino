@@ -15,8 +15,8 @@ In its basic form, an interrupt works like this:
 _Figure: Interaction between the loop() function and the ISR at runtime (DroneBot Workshop)_ 
 
 Interrupts are great for **monitoring events** such as switch presses or alarm 
-triggers, which occur spasmodically. They are also the proper choice when you 
-need to measure input pulses accurately.
+triggers. They are also the proper choice when we need to measure input pulses 
+accurately.
 
 Types of Interrupts:  
 * **Hardware Interrupt**: It happens when an external event occurs like an external 
