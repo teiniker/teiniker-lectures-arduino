@@ -65,19 +65,6 @@ The I2C protocol’s simplicity and efficiency make it a go-to choice for
 short-distance communication between microcontrollers and peripheral devices.
 
 
-## I2C Applications
-
-* Communicating with sensors (e.g., temperature, humidity, accelerometers).
-
-* Interfacing with real-time clocks (RTC).
-
-* Connecting display devices like OLEDs and LCDs.
-
-* Accessing EEPROMs for non-volatile data storage.
-
-* Driving GPIO expanders, DACs, or ADCs.
-
-
 ## I2C on Arduino
 
 The Arduino has dedicated pins for I2C, which have **built-in pull-up resistors** 
@@ -91,6 +78,19 @@ For Arduino Uno R3 boards, these are pins A4 and A5:
 * **VCC** and **GND** are also available for power supply.
 
 In the Arduino Uno R3 version, there is another set of I2C pins near the USB socket.
+
+
+## I2C Applications
+
+* Communicating with sensors (e.g., temperature, humidity, accelerometers).
+
+* Interfacing with real-time clocks (RTC).
+
+* Connecting display devices like OLEDs and LCDs.
+
+* Accessing EEPROMs for non-volatile data storage.
+
+* Driving GPIO expanders, DACs, or ADCs.
 
 
 ## Examples
