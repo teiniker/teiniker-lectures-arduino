@@ -92,4 +92,4 @@ The following bit manipulation functions are declared in the `wiring_private.h` 
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
     * Chapter 3: Arduino Language Reference
 
-*Egon Teiniker, 2020 - 2023, GPL v3.0* 
+*Egon Teiniker, 2020 - 2024, GPL v3.0* 

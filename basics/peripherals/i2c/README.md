@@ -114,8 +114,11 @@ The following methods are provided by the `Wire` class:
 * **void Wire.begin()**\
     Initializes the `Wire` library and join the I2C bus as a **Master**. 
     This function should normally be called only once.
+
+
 * **void Wire.begin(uint8_t address)**\
     If the Arduino join the bus as a **Slave**, a 7-bit address is specified.
+
 
 * **void Wire.end()**\
     Disable the `Wire` library, reversing the effect of `Wire.begin()`.
@@ -128,40 +131,100 @@ The following methods are provided by the `Wire` class:
 
     It returns the number of bytes returned from the peripheral device.
 
+
 * **void Wire.beginTransmission(uint8_t address)**\
     Begins a transmission to the I2C peripheral device (Slave) with the given address. 
     The parameter `address` is the 7-bit address of the device to transmit to.
 
+
 * **uint8_t Wire.endTransmission(void)**\
     After `beginTransmission()`, the library queues bytes for transmission with the `write()` function and transmit them by calling `endTransmission()`.
+
 
 * **size_t Wire.write(uint8_t value)**\
    **size_t write(const uint8_t *data, size_t len)**\
    **size_t Wire.write(String value)**\
-
     Writes data from a peripheral device (Slave) in response to a request from a controller device (Master), 
     or queues bytes for transmission from a controller (Master) to peripheral device (Master) - in-between calls to `beginTransmission()` and `endTransmission()`.
 
     Returns the number of bytes written.
 
-* Wire.read()
+
+* **int Wire.read(void)**\
+    This function reads a byte that was transmitted from a peripheral 
+    device to a controller device after a call to `requestFrom()` or 
+    was transmitted from a controller device to a peripheral device. 
+    `read()` inherits from the `Stream` utility class.
+
+    Returns the next byte received.
 
 
+* **int Wire.available(void)**\
+    This function returns the number of bytes available for retrieval 
+    with `read()`. This function should be called on a controller device 
+    after a call to `requestFrom()` or on a peripheral inside the 
+    `onReceive()` handler. 
+    `available()` inherits from the `Stream` utility class.
 
-* Wire.available()
+    Returns the number of bytes available for reading.
 
 
-* Wire.setClock()
+* **void Wire.setClock(uint32_t)**\
+    This function modifies the clock frequency for I2C communication. 
+    I2C peripheral devices have no minimum working clock frequency, 
+    however 100KHz is usually the baseline.
 
-* Wire.onReceive()
+    `clockFrequency`: the value (in Hertz) of the desired communication 
+    clock. Accepted values are `100000` (standard mode) and `400000` 
+    (fast mode). Some processors also support `10000` (low speed mode), 
+    `1000000` (fast mode plus) and `3400000` (high speed mode). Please 
+    refer to the specific processor documentation to make sure the desired 
+    mode is supported.
 
-* Wire.onRequest()
 
-* Wire.setWireTimeout()
+* **void Wire.onReceive(void(*)(int) handler)**\
+    This function registers a function to be called when a peripheral 
+    device receives a transmission from a controller device.
 
-* Wire.clearWireTimeoutFlag()
+    `handler`: the function to be called when the peripheral device 
+    receives data; this should take a single `int` parameter (the number 
+    of bytes read from the controller device) and return nothing.
 
-* Wire.getWireTimeoutFlag()
+
+* **void Wire.onRequest(void(*)(void) handler)**\
+    This function registers a function to be called when a controller 
+    device requests data from a peripheral device.
+
+    `handler`: the function to be called, takes no parameters and 
+    returns nothing.
+
+
+* **void Wire.setWireTimeout(uint32_t timeout = 25000, bool reset_with_timeout = false)**\
+    Sets the timeout for Wire transmissions in master mode.
+
+    `timeout`: timeout in microseconds, if zero then timeout checking is disabled.
+
+    `reset_on_timeout`: if true then `Wire` hardware will be automatically reset 
+    on timeout.
+
+
+* **void Wire.clearWireTimeoutFlag(void)**\
+    Clears the timeout flag.
+
+    Timeouts might not be enabled by default. See the documentation for 
+    `Wire.setWireTimeout()` for more information on how to configure 
+    timeouts and how they work.
+
+
+* **bool Wire.getWireTimeoutFlag(void)**\
+    Checks whether a timeout has occurred since the last time the flag 
+    was cleared.
+
+    Returns the current value of the flag.
+
+    This flag is set whenever a timeout occurs and cleared when 
+    `Wire.clearWireTimeoutFlag()` is called, or when the timeout is 
+    changed using `Wire.setWireTimeout()`.
 
 
 ## References
@@ -171,5 +234,7 @@ The following methods are provided by the `Wire` class:
 * [Expand Arduino’s IO | Interfacing PCF8574 with Arduino](https://www.electronicshub.org/interfacing-pcf8574-with-arduino/)
 
 * [Arduino: Wire Library](https://www.arduino.cc/reference/en/language/functions/communication/wire/)
+
+* [GitHub: Arduino Core - Wire](https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/Wire)
 
 *Egon Teiniker, 2020-2024, GPL v3.0* 
