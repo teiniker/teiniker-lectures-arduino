@@ -80,28 +80,23 @@ short-distance communication between microcontrollers and peripheral devices.
 
 ## I2C on Arduino
 
-On Arduino Uno the following ports are use:
-* 5V
-* GND
-* A4 (SDA)
-* A5 (SCL)
+The Arduino has dedicated pins for I2C, which have **built-in pull-up resistors** 
+as required by the I2C protocol.
 
-_Example:_ [TinkerCAD: I2C Port Extension (PCF8574)](https://www.tinkercad.com/things/fuRwUTuL8oF-arduino-i2c-port-extension-pcf8574)
+![Uno R3 I2C Port](figures/Uno-R3-I2C.png)
 
-![I2C Port Extension](figures/I2C-PCF8574.png)
+For Arduino Uno R3 boards, these are pins A4 and A5: 
+* Pin **A4** is the **SDA** pin
+* Pin **A5** is the **SCL** pin
+* **VCC** and **GND** are also available for power supply.
 
-By interfacing **PCF8574** with Arduino UNO, we can increase the number 
-of IO pins of your Arduino so that we don’t have to worry about connecting 
-several IO devices like LEDs, LCD Display, Motors, Sensors etc.
+In the Arduino Uno R3 version, there is another set of I2C pins near the USB socket.
 
-This IO port extension based on PCF8574 is also available as an I2C module.
 
-![IO Port Extension](figures/I2C-PCF8574-IOModule.png)
+## Examples
 
-The I2C bus connection consists of the lines `Vcc`, `GND`, `SDA`, and `SCL`. 
-In addition, the address of the respective module can be changed using three 
-jumpers.
-This means that several modules can be operated in parallel on the same I2C bus.
+* [I2C Port Extension using the PCF8574](i2c-port-extension/)
+
 
 
 ## Wire Library
