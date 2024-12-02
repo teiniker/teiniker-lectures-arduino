@@ -50,6 +50,7 @@ In this example the 74HC595 is used to address 8 LEDs. Only 3 pins on the Arduin
 
 ![74HC595 Example](figures/74HC595-Example.png)
 
+
 ## Source Code: Register Programming 
 
 It starts with defining the required Arduino pins.
@@ -111,7 +112,7 @@ void loop()
 
 As a result of this example, the 8 LEDs will be turned on in sequence and then turned off again.
 
-_Example:_ Tinkercad - [Register Port Extension](https://www.tinkercad.com/things/bJAyWSbxPoe-arduino-digital-port-extension-74hc595-register) 
+_Example:_ [TinkerCAD: 74HC595 Port Extension](https://www.tinkercad.com/things/bJAyWSbxPoe-arduino-digital-port-extension-74hc595-register) 
 
 
 
@@ -119,10 +120,10 @@ _Example:_ Tinkercad - [Register Port Extension](https://www.tinkercad.com/thing
 
 The Arduino Framework provides functions to work directly with shift registers.
 
-_Example:_ Tinkercad - [Port Extension using 74HC595](https://www.tinkercad.com/things/8iZWKXwZWYk-arduino-digital-port-extension-74hc595)
+_Example:_ [Tinkercad: 74HC595 Port Extension using `shiftOut()`](https://www.tinkercad.com/things/8iZWKXwZWYk-arduino-digital-port-extension-74hc595)
 
 
-IN this version, the `update_shift_register()` function sets the `LATCH_PIN` to `LOW` and 
+In this version, the `update_shift_register()` function sets the `LATCH_PIN` to `LOW` and 
 then calls the Arduino `shiftOut()` function to shift the contents of the `leds` variable in 
 the shift register before setting the `LATCH_PIN` back to `HIGH`.
 
@@ -134,7 +135,6 @@ void update_shift_register(uint8_t leds)
    digitalWrite(LATCH_PIN, HIGH);
 }
 ```
-
 
 In the context of shift regsters, we can use the following **library functions** 
 from the Arduino Framework:
@@ -218,8 +218,8 @@ from the Arduino Framework:
 
 ## Source Code: Object-Oriented Programming 
 
-The `PortExtension` class encapsulates all necessary data (pin assignments, data bytes) and 
-provides methods for writing individual bits or bytes.
+The `PortExtension` class encapsulates all necessary data (pin assignments, 
+data bytes) and provides methods for writing individual bits or bytes.
 
 ```C++
 class PortExtension
@@ -265,8 +265,8 @@ class PortExtension
 };
 ```
 
-After instantiating the `PortExtension` class, you can work with the `port` object as if it 
-were a component of the microcontroller.
+After instantiating the `PortExtension` class, you can work with the `port` 
+object as if it were a component of the microcontroller.
 
 ```C++
 PortExtension port(LATCH_PIN, CLOCK_PIN, DATA_PIN);
@@ -284,7 +284,7 @@ void loop()
 }
 ```
 
-_Example:_ Tinkercad - [OOP Port Extension](https://www.tinkercad.com/things/a1W8GGV5kMr-arduino-digital-port-extension-74hc595-oop)
+_Example:_ [TinkerCAD: 74HC595 Port Extension OOP](https://www.tinkercad.com/things/a1W8GGV5kMr-arduino-digital-port-extension-74hc595-oop)
 
 
 

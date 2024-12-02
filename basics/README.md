@@ -50,14 +50,7 @@ microcontroller hardware - **Hardware Abstraction Layer (HAL)**.
 This makes it easy to get **applications running on different boards** 
 implementing the same HAL.
 
-* [Register Programming](hardware-abstraction/register-programming/io-ports/)
-    * Example: [Digital I/O](hardware-abstraction/register-programming/io-ports/)
-    * Example: [Port Extension (74HC595)](hardware-abstraction/port-extension/)
-
-* [Arduino Libraries](hardware-abstraction/arduino-library/)
-
-* [Arduino Framework and Standard Libraries](libraries/)
-
+[More...](hardware-abstraction/README.md)
 
 
 ## Programming Techniques
