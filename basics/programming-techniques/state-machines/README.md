@@ -136,4 +136,4 @@ Using this pattern, SMs can always be converted into C code using the same imple
 * [State machines in C](https://yakking.branchable.com/posts/state-machines-in-c/)
 * [UML Tool: Modelio](https://www.modelio.org/) 
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 

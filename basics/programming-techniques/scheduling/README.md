@@ -2,9 +2,9 @@
 
 ## Hardware Setup
 
-For the following examples we can use a simple circuit of two LEDs.
+Running the following examples, we can use a simple circuit of two LEDs.
 
-![Arduino Uno Board](doc/TwoLEDs.png)
+![Arduino Uno Board](figures/TwoLEDs.png)
 
 
 ## delay() Function
@@ -158,7 +158,9 @@ _Example:_ [Arduino: Blink Scheduler](https://www.tinkercad.com/things/hBWwhvLwV
 * [Blink Without Delay](https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay)
 * [Using millis() for timing](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing)
 * [Arduino Tutorial: Using millis() Instead of delay()](https://www.norwegiancreations.com/2017/09/arduino-tutorial-using-millis-instead-of-delay/)
+
 * [Scan time of the PLC program](https://www.plcacademy.com/scan-time-of-the-plc-program/) 
+
 * [YouTube: Arduino Tutorial - Multitasking](https://youtu.be/YP9xQWqFOKg)
 
-*Egon Teiniker, 2020 - 2022, GPL v3.0* 
+*Egon Teiniker, 2020 - 2024, GPL v3.0* 
