@@ -1,4 +1,4 @@
-# Arduino Core 
+# Arduino Core Framework
 
 **Arduino Libraries** are a collection of code that makes it easy for us 
 to connect to a sensor, display, module, etc.
