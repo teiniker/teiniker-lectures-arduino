@@ -280,6 +280,8 @@ for common hardware components and functionalities.
 
 * Develop custom libraries for specific hardware components or functionalities.
 
+_Example_: [Arduino Core Framework](avr-core/README.md)
+
 
 
 *Egon Teiniker, 2020-2024, GPL v3.0*

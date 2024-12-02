@@ -7,8 +7,10 @@ The **Arduino Core** is a set of configurations and code libraries that
 realizes an hardware abstraction layer commonly used to program and interact 
 with a wide range of Arduino boards. 
 
+_Examples:_ [Arduino Boards](https://www.arduino.cc/en/hardware) 
+
 It includes definitions for the various I/O functions, as well as the 
-implementation of the Arduino language (a set of C/C++ functions) that 
+implementation of the **Arduino language** (a set of C/C++ functions) that 
 simplifies programming for these devices. 
 
 The core provides essential support for standard Arduino functions like 
