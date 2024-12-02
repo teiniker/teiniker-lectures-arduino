@@ -59,11 +59,11 @@ In addition to the use of hardware components, the following
 **programming techniques** are commonly used in the context of microcontroller 
 programming:
 
-* [Timing and Scheduling](timing/)
+* [Timing and Scheduling](programming-techniques/scheduling/)
 
-* [State Machines](state-machines/)
+* [State Machines](programming-techniques/state-machines/)
 
-* [Object-Oriented Programming](oop/)
+* [Object-Oriented Programming](programming-techniques/oop/)
 
 
 ## References

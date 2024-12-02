@@ -1,5 +1,10 @@
 # Timing and Task Scheduling
 
+In the context of embedded programming, cyclic processing and scheduling 
+are fundamental concepts for managing **how tasks or processes are executed** 
+in an embedded system. 
+
+
 ## Hardware Setup
 
 Running the following examples, we can use a simple circuit of two LEDs.
