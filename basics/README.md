@@ -29,7 +29,7 @@ computing devices but are designed for different purposes and contexts.
 
 Microcontrollers directly incorporates some **I/O hardware components**:
 
-* [Memory (Flash, SRAM, EEPROM)](memory/)
+* [Memory (Flash, SRAM, EEPROM)](peripherals/memory/)
 
 * [I/O Ports](peripherals/io-ports/)
 
