@@ -137,14 +137,14 @@ If we want to use the same functionality on different microcontrollers, we
 often have to exchange parts of the code within a function. This can be 
 achieved using pre-processor instructions for conditional compilation.
 
-_Example_: [TinkerCAD - Conditional compilation](https://www.tinkercad.com/things/fBEtVlXAG2W-arduino-7-segment-hardware-abstraction)
+_Example_: [TinkerCAD - 7 Segment Output](https://www.tinkercad.com/things/fBEtVlXAG2W-arduino-7-segment-hardware-abstraction)
 
-    This example shows the use of conditional compilation (`#define`, `#ifdef` and `#endif`) 
-    to allow variants of an implementation. We find this approach very often in Arduino 
-    libraries to adapt functionality to different Arduino boards.
+This example shows the use of conditional compilation (`#define`, `#ifdef` and `#endif`) 
+to allow variants of an implementation. We find this approach very often in Arduino 
+libraries to adapt functionality to different Arduino boards.
 
 
-_Example_: Conditional compilation for hardware-specific features (`cores/arduino/HardwareSerial.h`)
+_Example_: AVR Arduino Core - [HardwareSerial.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h)
 
 ```C++
 #if defined(UBRRH) || defined(UBRR0H)
@@ -230,7 +230,7 @@ Structure of an Arduino Library:
     about the library.
 
 
-_Example_: I2C library header file (`Wire.h`)
+_Example_: I2C library header file [Wire.h](https://github.com/arduino/ArduinoCore-avr/blob/master/libraries/Wire/src/Wire.h)
 ```C++
 #ifndef TwoWire_h
 #define TwoWire_h
@@ -245,7 +245,8 @@ extern TwoWire Wire;
 #endif    
 ```
 
-_Example_: I2C library implementation file (`Wire.cpp`)
+_Example_: I2C library implementation file [Wire.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/libraries/Wire/src/Wire.cpp)
+
 ```C++
 #include "Wire.h"
 
@@ -281,6 +282,9 @@ To do this, we will proceed step by step:
 
 We can therefore use our own libraries in exactly the same way as libraries 
 from sensor or motor manufacturers.
+
+
+_Example:_ [Arduino Logging Library](arduino-library/logging/)
 
 _Example:_ [Overview of the official Arduino libraries](https://reference.arduino.cc/reference/en/libraries/)
     
