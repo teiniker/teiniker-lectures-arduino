@@ -54,4 +54,4 @@ _Example:_ [EEPROM Data Memory](eeprom/)
 * [Arduino Memory Guide](https://docs.arduino.cc/learn/programming/memory-guide)
 * [Managing Arduino Memory: Flash, SRAM, EEPROM!](https://www.seeedstudio.com/blog/2021/04/26/managing-arduino-memory-flash-sram-eeprom/#:~:text=There%20are%20three%20types%20of,Erasable%20Programmable%20Read%2DOnly%20Memory)
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
