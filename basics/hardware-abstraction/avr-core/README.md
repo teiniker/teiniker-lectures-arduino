@@ -44,4 +44,4 @@ configuration files of the **Arduino AVR Boards platform**.
 
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
 
-*Egon Teiniker, 2020 - 2024, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 

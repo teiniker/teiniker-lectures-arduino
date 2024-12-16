@@ -71,7 +71,7 @@ By abstracting the hardware, application developers don't need to write code
 for each specific piece of hardware. Instead, they write against a standardized 
 interface (API), which simplifies the development process.
 
-### Macros and Conditional Compilation
+### Macros 
 
 Abstract hardware-specific details and enable compiling the same codebase for 
 different hardware targets.
@@ -131,6 +131,12 @@ Arduino boards or when modifying hardware configurations.
     * Respects scope and can ble scoped to namespaces or classes in C++.        
 
 
+### Conditional Compilation
+
+If we want to use the same functionality on different microcontrollers, we 
+often have to exchange parts of the code within a function. This can be 
+achieved using pre-processor instructions for conditional compilation.
+
 _Example_: [TinkerCAD - Conditional compilation](https://www.tinkercad.com/things/fBEtVlXAG2W-arduino-7-segment-hardware-abstraction)
 
     This example shows the use of conditional compilation (`#define`, `#ifdef` and `#endif`) 
@@ -188,14 +194,41 @@ AVR-based Arduino boards come with varying numbers of hardware UARTs:
 * **Arduino Leonardo**, **Micro**: Have one or more UARTs with different configurations.
 
 
-### Header Files for Interface Separation
+### Arduino Libraries 
 
-Separate the hardware abstraction interface from its implementation, promoting 
-modularity and easier maintenance.
+An Arduino library is a collection of code that provides **reusable functions, 
+objects, and resources** to simplify programming for specific hardware components,
+protocols, or functionalities in Arduino projects. 
 
-* Declare interfaces in header files `.h`, and implement them in source files `.c`.
+Libraries allow developers to **extend the Arduino environment** with pre-written 
+code, avoiding the need to reinvent solutions for common tasks such as controlling 
+a sensor, communicating via a protocol, or driving a motor.
 
-* Allow different implementations to be swapped without altering application code.
+
+Structure of an Arduino Library:
+
+* **Library Folder**: The library files are stored in a dedicated folder, named 
+    after the library. For example, the library `EEPROM` would be stored in a 
+    folder named `EEPROM`.
+
+* **Header File (`.h`)**: 
+    * Contains the **declarations of the classes, methods, and variables** used in 
+    the library.
+    * Includes preprocessor directives like `#ifndef`, `#define`, and `#endif` 
+    to prevent multiple inclusions.
+
+* **Source File (`.cpp`)**: Contains the implementation of the methods declared 
+    in the header file.
+
+* **Keywords File (`keywords.txt`)**: Optional file used to highlight keywords 
+    in the Arduino IDE.
+
+* **Examples Folder**: A folder containing example sketches showing how to use 
+    the library.
+
+* **Library Properties (`library.properties`)**: A file that contains metadata 
+    about the library.
+
 
 _Example_: I2C library header file (`Wire.h`)
 ```C++
@@ -231,57 +264,52 @@ void TwoWire::begin(void)
 //...
 ```
 
-Creating an **alternative implementation** for the `Wire.h` header involves 
-providing a new version of the `Wire.cpp` (and potentially `Wire.h`) files 
-that conform to the expected interface but offer different functionalities, 
-optimizations, or support for different hardware configurations.
+We can also **implement our own Arduino library**. 
+To do this, we will proceed step by step:
 
-Each implementation file is compiled into an **object file**, e.g. `Wire.cpp` 
-becomes `Wire.o`. These object files are linked by the **linker** to the final 
-executable.
-By using different implementations (e.g. `Wire.cpp`), different object files 
-can be created and linked during the build process.
+* Step 1: [Implement the functionality](arduino-library/led-version1/) 
+    We implement the desired functionality in the form of functions or classes. 
+    The code is currently in an `.ino` file.
 
-_Example_: [Port Extension (74HC595)](hardware-abstraction/port-extension/README.md)
+* Step 2: [Separation into `.h` and `.cpp` files](arduino-library/led-version2/)
+    We put the implementation of the functionality into a separate `.cpp` file 
+    and create a header file (`.h`) to define the API.
 
+* Step 3: [Creation of a library](arduino-library/led-version3/)
+    We create a library folder with the necessary files and structure (including
+    examples). Filally we zip the library folder and import it into the Arduino IDE.
 
-### Modularization and Separation of Concerns
+We can therefore use our own libraries in exactly the same way as libraries 
+from sensor or motor manufacturers.
 
-Organize code into **distinct modules** based on functionality, each handling 
-specific aspects of hardware abstraction.
-
-* Create separate modules for different hardware components (e.g., UART, SPI, I2C).
-
-* Ensure that higher-level application code interacts only with the abstraction 
-    layer, not the hardware directly.
-
-* By implementing the abstractions for hardware components in separate modules
-    (e.g. `Wire.h` and `Wire.cpp`), it is easy to link only the object files 
-    needed for a specific application in the build process.
-
-_Example_: [Build an Arduino Library](arduino-library/)
+_Example:_ [Overview of the official Arduino libraries](https://reference.arduino.cc/reference/en/libraries/)
+    
 
 
-### Object-Oriented Programming (OOP)
+### Arduino Core Framework
 
-OOP offers a set of principles and paradigms that can significantly enhance hardware 
-abstraction in embedded systems. Adopting OOP concepts—typically through languages 
-like C++ can lead to more modular, maintainable, and scalable codebases. 
+The Arduino Core Framework is the **foundation of the Arduino ecosystem**, 
+providing the essential functionality and abstractions required to write 
+and run code on a variety of microcontroller platforms supported by Arduino. 
 
-_Example_: [Port Extension (74HC595)](hardware-abstraction/port-extension/README.md)
+It acts as a **bridge between the hardware-specific details of a microcontroller 
+and the user-friendly APIs** that developers use in Arduino sketches.
 
+Concepts of the Arduino Core Framework:
 
-### Frameworks
+* **Platform Independence**: While the hardware capabilities of different 
+    microcontrollers vary widely, the Core Framework standardizes interactions, 
+    such as digital/analog I/O, timers, interrupts, and communication protocols.
 
-Leverage existing libraries and frameworks that provide high-level abstractions
-for common hardware components and functionalities.
+* **Layered Architecture**: The Arduino Core sits between the hardware abstraction 
+    layer (HAL) of a specific microcontroller and the high-level Arduino API 
+    exposed to users.
 
-* Use libraries like Arduino, mbed, or CMSIS to simplify hardware interaction.
+* **Extensibility**: It supports various microcontroller families (e.g., AVR, 
+    ESP32, Pi Pico) by allowing board manufacturers to provide their own 
+    hardware-specific implementations of the Core.
 
-* Develop custom libraries for specific hardware components or functionalities.
-
-_Example_: [Arduino Core Framework](avr-core/README.md)
-
+_Example_: [Arduino Core Framework for AVR microcontrollers](avr-core/README.md)
 
 
 *Egon Teiniker, 2020-2024, GPL v3.0*
