@@ -32,15 +32,15 @@ computing devices but are designed for different purposes and contexts.
 
 Microcontrollers directly incorporates some **I/O hardware components**:
 
-* [Memory (Flash, SRAM, EEPROM)](peripherals/memory/)
+* [Memory (Flash, SRAM, EEPROM)](memory/)
 
-* [I/O Ports](peripherals/io-ports/)
+* [I/O Ports](io-ports/)
 
-* [Interrupts and Timers](peripherals/interrupts/)
+* [Interrupts and Timers](interrupts/)
 
-* [Serial Communication (UART)](peripherals/serial/)
+* [Serial Communication (UART)](serial/)
 
-* [I2C Bus](peripherals/i2c/)
+* [I2C Bus](i2c/)
 
 * ...
 
