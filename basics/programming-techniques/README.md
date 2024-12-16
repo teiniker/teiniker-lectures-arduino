@@ -1,14 +1,15 @@
 # Programming Techniques
 
-In addition to the use of hardware components, the following 
-**programming techniques** are commonly used in the context of microcontroller 
-programming:
+In addition to the use of peripheral components and hardware abstraction, 
+the following **programming techniques** are commonly used in the context 
+of microcontroller programming:
 
-* [Timing and Scheduling](programming-techniques/scheduling/)
+* [Object-Oriented Programming](oop/)
 
-* [State Machines](programming-techniques/state-machines/)
+* [Timing and Scheduling](scheduling/)
 
-* [Object-Oriented Programming](programming-techniques/oop/)
+* [State Machines](state-machines/)
+
 
 
 ## References

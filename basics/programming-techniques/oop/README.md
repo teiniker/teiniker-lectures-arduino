@@ -1,10 +1,13 @@
-# Object-Oriented Programming 
+# Object-Oriented Programming (OOP)
 
-Object-Oriented Programming (OOP) is a programming paradigm that uses *objects* to 
-design software. It's a way of organizing and structuring software programs that 
-is based on the concept of objects, which can contain **data and code**: data in 
-the form of fields (often known as **attributes** or properties), and code, in the 
-form of procedures (often known as **methods**).
+OOP is a programming paradigm that uses **objects** to design software. 
+
+Object orientation a way of organizing and structuring software programs that 
+is based on the concept of objects, which can contain data and code: 
+
+* **data** in the form of fields (often known as **attributes** or properties)
+
+* **code** in the form of procedures (often known as **methods**).
 
 Here are the key concepts of OOP:
 
@@ -37,7 +40,7 @@ classes to be treated as instances of the same class through inheritance.
 It also refers to the ability of different methods to exist with the same 
 name but potentially different implementations.
 
-OOP languages include Java, C++, Python, and many others. Each of these 
+OOP languages include C++, Python, Java, and many others. Each of these 
 languages implements OOP concepts in slightly different ways, but the 
 underlying principles remain the same. 
 
@@ -247,6 +250,18 @@ operation belongs to.
 In an Arduino program you can save the `.h` and `.cpp` files in a 
 directory parallel to the `.ino` file. 
 These are then automatically taken into account during the build process.
+
+_Exaple:_ [Led class declaration and implementation](../../hardware-abstraction/arduino-library/led-version2/)
+
+
+## Examples and Exercises 
+
+_Example:_ [Port Extension (74HC595) - step-by-step to OOP](port-extension/README.md)
+
+_Example:_ [HC-SR04 Ultrasonic Sensor Library](../../../sensors-and-actuators/sensors/hc-sr04/lib/HC-SR04/)
+
+_Example:_ [Arduino Library: Wire](https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/Wire)
+
 
 ## References
 * Josh Lospinoso. **C++ Crash Course**. No Starch Press, 2019
