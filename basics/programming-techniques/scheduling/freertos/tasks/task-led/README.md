@@ -20,34 +20,36 @@ void led1_task(void *pvParameter)
 
 * **Task Creation**: The `xTaskCreatePinnedToCore()` function is used to create 
     a task and pin it to a specific core on the ESP32 (which is dual-core). 
-```C++    
-xTaskCreatePinnedToCore(
-    led1_task,      // Task Function 
-    "LED1Task",     // Task Name
-    128,            // Stack Depth 
-    NULL,           // Parameters 
-    2,              // Priority 
-    NULL,           // Task Handle
-    1               // Core Number
-);
-```
+    ```C++    
+    xTaskCreatePinnedToCore(
+        led1_task,      // Task Function 
+        "LED1Task",     // Task Name
+        128,            // Stack Depth 
+        NULL,           // Parameters 
+        2,              // Priority 
+        NULL,           // Task Handle
+        1               // Core Number
+    );
+    ```
+    
     The parameters are:
-    * Task Function: The function that the task should execute. In this case, either led1_task or led2_task.
-
-    * Task Name: A descriptive name for the task. This is used for debugging purposes.
-
-    * Stack Depth: The size of the stack for the task. This determines how much memory is allocated for the task's stack.
-
-    * Parameters: Any parameters you want to pass to the task. In this example, we're not passing any parameters, so it's NULL.
-
-    * Priority: The priority of the task. A higher number means higher priority.
-
-    * Task Handle: A handle to the task. This can be used to refer to the task later (e.g., to delete it). We're not using this feature, so it's set to NULL.
-
-    * Core Number: The core you want to pin the task to. The ESP32 is a dual-core processor, with cores numbered 0 and 1. In this case, both tasks are pinned to core 1.
+    * **Task Function**: The function that the task should execute. In this case, either led1_task or led2_task.
+    
+    * **Task Name**: A descriptive name for the task. This is used for debugging purposes.
+    
+    * **Stack Depth**: The size of the stack for the task. This determines how much memory is allocated for the task's stack.
+    
+    * **Parameters**: Any parameters you want to pass to the task. In this example, we're not passing any parameters, so it's NULL.
+    
+    * **Priority**: The priority of the task. A higher number means higher priority.
+    
+    * **Task Handle**: A handle to the task. This can be used to refer to the task later (e.g., to delete it). We're not using this feature, so it's set to NULL.
+    
+    * **Core Number**: The core you want to pin the task to. The ESP32 is a dual-core processor, with cores numbered 0 and 1. In this case, both tasks are pinned to core 1.
 
 * **Loop Function**: The `loop()` function is executed continuously after `setup()`. 
     In this case, it's essentially empty since the tasks are running independently in the background. We add a delay to prevent the `loop()` from running too quickly, which can be beneficial for power consumption and CPU usage.
+
 ```C++
 void loop() 
 {
