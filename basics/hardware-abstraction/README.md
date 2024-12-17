@@ -78,9 +78,6 @@ different hardware targets.
 
 * Use `#define` to create hardware-specific constants and inline functions.
 
-* Utilize `#ifdef`, `#ifndef`, `#if`, `#else`, and `#endif` to include or 
-    exclude code based on hardware configurations.
-
 _Example_: Define platform specific constants (`variants/standard/pins_arduino.h`)
 
 ```C++
@@ -136,6 +133,9 @@ Arduino boards or when modifying hardware configurations.
 If we want to use the same functionality on different microcontrollers, we 
 often have to exchange parts of the code within a function. This can be 
 achieved using pre-processor instructions for conditional compilation.
+
+* Utilize `#ifdef`, `#ifndef`, `#if`, `#else`, and `#endif` to include or 
+    exclude code based on hardware configurations.
 
 _Example_: [TinkerCAD - 7 Segment Output](https://www.tinkercad.com/things/fBEtVlXAG2W-arduino-7-segment-hardware-abstraction)
 
