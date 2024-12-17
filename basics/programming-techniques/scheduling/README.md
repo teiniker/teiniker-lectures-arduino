@@ -159,6 +159,22 @@ void task_2(void) // INTERVAL_2
 _Example:_ [Arduino: Blink Scheduler](https://www.tinkercad.com/things/hBWwhvLwV6O)
 
 
+## Real-Time Operating System (RTOS)
+
+A RTOS is an operating system designed to process data and execute tasks within strict time constraints, 
+ensuring predictable and deterministic performance. It prioritizes timely execution of critical tasks, 
+often used in systems requiring immediate responses, such as industrial control systems, medical devices, 
+automotive systems, and robotics. 
+
+An RTOS is typically categorized as hard real-time (where missing a deadline is unacceptable) or soft 
+real-time (where occasional delays are tolerable but undesirable). 
+
+Key features include task scheduling, low latency, and reliability.
+
+* [FreeRTOS](freertos/)
+
+
+
 ## References 
 * [Blink Without Delay](https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay)
 * [Using millis() for timing](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing)
