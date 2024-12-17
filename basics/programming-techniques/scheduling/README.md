@@ -171,7 +171,7 @@ real-time (where occasional delays are tolerable but undesirable).
 
 Key features include task scheduling, low latency, and reliability.
 
-* [FreeRTOS](freertos/)
+* [FreeRTOS implemented for Arduino Uno R3](freertos/)
 
 
 
