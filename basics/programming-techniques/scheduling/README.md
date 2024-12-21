@@ -184,4 +184,6 @@ Key features include task scheduling, low latency, and reliability.
 
 * [YouTube: Arduino Tutorial - Multitasking](https://youtu.be/YP9xQWqFOKg)
 
-*Egon Teiniker, 2020 - 2024, GPL v3.0* 
+* [YouTube (Nate Graff): Real Time Operating Systems (RTOS)](https://youtu.be/jSvv_ELkSMM?si=qzi5OeiML9xAiDal)
+
+*Egon Teiniker, 2020-2024, GPL v3.0* 
