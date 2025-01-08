@@ -1,19 +1,17 @@
-#ifndef _LED_H_    // Include guard
+#ifndef _LED_H_ 
 #define _LED_H_
 
 #include <stdint.h>
 
 class Led
 {
-    private:    // Private members (inside the class only)
+    private:    
         uint8_t _pin;
         bool _state;
 
-    public:    // Public members
-        // Constructor
+    public:    
         Led(uint8_t pin, bool state = false);    
 
-        // Public methods
         bool state(void);
         uint8_t pin(void);
 
@@ -21,7 +19,7 @@ class Led
         void off(void);
         void toggle(void);
 
-    private:    // Private members 
+    private:    
         void _setPin();
 };
 
