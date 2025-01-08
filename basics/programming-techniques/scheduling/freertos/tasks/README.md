@@ -49,7 +49,7 @@ priority that are also in the ready state.
 In other words, **the task placed into the Running state is always the 
 highest priority task that is able to run**.
 
-_Example:_ [Blink and Alalog Read Tasks](tasks/blink-analog-read/) 
+
 
 
 ## References 
