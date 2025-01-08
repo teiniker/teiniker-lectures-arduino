@@ -23,10 +23,10 @@ void led1_task(void *pvParameter)
     while(1) 
     {
         digitalWrite(LED1_PIN, HIGH);  
-//        vTaskDelay(500 / portTICK_PERIOD_MS);  
+        vTaskDelay(500 / portTICK_PERIOD_MS);  
 
         digitalWrite(LED1_PIN, LOW);  
-//        vTaskDelay(500 / portTICK_PERIOD_MS);  
+        vTaskDelay(500 / portTICK_PERIOD_MS);  
     }
 }
 
@@ -39,9 +39,9 @@ void led2_task(void *pvParameter)
     while(1) 
     {
         digitalWrite(LED2_PIN, HIGH);  
-  //      vTaskDelay(250 / portTICK_PERIOD_MS);  
+        vTaskDelay(250 / portTICK_PERIOD_MS);  
 
         digitalWrite(LED2_PIN, LOW);  
- //       vTaskDelay(250 / portTICK_PERIOD_MS);  
+        vTaskDelay(250 / portTICK_PERIOD_MS);  
     }
 }
