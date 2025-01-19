@@ -18,30 +18,30 @@ With the proper data inputs, each pair of drivers forms a **full-H (or bridge)**
 or motor applications.
 
 
+## Motor Forward and Backward
+
 ## Wiring Diagram 
 
-Connect the L293D pin 1 (M1 PWM) to the digital (PWM) pin 5 on the Arduino.  
-Output any integer between 0 and 255, where 0 will be off, 128 is half speed and 255 is max speed.
-
-L293D pin 2 (M1 direction 0/1) and L293D pin 7 (M1 direction 1/0) to the digital Arduino pins 4 and 3. 
-Output one pin as HIGH and the other pin as LOW, and the motor will spin in one direction.
-Reverse the outputs to LOW and HIGH, and the motor will spin in the other direction
+Connect the L293D ENABLE 1,2 (pin 1) to the digital pin 2 on the Arduino, 
+L293D Input 1 (pin 2) to Arduino digital pin 3 (PWM), 
+and L293D Input 2 (pin 7) to Arduino digital pin 5 (PWM).   
 
 ![DC Motor](DC-Motor-L293D.png)
 
-Note that the **DC motor needs its own power supply** (more current and sometimes higher voltage).
-In this case, the two **GND potentials must be connected** to each other (see circuit).
-
+Note that the **DC motor needs its own power supply** (more current and 
+sometimes higher voltage).
+In this case, the two **GND potentials must be connected** to each other!!
 
 
 ## Source Code
 
-No library is required for this example, since all signals can be output directly via the Arduino pins.
+No library is required for this example, since all signals can be output 
+directly via the Arduino pins.
 
 ```C
-const int ENABLE = 5;
-const int DIR_A = 3;
-const int DIR_B = 4;
+const int ENABLE = 2;
+const int DIR_A = 3;	
+const int DIR_B = 5;
 
 void setup() 
 {
@@ -52,29 +52,89 @@ void setup()
 
 void loop() 
 {
-    digitalWrite(ENABLE,HIGH);  
+    digitalWrite(ENABLE,HIGH); 
+  
+  	// forward
     digitalWrite(DIR_A,HIGH);    
     digitalWrite(DIR_B,LOW);
     delay(1000);
 
-    digitalWrite(ENABLE,LOW); 
+  	// stop
+    digitalWrite(DIR_A,LOW);    
+    digitalWrite(DIR_B,LOW);
     delay(1000);    
 
-    digitalWrite(ENABLE,HIGH); 
+  	// backward
     digitalWrite(DIR_A,LOW); 
     digitalWrite(DIR_B,HIGH);
     delay(1000);
 
-    digitalWrite(ENABLE,LOW); 
+  	// stop
+    digitalWrite(DIR_A,LOW);    
+    digitalWrite(DIR_B,LOW);
     delay(1000);    
 }
 ```
-Note that we need a **delay between the commands** to give the DC motor some time to move to follow.
+Note that we need a **delay between the commands** to give the DC motor 
+some time to move to follow.
+
+_Example (Tinkercad):_[Arduino: L293D + DC Motor](https://www.tinkercad.com/things/cquv6WcyB61) 
 
 
-## Simulation
+## Motor Speed 
 
-**Tinkercad**: [Arduino: L293D + DC Motor](https://www.tinkercad.com/things/cquv6WcyB61) 
+Using the Arduino PWM pins we can also control the speed of the motor.
+
+## Wiring Diagram 
+
+We use the same wiring diagram as before but we add an oscilloscope 
+to observe the PWM signal.
+
+![DC Motor PWM](DC-Motor-L293D-PWM.png)
+
+The value of a PWM output can be between `0` and `255`.
+The value `0` means output constant `LOW` and the value `255` means output 
+constant `HIGH` (i.e. maximum speed).
+
+## Source Code
+
+In this example also no library is required.
+
+```C
+const int ENABLE = 2;
+const int DIR_A = 3;	// PWM Pin
+const int DIR_B = 5;	// PWM Pin
+
+void setup() 
+{
+  	Serial.begin(115200);
+  
+    pinMode(ENABLE,OUTPUT);
+    pinMode(DIR_A,OUTPUT);
+    pinMode(DIR_B,OUTPUT);
+}
+
+void loop() 
+{
+    digitalWrite(ENABLE,HIGH); 
+    digitalWrite(DIR_A,LOW); 
+    digitalWrite(DIR_B,LOW);  
+  
+    for(int speed=50; speed < 250; speed += 25)
+    {
+  	  Serial.print("Speed: ");
+      Serial.println(speed);
+      analogWrite(DIR_A,speed);    
+      digitalWrite(DIR_B,LOW);
+      delay(5000);
+    }
+}
+```
+
+Note that we start with a PWM value of `50` because the motor will 
+not rotate below this value.
+
+_Example (Tinkercad):_[Arduino: L293D + DC Motor (Speed)](https://www.tinkercad.com/things/cpho9uGiEDM-arduino-l293d-dc-motor-speed) 
 
 
 ## References
@@ -83,4 +143,4 @@ Note that we need a **delay between the commands** to give the DC motor some tim
 * [YouTube: Arduino for Beginners 20 Using a Motor Shield](https://youtu.be/cqfkH7pyyfY)
 
 
-*Egon Teiniker, 2020 - 2022, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
