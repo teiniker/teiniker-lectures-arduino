@@ -28,6 +28,25 @@ and L293D Input 2 (pin 7) to Arduino digital pin 5 (PWM).
 
 ![DC Motor](DC-Motor-L293D.png)
 
+| Pin | Name   | Description                                         |
+|-----|--------|-----------------------------------------------------|
+| 1   |  1,2EN | Enable driver channels 1 and 2 (active high input)  |
+| 2   |    1A  | Driver 1 input, noninverting                        |
+| 3   |    1Y  | Driver 1 output                                     |
+| 4   |   GND  | Device ground and heat sink pin                     |
+| 5   |   GND  | Device ground and heat sink pin                     |
+| 6   |    2Y  | Driver 2 output                                     |
+| 7   |    2A  | Driver 2 input, noninverting                        |
+| 8   |   VCC2 | Power VCC for drivers 4.5 V to 36 V                 |
+| 9   |  3,4EN | Enable driver channels 3 and 4 (active high input)  |
+| 10  |    3A  | Driver 3 input, noninverting                        |
+| 11  |    3Y  | Driver 3 output                                     |
+| 12  |   GND  | Device ground and heat sink pin                     |
+| 13  |   GND  | Device ground and heat sink pin                     |
+| 14  |   4Y   | Driver 4 output                                     |
+| 15  |   4A   | Driver 4 input, noninverting                        |
+| 16  |   VCC1 | 5-V supply for internal logic translation           |
+
 Note that the **DC motor needs its own power supply** (more current and 
 sometimes higher voltage).
 In this case, the two **GND potentials must be connected** to each other!!
