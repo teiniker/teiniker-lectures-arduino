@@ -14,20 +14,6 @@ is low, those drivers are disabled, and their outputs are off and in the high-im
 
 ![L293D](L293D.png)
 
-With the proper data inputs, each pair of drivers forms a **full-H (or bridge)** reversible drive suitable for solenoid 
-or motor applications.
-
-
-## Motor Forward and Backward
-
-## Wiring Diagram 
-
-Connect the L293D ENABLE 1,2 (pin 1) to the digital pin 2 on the Arduino, 
-L293D Input 1 (pin 2) to Arduino digital pin 3 (PWM), 
-and L293D Input 2 (pin 7) to Arduino digital pin 5 (PWM).   
-
-![DC Motor](DC-Motor-L293D.png)
-
 | Pin | Name   | Description                                         |
 |-----|--------|-----------------------------------------------------|
 | 1   |  1,2EN | Enable driver channels 1 and 2 (active high input)  |
@@ -46,6 +32,20 @@ and L293D Input 2 (pin 7) to Arduino digital pin 5 (PWM).
 | 14  |   4Y   | Driver 4 output                                     |
 | 15  |   4A   | Driver 4 input, noninverting                        |
 | 16  |   VCC1 | 5-V supply for internal logic translation           |
+
+With the proper data inputs, each pair of drivers forms a **full-H (or bridge)** reversible drive suitable for solenoid 
+or motor applications.
+
+
+## Motor Forward and Backward
+
+## Wiring Diagram 
+
+Connect the L293D ENABLE 1,2 (pin 1) to the digital pin 2 on the Arduino, 
+L293D Input 1 (pin 2) to Arduino digital pin 3 (PWM), 
+and L293D Input 2 (pin 7) to Arduino digital pin 5 (PWM).   
+
+![DC Motor](DC-Motor-L293D.png)
 
 Note that the **DC motor needs its own power supply** (more current and 
 sometimes higher voltage).
