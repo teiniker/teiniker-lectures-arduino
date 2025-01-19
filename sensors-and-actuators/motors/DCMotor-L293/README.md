@@ -104,7 +104,7 @@ _Example (Tinkercad):_[Arduino: L293D + DC Motor](https://www.tinkercad.com/thin
 
 Using the Arduino PWM pins we can also control the speed of the motor.
 
-## Wiring Diagram 
+### Wiring Diagram 
 
 We use the same wiring diagram as before but we add an oscilloscope 
 to observe the PWM signal.
@@ -115,7 +115,7 @@ The value of a PWM output can be between `0` and `255`.
 The value `0` means output constant `LOW` and the value `255` means output 
 constant `HIGH` (i.e. maximum speed).
 
-## Source Code
+### Source Code
 
 In this example also no library is required.
 
@@ -153,7 +153,119 @@ void loop()
 Note that we start with a PWM value of `50` because the motor will 
 not rotate below this value.
 
-_Example (Tinkercad):_[Arduino: L293D + DC Motor (Speed)](https://www.tinkercad.com/things/cpho9uGiEDM-arduino-l293d-dc-motor-speed) 
+_Example (Tinkercad):_ [Arduino: L293D + DC Motor (Speed)](https://www.tinkercad.com/things/cpho9uGiEDM-arduino-l293d-dc-motor-speed) 
+
+
+## Motor Class
+
+The control of the DC motor requires some data such as the pin numbers used 
+but also operations for forward, backward and stop.
+
+These data and operations can be summarized in a `DCMotor` class. For each motor 
+that is connected to the Arduino board, a new object of the `DCMotor` class is 
+instantiated and the pins used are passed on.
+
+### Wiring Diagram 
+
+We use the same circuit as shown above.
+
+### Source Code
+
+_Example:_ `DCMotor` class implementation
+
+```C
+class DCMotor 
+{
+  private:
+    int _enablePin;
+    int _dirAPin;
+    int _dirBPin;
+
+  public:
+    // Constructor
+    DCMotor(int enable, int dirA, int dirB) 
+    {
+      _enablePin = enable;
+      _dirAPin = dirA;
+      _dirBPin = dirB;
+
+      // Set up the pins as output
+      pinMode(_enablePin, OUTPUT);
+      pinMode(_dirAPin, OUTPUT);
+      pinMode(_dirBPin, OUTPUT);
+		
+      // Enable motor dirver  channels 
+      digitalWrite(_enablePin, HIGH);
+      
+      // Ensure the motor starts in a stopped state
+      stop();
+    }
+
+    // Motor operations
+
+    void forward() 
+    {      
+      digitalWrite(_dirAPin, HIGH);
+      digitalWrite(_dirBPin, LOW);
+    }
+
+    void stop() 
+    {
+      digitalWrite(_dirAPin, LOW);
+      digitalWrite(_dirBPin, LOW);
+    }
+
+    void backward() 
+    {
+      digitalWrite(_dirAPin, LOW);
+      digitalWrite(_dirBPin, HIGH);
+    }
+};
+```
+
+To prepare this implementation for an Arduino library, we can 
+**split the code into a header file and an implementation file**. 
+
+For simulation in Tinkercad, the direct implementation of the class 
+is easier to use.
+
+
+_Example:_ Using the `DCMotor` class
+
+Now that we have a `DCMotor` class we can control the motor very easily:
+
+```C
+const int ENABLE = 2;
+const int DIR_A = 3;	
+const int DIR_B = 5;	
+
+DCMotor motor(ENABLE, DIR_A, DIR_B);
+
+void setup() 
+{
+}
+
+void loop() 
+{
+  	// forward
+    motor.forward();
+    delay(1000);
+
+  	// stop
+    motor.stop();
+    delay(1000);    
+
+  	// backward
+    motor.backward();
+    delay(1000);
+
+  	// stop
+    motor.stop();
+    delay(1000);    
+}
+```
+
+_Example (Tinkercad):_ [Arduino: L293D + DC Motor Class](https://www.tinkercad.com/things/9GZsBIjCXOJ-arduino-l293d-dc-motor-class) 
 
 
 ## References
