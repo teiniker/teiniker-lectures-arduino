@@ -73,22 +73,22 @@ void loop()
 {
     digitalWrite(ENABLE,HIGH); 
   
-  	// forward
+    // forward
     digitalWrite(DIR_A,HIGH);    
     digitalWrite(DIR_B,LOW);
     delay(1000);
 
-  	// stop
+    // stop
     digitalWrite(DIR_A,LOW);    
     digitalWrite(DIR_B,LOW);
     delay(1000);    
 
-  	// backward
+    // backward
     digitalWrite(DIR_A,LOW); 
     digitalWrite(DIR_B,HIGH);
     delay(1000);
 
-  	// stop
+    // stop
     digitalWrite(DIR_A,LOW);    
     digitalWrite(DIR_B,LOW);
     delay(1000);    
@@ -126,7 +126,7 @@ const int DIR_B = 5;	// PWM Pin
 
 void setup() 
 {
-  	Serial.begin(115200);
+    Serial.begin(115200);
   
     pinMode(ENABLE,OUTPUT);
     pinMode(DIR_A,OUTPUT);
@@ -141,11 +141,11 @@ void loop()
   
     for(int speed=50; speed < 250; speed += 25)
     {
-  	  Serial.print("Speed: ");
-      Serial.println(speed);
-      analogWrite(DIR_A,speed);    
-      digitalWrite(DIR_B,LOW);
-      delay(5000);
+        Serial.print("Speed: ");
+        Serial.println(speed);
+        analogWrite(DIR_A,speed);    
+        digitalWrite(DIR_B,LOW);
+        delay(5000);
     }
 }
 ```
@@ -247,19 +247,19 @@ void setup()
 
 void loop() 
 {
-  	// forward
+    // forward
     motor.forward();
     delay(1000);
 
-  	// stop
+    // stop
     motor.stop();
     delay(1000);    
 
-  	// backward
+    // backward
     motor.backward();
     delay(1000);
 
-  	// stop
+    // stop
     motor.stop();
     delay(1000);    
 }
