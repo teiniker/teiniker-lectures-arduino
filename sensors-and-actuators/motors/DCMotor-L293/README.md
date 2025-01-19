@@ -39,7 +39,7 @@ or motor applications.
 
 ## Motor Forward and Backward
 
-## Wiring Diagram 
+### Wiring Diagram 
 
 Connect the L293D ENABLE 1,2 (pin 1) to the digital pin 2 on the Arduino, 
 L293D Input 1 (pin 2) to Arduino digital pin 3 (PWM), 
@@ -52,7 +52,7 @@ sometimes higher voltage).
 In this case, the two **GND potentials must be connected** to each other!!
 
 
-## Source Code
+### Source Code
 
 No library is required for this example, since all signals can be output 
 directly via the Arduino pins.
