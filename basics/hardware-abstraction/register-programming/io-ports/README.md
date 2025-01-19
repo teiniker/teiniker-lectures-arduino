@@ -1,4 +1,4 @@
-# Accessing I/O Ports via Registers
+# Programming I/O Ports via Registers
 
 The ports of the Arduino Uno Board are connected directly to the pins of 
 the ATmega328P. The microcontroller combines the pins into 8-bit ports.
@@ -99,8 +99,10 @@ If the result is nonzero, the pin is high, and if it's zero, the pin is low.
 
 _Example_: [Tinkercad - Native Digital IO](https://www.tinkercad.com/things/gW2rGRv73t4) 
 
+
 ## References
 * [Arduino Core AVR: wiring_digital.c](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/wiring_digital.c)
+
 * [Arduino Core ESP32: esp32-hal-gpio.c]([arduino-esp32/cores/esp32/esp32-hal-gpio.c](https://github.com/espressif/arduino-esp32/blob/5f427c998a5eff55abf163a4fbeab17fff06e348/cores/esp32/esp32-hal-gpio.c))
 
 * [ATmega328P Datasheet: 13. I/O Ports](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
@@ -108,4 +110,4 @@ _Example_: [Tinkercad - Native Digital IO](https://www.tinkercad.com/things/gW2r
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
     * Chapter 3: Arduino Language Reference
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2024, GPL v3.0*

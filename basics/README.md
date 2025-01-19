@@ -4,70 +4,11 @@ This section provides an introduction to **microcontroller programming**
 using the **ATMega328P** microcontroller. The ATMega328P is a popular
 microcontroller used in many embedded systems, including the **Arduino**.
 
+* [Microcontroller Peripherals](peripherals/)
 
-## CPU vs. Microcontroller
+* [Hardware Abstraction](hardware-abstraction/README.md)
 
-A **CPU (Central Processing Unit)** and a **Microcontroller** are both essential 
-computing devices but are designed for different purposes and contexts.
-
-* **CPU**:
-    * The CPU is the central component of a computer system, responsible for 
-        **executing instructions**.
-    * It is part of a larger system that includes other components like RAM, 
-        storage, and input/output devices.
-
-* **Microcontroller**:
-    * A microcontroller is an **integrated system** that combines a **CPU**, 
-        **memory (RAM and ROM)**, and **input/output peripherals** on 
-        a single chip.
-    * Designed for specific, dedicated tasks in **embedded systems**.
-
-![CPU vs. Microcontroller](figures/CPUvsMicorcontroller.png)
-
-
-## Peripherals
-
-Microcontrollers directly incorporates some **I/O hardware components**:
-
-* [Serial Communication (UART)](serial/)
-
-* [I/O Ports](io-ports/)
-
-* [Memory (Flash, SRAM, EEPROM)](memory/)
-
-* ...
-
-
-## Hardware Abstraction
-
-The use of **libraries and frameworks** enables an abstraction from the concrete 
-microcontroller hardware - **Hardware Abstraction Layer (HAL)**. 
-
-This makes it easy to get **applications running on different boards** 
-implementing the same HAL.
-
-* [Register Programming](hardware-abstraction/register-programming/io-ports/)
-    * Example: [Port Extension (74HC595)](hardware-abstraction/port-extension/)
-
-* [Interrupts](hardware-abstraction/interrupts/)
-
-* [Arduino Libraries](hardware-abstraction/arduino-library/)
-
-* [Arduino Framework and Standard Libraries](libraries/)
-
-
-
-## Programming Techniques
-
-In addition to the use of hardware components, the following 
-**programming techniques** are commonly used in the context of microcontroller 
-programming:
-
-* [Timing and Scheduling](timing/)
-
-* [State Machines](state-machines/)
-
-* [Object-Oriented Programming](oop/)
+* [Programming Techniques](programming-techniques/)
 
 
 ## References
