@@ -193,6 +193,8 @@ Key Functions of a UART to USB Converter:
 
 
 ## References 
+* [Arduino Learn: Universal Asynchronous Receiver-Transmitter (UART)](https://docs.arduino.cc/learn/communication/uart/)
+
 * [Rohde-Schwarz: Understanding UART](https://www.rohde-schwarz.com/cz/products/test-and-measurement/essentials-test-equipment/digital-oscilloscopes/understanding-uart_254524.html)
 
 * [YouTube: FTDI USB to Serial Adapter Demo](https://youtu.be/7yhgYJe2ShM?si=yrhTIoDcP7e0mZ92)
