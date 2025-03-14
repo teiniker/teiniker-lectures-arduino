@@ -5,7 +5,7 @@ LM75 sensor;
 
 void setup() 
 {
-  Serial.begin(125200);
+  Serial.begin(115200);
   Wire.begin();
 }
 
