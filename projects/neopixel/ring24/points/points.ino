@@ -9,22 +9,24 @@ void setup()
   pixels.begin();	// Initialize the NeoPixel library.
 }
 
-void loop() {
-  static int posRed = 0;               // Initial position for the red pixel
-  static int posGreen = NUMPIXELS - 1; // Initial position for the green pixel
+void loop() 
+{
+  static int currentPixel = 0;      // Current pixel position
+  static int hue = 0;               // Current color hue
 
-  pixels.clear(); // Clear all pixels to black before setting new ones
+  pixels.setPixelColor(currentPixel, pixels.ColorHSV(hue));
+  pixels.show();
 
-  // Set Red pixel
-  pixels.setPixelColor(posRed, pixels.Color(255, 0, 0));
+  delay(50);                        // Adjust delay for speed of rainbow transition
 
-  // Set Green pixel
-  pixels.setPixelColor(posGreen, pixels.Color(0, 255, 0));
+  currentPixel++;
+  hue += 65536 / NUMPIXELS;         // Increment hue for rainbow steps
 
-  pixels.show(); // Update the strip with new data
-  delay(100);    // Delay for smooth animation (adjust as needed)
-
-  // Move positions for the next iteration
-  posRed = (posRed + 1) % NUMPIXELS;                   // Increment red position
-  posGreen = (posGreen - 1 + NUMPIXELS) % NUMPIXELS;   // Decrement green position (wrap around)
+  if (currentPixel >= NUMPIXELS) {
+    delay(500);                     // Pause briefly after completing one rainbow cycle
+    pixels.clear();                 // Clear all pixels
+    pixels.show();
+    currentPixel = 0;               // Reset pixel counter
+    hue = 0;                        // Reset hue to start the rainbow again
+  }
 }
