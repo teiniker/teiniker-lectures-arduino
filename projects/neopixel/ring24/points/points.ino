@@ -11,22 +11,23 @@ void setup()
 
 void loop() 
 {
-  static int currentPixel = 0;      // Current pixel position
-  static int hue = 0;               // Current color hue
+  static int hueOffset = 0;   // Anfangswert für den Farbverlauf
+  static int brightness = 45;  // Helligkeit (0-255)
+  static int dimDirection = 1; // Richtung des Dimmens (1 heller, -1 dunkler)
 
-  pixels.setPixelColor(currentPixel, pixels.ColorHSV(hue));
+  for(int i = 0; i < NUMPIXELS; i++) {
+    int pixelHue = hueOffset + (65536 / NUMPIXELS) * i;
+    pixels.setPixelColor(i, pixels.ColorHSV(pixelHue, 255, brightness));
+  }
+
   pixels.show();
+  delay(30);  // Verzögerung für die Geschwindigkeit des Regenbogens und des Dimmens
 
-  delay(50);                        // Adjust delay for speed of rainbow transition
+  hueOffset += 256;  // Farbwert erhöhen für Animation
+  hueOffset %= 65536;  // Zurücksetzen des Farbwertes für kontinuierliche Animation
 
-  currentPixel++;
-  hue += 65536 / NUMPIXELS;         // Increment hue for rainbow steps
-
-  if (currentPixel >= NUMPIXELS) {
-    delay(500);                     // Pause briefly after completing one rainbow cycle
-    pixels.clear();                 // Clear all pixels
-    pixels.show();
-    currentPixel = 0;               // Reset pixel counter
-    hue = 0;                        // Reset hue to start the rainbow again
+  brightness += dimDirection;
+  if(brightness >= 255 || brightness <= 0) {
+    dimDirection *= -1;  // Richtung des Dimmens umkehren
   }
 }
