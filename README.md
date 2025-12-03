@@ -7,7 +7,7 @@ includes both software and hardware aspects.
 
 * [Computer Architectures](computer-architectures/)
 
-* [Microcontroller Programming Basics](basics/)
+* [Microcontroller Programming Basics](programming-basics/)
   
 * [Sensors and Actuators](sensors-and-actuators/)
 
