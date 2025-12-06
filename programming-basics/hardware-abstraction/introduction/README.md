@@ -8,13 +8,30 @@ in a general or simplified way, rather than needing to directly manage the detai
 and complexities of the hardware.
 
 
-## Hardware Abstraction Layer (HAL)
+## Layered Architecture
 
-The concept of a **Hardware Abstraction Layer (HAL)** is an essential component 
-in both system software and embedded systems design. The HAL acts as an intermediary 
-layer that provides a consistent and simplified interface to interact with hardware. 
-This abstraction allows software applications and higher-level system components to 
-operate independently of specific hardware details. 
+The separation between hardware and the rest of the system is given, at least 
+once the hardware is defined.
+But because of technology advances the hardware will change over time.
+
+A problem is that there is nothing that keeps hardware knowledge from polluting 
+all the code so the code will be very hard to change.
+
+**Software and firmware intermingling is an anti-pattern**.
+
+### Hardware Abstraction Layer 
+
+The **line between software and firmware** is typically not so well defined
+as the line between code and hardware.
+One of our jobs as an embedded software devloper is to firm up that line.
+
+![Embedded Architecture Layers](figures/Embedded-Architecture-Layered.png)
+
+The name of the boundary between the software and the firmware is the 
+**Hardware Abstraction Layer (HAL)**.
+
+The HAL exists for the software that sits on top of it, and its API should 
+be tailored to that software’s needs. 
 
 Here are some key aspects of a HAL:
 
@@ -50,7 +67,7 @@ Without hardware abstraction, every application would have to be programmed
 down to the register level. This is not only tedious, but also reduces the 
 reusability of the application for different boards.
 
-_Example:_ [Programming I/O Ports via Registers](register-programming/io-ports/)
+_Example:_ [Programming I/O Ports via Registers](../register-programming/io-ports/)
 
 
 Have a look on the following tutorials created by **Mitch Davis** on YouTube: 
@@ -316,4 +333,4 @@ Concepts of the Arduino Core Framework:
 _Example_: [Arduino Core Framework for AVR microcontrollers](avr-core/README.md)
 
 
-*Egon Teiniker, 2020-2024, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*

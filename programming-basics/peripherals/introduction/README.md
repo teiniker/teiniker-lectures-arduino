@@ -1,14 +1,6 @@
-# Peripherals
+# Introduction
 
-The use of on-chip peripheral components is an essential part of 
-microcontroller programming. we must refer to the datasheet of 
-the respective microcontroller to get a description of the 
-peripheral component registers.
-
-_Example:_ Datasheet of the [ATmega328P](../../computer-architectures/microcontroller/atmega328p/datasheet-ATmega328P.pdf) microcontroller.
-
-
-## CPU vs. Microcontroller
+## CPU vs Microcontroller
 
 A **CPU (Central Processing Unit)** and a **Microcontroller** are both essential 
 computing devices but are designed for different purposes and contexts.
@@ -30,19 +22,12 @@ computing devices but are designed for different purposes and contexts.
 
 ## Peripheral Components
 
-Microcontrollers directly incorporates some **I/O hardware components**:
+The use of on-chip peripheral components is an essential part of 
+microcontroller programming. we must refer to the datasheet of 
+the respective microcontroller to get a description of the 
+peripheral component registers.
 
-* [Memory (Flash, SRAM, EEPROM)](memory/)
-
-* [I/O Ports](io-ports/)
-
-* [Interrupts and Timers](interrupts/)
-
-* [Serial Communication (UART)](serial/)
-
-* [I2C Bus](i2c/)
-
-* ...
+_Example:_ Datasheet of the [ATmega328P](../../computer-architectures/microcontroller/atmega328p/datasheet-ATmega328P.pdf) microcontroller.
 
 
 ## References
@@ -50,5 +35,4 @@ Microcontrollers directly incorporates some **I/O hardware components**:
 * Daniele Lacamera. **Embedded Systems Architecture**. Packt Publishing, 2023.
 
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
-
+*Egon Teiniker, 2020-2025, GPL v3.0* 

@@ -6,7 +6,7 @@ microcontroller used in many embedded systems, including the **Arduino**.
 
 * [Microcontroller Peripherals](peripherals/)
 
-* [Hardware Abstraction](hardware-abstraction/README.md)
+* [Hardware Abstraction](hardware-abstraction/)
 
 * [Programming Techniques](programming-techniques/)
 
@@ -15,5 +15,4 @@ microcontroller used in many embedded systems, including the **Arduino**.
 
 * Daniele Lacamera. **Embedded Systems Architecture**. Packt Publishing, 2023.
 
-
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
