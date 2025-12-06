@@ -15,4 +15,4 @@ includes both software and hardware aspects.
 * Michael Margolis, Brian Jepson, Nicholas Robert Weldin. **Arduino Cookbook**. O'Reilly, 2020
 * Norman Dunbar. **Arduino Software Internals**. APress, 2020
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
