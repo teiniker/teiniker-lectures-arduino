@@ -1,4 +1,4 @@
-# Arduino Programming
+# Microcontroller Programming using Arduino
 
 Before we get to programming, let's look at the **basics of computer 
 architectures**:
