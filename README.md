@@ -22,6 +22,8 @@ operating system for multitasking is a particular focus here.
 
 * [Introduction](esp32-c6/introduction)
 
+* [ESP32-C6 Board](esp32-c6/boards/ESP32-C6)
+  
 * [FreeRTOS](esp32-c6/freertos)
   
 ## References
