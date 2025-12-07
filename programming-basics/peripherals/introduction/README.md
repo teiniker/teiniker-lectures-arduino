@@ -27,7 +27,7 @@ microcontroller programming. we must refer to the datasheet of
 the respective microcontroller to get a description of the 
 peripheral component registers.
 
-_Example:_ Datasheet of the [ATmega328P](../../computer-architectures/microcontroller/atmega328p/datasheet-ATmega328P.pdf) microcontroller.
+_Example:_ Datasheet of the [ATmega328P](../../../computer-architectures/microcontroller/atmega328p/datasheet-ATmega328P.pdf) microcontroller.
 
 
 ## References
