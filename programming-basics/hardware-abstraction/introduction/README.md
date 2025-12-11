@@ -289,11 +289,11 @@ To do this, we will proceed step by step:
     We implement the desired functionality in the form of functions or classes. 
     The code is currently in an `.ino` file.
 
-* Step 2: [Separation into `.h` and `.cpp` files](arduino-library/led-version2/)
+* Step 2: [Separation into `.h` and `.cpp` files](../arduino-library/led-version2/)
     We put the implementation of the functionality into a separate `.cpp` file 
     and create a header file (`.h`) to define the API.
 
-* Step 3: [Creation of a library](arduino-library/led-version3/)
+* Step 3: [Creation of a library](../arduino-library/led-version3/)
     We create a library folder with the necessary files and structure (including
     examples). Filally we zip the library folder and import it into the Arduino IDE.
 
