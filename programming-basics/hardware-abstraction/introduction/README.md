@@ -285,7 +285,7 @@ void TwoWire::begin(void)
 We can also **implement our own Arduino library**. 
 To do this, we will proceed step by step:
 
-* Step 1: [Implement the functionality](arduino-library/led-version1/) 
+* Step 1: [Implement the functionality](../arduino-library/led-version1/) 
     We implement the desired functionality in the form of functions or classes. 
     The code is currently in an `.ino` file.
 
