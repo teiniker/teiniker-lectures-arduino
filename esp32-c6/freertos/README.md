@@ -15,7 +15,7 @@ across all industry sectors.
 * [Mutexes](mutexes/)
 
 
-## Simply Explained YouTube Tutorials
+## YouTube Tutorials: Simply Explained
 
 * [What is FreeRTOS?](https://youtu.be/kP-pP6FEu8I)
     FreeRTOS can be used from within ESP IDF and Arduino.    
