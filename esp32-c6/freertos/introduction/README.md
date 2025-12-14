@@ -1,13 +1,4 @@
-# FreeRTOS 
-
-FreeRTOS is a **Real-Time Operating System (RTOS)** for microcontrollers 
-and small microprocessors. Distributed freely under the MIT open source license.
-
-FreeRTOS includes a kernel and a growing set of IoT libraries suitable for use 
-across all industry sectors.
-
-
-## FreeRTOS and the Arduino Framework on ESP32-C6
+# FreeRTOS and the Arduino Framework on ESP32-C6
 
 FreeRTOS is the OS kernel that **Espressif IoT Development Framework (ESP-IDF)** 
 boots and runs everything on, and the **Arduino framework is layered on top 
