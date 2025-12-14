@@ -27,5 +27,6 @@ See: [Arduino Setup](https://docs.sparkfun.com/SparkFun_Thing_Plus_ESP32_C6/soft
 
 * [ESP32-C6-DevKitC-1 v1.2](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html)
 
+* [ESP32 Arduino Core’s documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
