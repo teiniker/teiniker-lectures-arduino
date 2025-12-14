@@ -33,7 +33,7 @@ across all industry sectors.
     * xTaskResumeAll()
 
 
-## Digi-Key Electronics YouTube Tutorials
+## YouTube Tutorials: Digi-Key Electronics
 
 * [Part 1: What is a Real-Time Operating System (RTOS)?](https://youtu.be/F321087yYy4)
     * Task: Set of Program instructions loaded in memory.
