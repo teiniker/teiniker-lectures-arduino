@@ -1,7 +1,25 @@
 # Arduino Core Framework
 
-**Arduino Libraries** are a collection of code that makes it easy for us 
-to connect to a sensor, display, module, etc.
+The Arduino Core Framework is the **foundation of the Arduino ecosystem**, 
+providing the essential functionality and abstractions required to write 
+and run code on a variety of microcontroller platforms supported by Arduino. 
+
+It acts as a **bridge between the hardware-specific details of a microcontroller 
+and the user-friendly APIs** that developers use in Arduino sketches.
+
+Concepts of the Arduino Core Framework:
+
+* **Platform Independence**: While the hardware capabilities of different 
+    microcontrollers vary widely, the Core Framework standardizes interactions, 
+    such as digital/analog I/O, timers, interrupts, and communication protocols.
+
+* **Layered Architecture**: The Arduino Core sits between the hardware abstraction 
+    layer (HAL) of a specific microcontroller and the high-level Arduino API 
+    exposed to users.
+
+* **Extensibility**: It supports various microcontroller families (e.g., AVR, 
+    ESP32, Pi Pico) by allowing board manufacturers to provide their own 
+    hardware-specific implementations of the Core.
 
 The **Arduino Core** is a set of configurations and code libraries that 
 realizes an hardware abstraction layer commonly used to program and interact 
@@ -44,4 +62,4 @@ configuration files of the **Arduino AVR Boards platform**.
 
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 

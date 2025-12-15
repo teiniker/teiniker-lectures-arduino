@@ -1,9 +1,73 @@
-# Build an Arduino Library
+# Arduino Libraries 
 
-To create a reusable hardware abstraction, it is not enough to 
-just implement the functionality. The source code must also be 
-structured systematically.
+An Arduino library is a collection of code that provides **reusable functions, 
+objects, and resources** to simplify programming for specific hardware components,
+protocols, or functionalities in Arduino projects. 
 
+
+Libraries allow developers to **extend the Arduino environment** with pre-written 
+code, avoiding the need to reinvent solutions for common tasks such as controlling 
+a sensor, communicating via a protocol, or driving a motor.
+
+Structure of an Arduino Library:
+
+* **Library Folder**: The library files are stored in a dedicated folder, named 
+    after the library. For example, the library `EEPROM` would be stored in a 
+    folder named `EEPROM`.
+
+* **Header File (`.h`)**: 
+    * Contains the **declarations of the classes, methods, and variables** used in 
+    the library.
+    * Includes preprocessor directives like `#ifndef`, `#define`, and `#endif` 
+    to prevent multiple inclusions.
+
+* **Source File (`.cpp`)**: Contains the implementation of the methods declared 
+    in the header file.
+
+* **Keywords File (`keywords.txt`)**: Optional file used to highlight keywords 
+    in the Arduino IDE.
+
+* **Examples Folder**: A folder containing example sketches showing how to use 
+    the library.
+
+* **Library Properties (`library.properties`)**: A file that contains metadata 
+    about the library.
+
+
+_Example_: I2C library header file [Wire.h](https://github.com/arduino/ArduinoCore-avr/blob/master/libraries/Wire/src/Wire.h)
+```C++
+#ifndef TwoWire_h
+#define TwoWire_h
+
+class TwoWire : public Stream
+{
+    //...
+};
+
+extern TwoWire Wire;
+
+#endif    
+```
+
+_Example_: I2C library implementation file [Wire.cpp](https://github.com/arduino/ArduinoCore-avr/blob/master/libraries/Wire/src/Wire.cpp)
+
+```C++
+#include "Wire.h"
+
+void TwoWire::begin(void)
+{
+  rxBufferIndex = 0;
+  rxBufferLength = 0;
+
+  txBufferIndex = 0;
+  txBufferLength = 0;
+
+  twi_init();
+  twi_attachSlaveTxEvent(onRequestService); // default callback must exist
+  twi_attachSlaveRxEvent(onReceiveService); // default callback must exist
+}
+//...
+```
 
 ## Using an Arduino Library 
 
@@ -33,6 +97,10 @@ Two optional files we may see are **keywords.txt** (this is a hints file to tell
 and **examples folder**, which may have some handy test-sketches. These will show up under the _File→Examples→Library_ dropdown.
 
 The description and details of a library will be taken from the **library.properties** property file within a library. 
+
+_Example:_ [Arduino Logging Library](arduino-library/logging/)
+
+_Example:_ [Overview of the official Arduino libraries](https://reference.arduino.cc/reference/en/libraries/)
 
 
 ### Manual Installation
@@ -69,7 +137,26 @@ The Arduino IDE comes with a build-in Library Manager.
   Now we can close the library manager.
 
 
-## Implement an Arduino Library
+## Building an Arduino Library
+
+We can also **implement our own Arduino library**. 
+To do this, we will proceed step by step:
+
+* Step 1: [Implement the functionality](../arduino-library/led-version1/) 
+    We implement the desired functionality in the form of functions or classes. 
+    The code is currently in an `.ino` file.
+
+* Step 2: [Separation into `.h` and `.cpp` files](../arduino-library/led-version2/)
+    We put the implementation of the functionality into a separate `.cpp` file 
+    and create a header file (`.h`) to define the API.
+
+* Step 3: [Creation of a library](../arduino-library/led-version3/)
+    We create a library folder with the necessary files and structure (including
+    examples). Filally we zip the library folder and import it into the Arduino IDE.
+
+We can therefore use our own libraries in exactly the same way as libraries 
+from sensor or motor manufacturers.
+
 
 ### Start With a Sketch
 
@@ -123,4 +210,4 @@ _Example_: [Led class as Arduino library](led-version3/)
 
 * [Arduino Style Guide for Creating Libraries](https://docs.arduino.cc/learn/contributions/arduino-library-style-guide/)
 
-*Egon Teiniker, 2020-2024, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
