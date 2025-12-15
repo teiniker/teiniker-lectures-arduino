@@ -1,6 +1,6 @@
-# Microcontroller Programming Basics
+# Embedded Programming 
 
-This section provides an introduction to **microcontroller programming**
+This section provides an introduction to **embedded programming**
 using the **ATMega328P** microcontroller. The ATMega328P is a popular
 microcontroller used in many embedded systems, including the **Arduino**.
 
