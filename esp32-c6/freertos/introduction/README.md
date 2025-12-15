@@ -53,7 +53,7 @@ the Arduino Framework:
     all tasks on that one core via preemption/time slicing and priorities. 
 
 
-## YouTube Tutorials: Simply Explained
+## YouTube Tutorials
 
 ### Simply Explained
 
