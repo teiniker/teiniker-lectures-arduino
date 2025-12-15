@@ -1,5 +1,9 @@
 # Programming I/O Ports via Registers
 
+Without hardware abstraction, every application would have to be programmed 
+down to the register level. This is not only tedious, but also reduces the 
+reusability of the application for different boards.
+
 The ports of the Arduino Uno Board are connected directly to the pins of 
 the ATmega328P. The microcontroller combines the pins into 8-bit ports.
 
@@ -101,6 +105,19 @@ _Example_: [Tinkercad - Native Digital IO](https://www.tinkercad.com/things/gW2r
 
 
 ## References
+
+* YouTube Tutorials created by **Mitch Davis** about register programming: 
+
+    * [Intro to registers](https://youtu.be/tBq3sO1Z-7o?si=r_6gOaQlL2HEGAYl)
+    * [Set Registers by Memory Address](https://youtu.be/W8REqKlGzDY?si=2senXEQiFCUqhx3g)
+    * [Barebones Microcontroller](https://youtu.be/tfTCFBqPzcE?si=x2brcGTF_hgZyx7o)
+    * [Bootloaders and Programmers](https://youtu.be/dcLeKj00t_I?si=bHLBwApwMflpI-UB)
+    * [AVRDude and fuses](https://youtu.be/Q2DakPocvfs?si=-rtPUYle80QxcB-B)
+    * [Compilers, Assemblers, and Friends](https://youtu.be/7lcY5tcP_ow?si=nRIHUNCrepeqPQNd)
+    * [Libraries (Preprocessor & Linker)](https://youtu.be/EOuNU89TdVU?si=extE8S5eeZOadchk)
+    * [Optimizers and Bit-Banging](https://youtu.be/ZLyesUiXde4?si=YrW2v2VVxiouZs0Q)
+    * [Review; ATTiny85 from scratch](https://youtu.be/N591sLGYWnM?si=DywXeAwhOajquhfe)
+
 * [Arduino Core AVR: wiring_digital.c](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/wiring_digital.c)
 
 * [Arduino Core ESP32: esp32-hal-gpio.c]([arduino-esp32/cores/esp32/esp32-hal-gpio.c](https://github.com/espressif/arduino-esp32/blob/5f427c998a5eff55abf163a4fbeab17fff06e348/cores/esp32/esp32-hal-gpio.c))
@@ -110,4 +127,4 @@ _Example_: [Tinkercad - Native Digital IO](https://www.tinkercad.com/things/gW2r
 * Norman Dunbar. **Arduino Software Internals**. APress 2020
     * Chapter 3: Arduino Language Reference
 
-*Egon Teiniker, 2020-2024, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
