@@ -8,6 +8,10 @@ microcontroller used in many embedded systems, including the **Arduino**.
 
 * [Hardware Abstraction](hardware-abstraction/)
 
+* [Timing and Scheduling](scheduling/)
+
+* [FreeRTOS](freertos/)
+
 * [Programming Techniques](programming-techniques/)
 
 

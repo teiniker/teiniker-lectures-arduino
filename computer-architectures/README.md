@@ -18,13 +18,9 @@ In the following sections the basic mechanisms and components of computer archit
 
 * [Sequential Logic](sequential-logic/)
 
-* Microcontrollers and Boards
+* Microcontrollers
     * [ATmega328p](microcontroller/atmega328p/datasheet-ATmega328P.pdf)
-    * [Arduino Uno Board](microcontroller/boards/uno-r3/datasheet-uno.pdf)
-    * [Arduino Nano Board](microcontroller/boards/nano/datasheet-nano.pdf)
-
     * [ATmega640](microcontroller/atmega2560/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf)
-    * [Arduino Mega Board](microcontroller/boards/mega2560/datasheet-mega2560.pdf)
 
 ## References
 
@@ -36,4 +32,4 @@ In the following sections the basic mechanisms and components of computer archit
 * Andrew S. Tanenbaum. **Structured Computer Organization**. Pearson Education, International Edition, 2013
 
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 

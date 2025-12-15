@@ -31,7 +31,7 @@ unsigned long timestamp = 0;
 bool led_green = false;
 volatile bool led_red = false;
 
-// Interrupt Service Routine
+// Interrupt Service Routine (ISR)
 void interrupt_service_button()
 {
   	digitalWrite(LED_RED_PIN, led_red);  

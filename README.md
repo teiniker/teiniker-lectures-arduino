@@ -8,7 +8,12 @@ architectures**:
 For the introduction to microcontroller programming, we will use the 
 **Arduino Uno R3** board (8bit AVR). Programming techniques and the 
 use of peripheral components will be demonstrated using concrete 
-examples:
+examples.
+
+We also want to look at how to program an **ESP32-C6** microcontroller 
+(32-bit RISC V) using the Arduino framework. The use of a real-time 
+operating system for multitasking is a particular focus here.
+
 
 * [Introduction](introduction/)
 
@@ -16,15 +21,6 @@ examples:
   
 * [Sensors and Actuators](sensors-and-actuators/)
 
-We also want to look at how to program an **ESP32-C6** microcontroller 
-(32-bit RISC V) using the Arduino framework. The use of a real-time 
-operating system for multitasking is a particular focus here.
-
-* [Introduction](esp32-c6/introduction)
-
-* [ESP32-C6 Board](esp32-c6/boards/ESP32-C6)
-  
-* [FreeRTOS](esp32-c6/freertos)
   
 ## References
 * Michael Margolis, Brian Jepson, Nicholas Robert Weldin. **Arduino Cookbook**. O'Reilly, 2020

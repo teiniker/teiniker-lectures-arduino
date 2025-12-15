@@ -5,7 +5,8 @@ milliseconds since the Arduino board began running the current program,
 is typically implemented using one of the built-in hardware timers of 
 the microcontroller. 
 
-For most Arduino boards, including the Arduino Uno which uses the **ATmega328P** microcontroller, **millis() is driven by Timer 0**.
+For most Arduino boards, including the Arduino Uno which uses 
+the **ATmega328P** microcontroller, **millis() is driven by Timer 0**.
 
 Here's how it works:
 

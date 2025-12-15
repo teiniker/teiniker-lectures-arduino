@@ -1,18 +1,26 @@
 # Introduction
 
-* **Setup**
-  * [Arduino IDE Setup](ArduinoSetup.md)
+* **Setup: Arduino Uno R3**
+  * [Arduino IDE](setup-uno/README.md)
 
-* **First Steps with Arduino**
-  * [Run an Arduino Sketch](RunSketches.md)
-  * [Hello World - Serial](serial_hello/)
-  * [Hello World - Blink](blink_hello/)
-
-* **Arduino Video Tutorials** 
-  * [McWhorter](tutorials/ArduinoTutorials-McWhorter.md) 
-  * [DroneBot Workshop](tutorials/ArduinoTutorials-DroneBotWorkshop.md)
+  * First Steps
+    - [Run an Arduino Sketch](setup-uno/RunSketches.md)
+    - [Hello World - Serial](setup-uno/serial_hello/)
+    - [Hello World - Blink](setup-uno/blink_hello/)
 
 
-## References
+* **Setup: ESP32**
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+  * [Arduino IDE](setup-esp32/README.md)
+
+  * First Steps
+    - [Hello World - Serial](setup-esp32/hello_serial/)
+    - [Hello World - Blink](setup-esp32/hello_blink/)
+
+
+* **YouTube Tutorials** 
+
+  * [McWhorter - Arduino](tutorials/ArduinoTutorials-McWhorter.md) 
+
+
+*Egon Teiniker, 2020-2025, GPL v3.0* 

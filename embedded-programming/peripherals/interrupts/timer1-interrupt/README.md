@@ -63,7 +63,7 @@ Here's a breakdown of the `setup()` code:
 * **Interrupts**: The Timer 1 Compare A Match interrupt is enabled. 
 
 
-The ISR (Interrupt Service Routine) for this interrupt, TIMER1_COMPA_vect, 
+The **Interrupt Service Routine (ISR)** for this interrupt, `TIMER1_COMPA_vect`, 
 toggles the state of the LED.
 
 ```C++
@@ -153,4 +153,4 @@ Here are the key reasons for this:
 
 * [ATmega328p Datasheet](/hardware/microcontroller/atmega328p/)
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
