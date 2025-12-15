@@ -1,11 +1,11 @@
-# Timing and Task Scheduling
+# Task Scheduling
 
 In the context of embedded programming, cyclic processing and scheduling 
-are fundamental concepts for managing **how tasks or processes are executed** 
-in an embedded system. 
+are fundamental concepts for managing **how tasks are executed** in an 
+embedded system. 
 
 
-## Hardware Setup
+## Timing
 
 Running the following examples, we can use a simple circuit of two LEDs.
 
@@ -38,6 +38,7 @@ _Example:_ [Arduino: Blink delay()](https://www.tinkercad.com/things/7TIAkPiA0M0
 
 
 ## millis() Function
+
 These restrictions can be avoided with the `millis()` function which is a **non-blocking operation**.
 Instead of waiting for a certain time, we can always check whether a certain time has already passed.
 
@@ -62,6 +63,7 @@ _Example:_ [Arduino: Blink millis()](https://www.tinkercad.com/things/gsCB4b6UFD
 
 
 ## Cyclic Processing
+
 In many programmable logic controllers (PLC) a **cyclic program processing** will be used - the 
 program is processed in **fixed cycles**.
 
