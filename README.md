@@ -12,7 +12,7 @@ examples:
 
 * [Introduction](introduction/)
 
-* [Microcontroller Programming Basics](programming-basics/)
+* [Embedded Programming](embedded-programming/)
   
 * [Sensors and Actuators](sensors-and-actuators/)
 
