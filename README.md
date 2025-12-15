@@ -1,19 +1,18 @@
-# Microcontroller Programming using Arduino
+# Embedded Programming using Arduino
 
 Before we get to programming, let's look at the **basics of computer 
 architectures**:
 
 * [Computer Architectures](computer-architectures/)
 
-For the introduction to microcontroller programming, we will use the 
+For the introduction to embedded programming, we will use the 
 **Arduino Uno R3** board (8bit AVR). Programming techniques and the 
 use of peripheral components will be demonstrated using concrete 
 examples.
 
-We also want to look at how to program an **ESP32-C6** microcontroller 
+We also look at how to program an **ESP32-C6** microcontroller 
 (32-bit RISC V) using the Arduino framework. The use of a real-time 
 operating system for multitasking is a particular focus here.
-
 
 * [Introduction](introduction/)
 
