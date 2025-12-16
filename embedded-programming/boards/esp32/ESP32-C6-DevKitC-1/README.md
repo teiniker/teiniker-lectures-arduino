@@ -1,6 +1,20 @@
-# ESP32-C6 
+# ESP32-C6-DevKitC-1-N8
 
 ![ESP32-C6-DevKitC-1-N8](figures/ESP32-C6-DevKitC-1-Front.png)
+
+* **CPU and Memory**
+	- HP RISC-V processor:
+		- Clock speed: up to **160 MHz**
+		- Four stage pipeline
+	- LP RISC-V processor:
+		- Clock speed: up to 20 MHz
+		- Two stage pipeline
+	- L1 cache: **32 KB**
+	- ROM: **320 KB**
+	- HP SRAM: **512 KB**
+	- LP SRAM: 16 KB
+
+
 
 
 ## Dev Board ESP32-C6-DevKitC-1
@@ -38,7 +52,7 @@ _Example:_ ESP32-C6-DevKitC-1-N8
 
 ## References
 
-* [ESP32-C6-DevKitC-1 v1.2](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html)
+* [ESP32-C6-DevKitC-1](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/index.html)
 * [Why the ESP32 C6 DevKit is Perfect for RISC-V Learning](https://youtu.be/JPhw94YGt_o?si=34kFTfoHrNuiQAR9)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
