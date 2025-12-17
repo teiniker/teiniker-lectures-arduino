@@ -2,7 +2,15 @@
 
 ![ESP32-C6-DevKitC-1-N8](figures/ESP32-C6-DevKitC-1-Front.png)
 
-* **CPU and Memory**
+The ESP32-C6 SoC (System on Chip) supports Wi-Fi 6 in 2.4 GHz band, 
+Bluetooth 5, Zigbee 3.0 and Thread 1.3. It consists of a high-performance 
+(HP) 32-bit RISC-V processor, an low-power (LP) 32-bit RISC-V
+processor, wireless baseband and MAC (Wi-Fi, Bluetooth LE, and 802.15.4), 
+RF module, and numerous peripherals
+
+![ESP32-C6 Block Diagram](figures/ESP32-C6-FunctionalBlockDiagram.png)
+
+* **CPU and Memory**:
 	- HP RISC-V processor:
 		- Clock speed: up to **160 MHz**
 		- Four stage pipeline
@@ -14,10 +22,38 @@
 	- HP SRAM: **512 KB**
 	- LP SRAM: 16 KB
 
+* **Advanced Peripheral Interfaces**:
+    - **30 GPIOs** (QFN40), or 22 GPIOs (QFN32)
+    - Analog interfaces:
+        - **12-bit SAR ADC**, up to 7 channels
+        - Temperature sensor
+    - Digital interfaces:
+        - **Two UARTs**
+        - Two SPI ports for communication with flash
+        - **General purpose SPI port**
+        - **I2C**
+        - I2S
+        - Pulse count controller
+        - USB Serial/JTAG controller
+        - Two TWAI® controllers, compatible with ISO 11898-1 (**CAN Specification 2.0**)
+        - LED PWM controller, up to 6 channels
+        - **Motor Control PWM** (MCPWM)
+
+* **Security**:
+    - **Secure boot**: Permission control on accessing internal and external memory
+    - **Flash encryption**: Memory encryption and decryption
+    -  4096-bit OTP, up to 1792 bits for users
+    - **Cryptographic hardware acceleration**:
+        - Random Number Generator (RNG)
+        - AES-128/256 (FIPS PUB 197)
+        - ECC
+        - HMAC
+        - RSA
+        - SHA (FIPS PUB 180-4)
+        - Digital signature
 
 
-
-## Dev Board ESP32-C6-DevKitC-1
+## Pinout
 
 ![ESP32-C6-DevKitC-1](figures/ESP32-C6-Pinout.png)
 
