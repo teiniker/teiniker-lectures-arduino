@@ -56,6 +56,25 @@ void setup()
 }
 ```
 
+The **volatile** keyword is a type qualifier used to tell the compiler that 
+a variable's value can be changed by something outside the control of the 
+code currently executing.
+
+Because modern compilers are highly aggressive about optimization, they often 
+assume that a variable's value stays the same unless the code explicitly modifies 
+it. `volatile` prevents these optimizations.
+
+When we mark a variable as `volatile`, we are giving the compiler two specific 
+instructions:
+
+* **No Caching**: The compiler must read the value from the actual memory address 
+    every single time it is referenced, rather than reusing a value it previously 
+    loaded into a CPU register.
+
+* **No Reordering**: The compiler cannot optimize away or reorder read/write 
+    operations involving that variable.
+
+
 ## Library Operations
 
 * **Timer1.initialize(unsigned long microseconds)**: Timer1 initialization
