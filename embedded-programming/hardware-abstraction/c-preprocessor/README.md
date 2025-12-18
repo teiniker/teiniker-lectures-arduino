@@ -133,6 +133,10 @@ AVR-based Arduino boards come with varying numbers of hardware UARTs:
 
 ## References
 
-
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
+    * Chapter 14: The Preprocessor
+    
+* Norman Dunbar. **Arduino Software Internals**. APress 2020
+    * Chapter 3: Arduino Language Reference
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
