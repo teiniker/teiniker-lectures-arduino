@@ -61,6 +61,32 @@ void setup()
 }
 ```
 
+When programming an Interrupt Service Routine (ISR):
+
+* **Keep it short and fast**: 
+    While the ISR is running, other interrupts (like millis() incrementing 
+    or Serial data arrival) are blocked.
+    - Do: Set a flag (a boolean) or update a counter and exit.
+    - **Don't**: Perform complex math, use delay(), or execute long for loops.
+
+* **Avoid Serial.print()**: 
+    Never use `Serial.print()` inside an ISR. Serial communication relies 
+    on interrupts to send data. If we call it inside an ISR where interrupts 
+    are disabled, our code will likely hang or behave unpredictably.
+
+* **Use the volatile Keyword**:
+    Any variable that is shared between your ISR and your main `loop()` 
+    must be declared as `volatile`. This tells the compiler that the value 
+    can change at any moment, preventing it from incorrectly caching the 
+    value in a CPU register.
+
+* **Atomic Access for Multi-byte Variables**:
+    The Arduino Uno is an 8-bit microcontroller. This means it can only read 
+    one byte at a time. If you are sharing a 16-bit or 32-bit variable 
+    between the ISR and the main loop, an interrupt could trigger while the 
+    main loop is halfway through reading the variable.
+
+
 The **volatile** keyword is a type qualifier used to tell the compiler that 
 a variable's value can be changed by something outside the control of the 
 code currently executing.
