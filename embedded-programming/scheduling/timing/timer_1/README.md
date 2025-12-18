@@ -25,6 +25,11 @@ TimerOne exclusively controls Timer1, which means:
 
 ## Wiring Diagram
 
+We use a simple LED to output a state that is changed in every timer interval.
+
+![Timer 1 Blink](figures/Arduino-Digital-Output.png)
+
+
 
 ## Source Code
 
