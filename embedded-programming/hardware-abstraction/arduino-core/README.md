@@ -31,12 +31,59 @@ It includes definitions for the various I/O functions, as well as the
 implementation of the **Arduino language** (a set of C/C++ functions) that 
 simplifies programming for these devices. 
 
+
+## Sketch Programming Model 
+
+The Arduino Core Framework also implements the **main() function** to enable 
+the familiar programming model of an Arduino Sketch.
+
+_Example_: Programming model of an Arduino Sketch
+
+```C++
+void setup()
+{
+    // Executed only once
+}
+
+void loop()
+{
+    // Executed for ever
+}
+```
+
+Here we can see how the **main() function** is implemented in the AVR Arduino 
+Core Framework:
+
+```C++
+int main(void)
+{
+	init();
+	initVariant();
+#if defined(USBCON)
+	USBDevice.attach();
+#endif
+	
+	setup();
+    
+	for (;;) {
+		loop();
+		if (serialEventRun) serialEventRun();
+	}
+        
+	return 0;
+}
+```
+
+After various initializations, the `setup()` function is called, then the 
+`loop()` function is executed in an infinite loop.
+
+
+## Core Libraries
+
 The core provides essential support for standard Arduino functions like 
 `digitalRead()`, `digitalWrite()`, and `analogRead()`, making it easier 
 for developers to develop projects involving sensors, motors, and other 
 peripherals. 
-
-* [ArduinoCore-API](https://github.com/earlephilhower/ArduinoCore-API)
 
 * [Arduino AVR Code](https://github.com/arduino/ArduinoCore-avr)
 

@@ -7,16 +7,22 @@ of that**.
 
 On the ESP32-C6, we find the following software layers:
 
-* **ESP32-C6 Bootloader**
+![ESP32 Software Stack](figures/ESP32-Stack.png)
+
+* **Arduino Sketch**: Our application code using  `setup()` and `loop()`.
+
+* **Arduino-ESP32 Core**: Provides Arduino APIs (`pinMode()`, `digitalWrite()`, 
+    Serial, WiFi, etc.) but implemented using IDF facilities and running 
+    inside IDF/FreeRTOS. 
 
 * **ESP-IDF**: Drivers, Wi-Fi/BLE stacks, event loop, timers, NVS, etc.
 
 * **FreeRTOS** (as an ESP-IDF component): Scheduler, tasks, queues, 
     semaphores, timers, ISR-to-task handoff, etc. 
 
-* **Arduino-ESP32 Core**: Provides Arduino APIs (pinMode, digitalWrite, 
-    Serial, WiFi, etc.) but implemented using IDF facilities and running 
-    inside IDF/FreeRTOS. 
+* **ESP32-C6 Hardware +Bootloader**: RISC-V core, Interrupt controller,
+     ROM startup code
+
 
 Due to this software architecture, the following implications arise for 
 the Arduino Framework:
