@@ -100,7 +100,7 @@ The description and details of a library will be taken from the **library.proper
 
 _Example:_ [Arduino Logging Library](arduino-library/logging/)
 
-_Example:_ [Overview of the official Arduino libraries](https://reference.arduino.cc/reference/en/libraries/)
+_Example:_ [Overview of the official Arduino libraries](https://docs.arduino.cc/libraries/)
 
 
 ### Manual Installation
@@ -142,15 +142,18 @@ The Arduino IDE comes with a build-in Library Manager.
 We can also **implement our own Arduino library**. 
 To do this, we will proceed step by step:
 
-* Step 1: [Implement the functionality](../arduino-library/led-version1/) 
+* Step 1: **Implement the functionality**
+
     We implement the desired functionality in the form of functions or classes. 
     The code is currently in an `.ino` file.
 
-* Step 2: [Separation into `.h` and `.cpp` files](../arduino-library/led-version2/)
+* Step 2: **Separation into `.h` and `.cpp` files**
+
     We put the implementation of the functionality into a separate `.cpp` file 
     and create a header file (`.h`) to define the API.
 
-* Step 3: [Creation of a library](../arduino-library/led-version3/)
+* Step 3: **Creation of a library**
+
     We create a library folder with the necessary files and structure (including
     examples). Filally we zip the library folder and import it into the Arduino IDE.
 
@@ -166,7 +169,7 @@ together in an `.ino` file.
 
 This approach is also easy to simulate using Tinkercad.
 
-_Example_: [Led class in one file](led-version1/)
+_Example_: [Digital IO functions](../arduino-library/digital-io/digital-io-version1/)
 
 
 ### Refactor to a C/C++ Module
@@ -180,7 +183,7 @@ constants, functions and classes) and an implementation file
 In an Arduino project, these module files are located parallel 
 to the `.ino` file in the same directory.
 
-_Example_: [Led class as mudule](led-version2/)
+_Example_: [Digital IO functions as a C module](../arduino-library/digital-io/digital-io-version2/)
 
 
 ### Create an Arduino Library
@@ -196,7 +199,7 @@ application examples in an `examples` folder.
 This directory is then compressed into a **ZIP file**. 
 In this form, the Arduino library can easily be distributed and installed.
 
-_Example_: [Led class as Arduino library](led-version3/)
+_Example_: [Digital IO functions as Arduino library](../arduino-library/digital-io/digital-io-version3/)
 
 
 ## References
