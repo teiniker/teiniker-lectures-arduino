@@ -61,5 +61,10 @@ Here are some key aspects of a HAL:
     at the hardware level can be contained within the HAL, reducing the risk to 
     the overall system.
 
+## References
+
+* Robert C. Martin. **Clean Architecture: A Craftsman's Guide to Software Structure and Design**.
+    Addison-Wesley, 2017
+    - Chapter 29: Clean Embedded Architecture
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
