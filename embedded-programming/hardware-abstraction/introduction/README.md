@@ -24,7 +24,7 @@ all the code so the code will be very hard to change.
 
 The **line between software and firmware** is typically not so well defined
 as the line between code and hardware.
-One of our jobs as an embedded software devloper is to firm up that line.
+One of our jobs as an embedded software developer is to firm up that line.
 
 ![Embedded Architecture Layers](figures/Embedded-Architecture-Layered.png)
 
