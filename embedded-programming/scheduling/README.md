@@ -15,8 +15,9 @@ embedded system.
 
     
 * **Scheduling**
-    - [Cyclic Processing](cyclic-processing/)
-
+    - [Cyclic Processing](cyclic-processing/introduction/README.md)
+        - Example: [cycletime_blink](cyclic-processing/cycletime_blink/)
+        - Example: [scheduler_blink](cyclic-processing/scheduler_blink/)
 
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
