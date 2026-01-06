@@ -52,8 +52,16 @@ A task can exist in one of the following states:
     API calls respectively.
 
 
-
 ## References
+
+* [YouTube (Digi-Key Electronics): Part 3: Task Scheduling](https://youtu.be/95yUbClyf3E?si=051YN9SgNIgvrAyq)
+
+* [YouTube (Digi-Key Electronics): Part 4: Memory Management](https://youtu.be/Qske3yZRW5I?si=TJ-p58wu5jiKC7lX)
+
+* [YouTube (Simply Explained): How to Multitask with FreeRTOS](https://youtu.be/WQGAs9MwXno)    
+
+* [YouTube (Simply Explained): Manage FreeRTOS tasks - Suspend, Delay, Resume, Delete](https://youtu.be/jJaGRCgDo9s?si=1ZBI1Coe6A3cQmLx)
+
 * [RTOS Fundamentals](https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/01-RTOS-fundamentals)
 
 * [Tasks and Co-routines](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/00-Tasks-and-co-routines)
