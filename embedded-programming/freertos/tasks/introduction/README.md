@@ -54,6 +54,8 @@ A task can exist in one of the following states:
 
 
 ## References
-* [Tasks and Co-routines](https://www.freertos.org/taskandcr.html)
+* [RTOS Fundamentals](https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/01-RTOS-fundamentals)
+
+* [Tasks and Co-routines](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/00-Tasks-and-co-routines)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
