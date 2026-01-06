@@ -1,11 +1,11 @@
-# Timing 
+# Timing: delay() vs. millis() 
 
 Running the following examples, we can use a simple circuit of two LEDs.
 
 ![Arduino Uno Board](figures/TwoLEDs.png)
 
 
-### delay() Function
+## delay() Function
 
 We can use the function `delay()` to force arduino to wait a given time interval.
 * **void delay(unsigned long)**\
@@ -30,7 +30,7 @@ However, it is very often necessary to execute another task during the waiting t
 _Example:_ [TinkerCAD: Blink delay()](https://www.tinkercad.com/things/7TIAkPiA0M0)
 
 
-### millis() Function
+## millis() Function
 
 These restrictions can be avoided with the `millis()` function which is a **non-blocking operation**.
 Instead of waiting for a certain time, we can always check whether a certain time has already passed.

@@ -1,4 +1,4 @@
-# TimerOne Library
+# Example: TimerOne Library
 
 TimerOne is an Arduino library that provides easy, high-level access 
 to **Hardware Timer1** on **AVR-based boards such as the Arduino Uno**.
@@ -9,26 +9,11 @@ and hardware-specific), TimerOne lets you:
 * Attach interrupt service routines (ISRs)
 * Generate PWM signals with fine resolution
 
-The Arduino Uno uses the **ATmega328P** microcontroller, which has 
-three timers:
-
-* **Timer0 (8-bit)**: Used by `millis()`, `micros()`, `delay()`
-
-* **Timer1 (16-bit)**: Not used by Arduino (used by TimerOne)
-
-* **Timer2 (8-bit)**: Used by `tone()`
-
-TimerOne exclusively controls Timer1, which means:
-* It does not interfere with `millis()` or `delay()`
-* It does override default PWM behavior on certain pins
-
-
 ## Wiring Diagram
 
 We use a simple LED to output a state that is changed in every timer interval.
 
 ![Timer 1 Blink](figures/Arduino-Digital-Output.png)
-
 
 
 ## Source Code
@@ -60,32 +45,6 @@ void setup()
   Timer1.attachInterrupt(ISR_blink_led); 
 }
 ```
-
-When programming an Interrupt Service Routine (ISR):
-
-* **Keep it short and fast**: 
-    While the ISR is running, other interrupts (like millis() incrementing 
-    or Serial data arrival) are blocked.
-    - Do: Set a flag (a boolean) or update a counter and exit.
-    - **Don't**: Perform complex math, use delay(), or execute long for loops.
-
-* **Avoid Serial.print()**: 
-    Never use `Serial.print()` inside an ISR. Serial communication relies 
-    on interrupts to send data. If we call it inside an ISR where interrupts 
-    are disabled, our code will likely hang or behave unpredictably.
-
-* **Use the volatile Keyword**:
-    Any variable that is shared between your ISR and your main `loop()` 
-    must be declared as `volatile`. This tells the compiler that the value 
-    can change at any moment, preventing it from incorrectly caching the 
-    value in a CPU register.
-
-* **Atomic Access for Multi-byte Variables**:
-    The Arduino Uno is an 8-bit microcontroller. This means it can only read 
-    one byte at a time. If you are sharing a 16-bit or 32-bit variable 
-    between the ISR and the main loop, an interrupt could trigger while the 
-    main loop is halfway through reading the variable.
-
 
 The **volatile** keyword is a type qualifier used to tell the compiler that 
 a variable's value can be changed by something outside the control of the 
