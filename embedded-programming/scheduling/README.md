@@ -9,7 +9,6 @@ embedded system.
 
 * [Cyclic Processing](cyclic-processing/)
 
-* [Interrupts](../peripherals/interrupts/)
 
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 

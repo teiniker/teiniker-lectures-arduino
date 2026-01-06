@@ -25,6 +25,11 @@ TimerOne exclusively controls Timer1, which means:
 
 ## Wiring Diagram
 
+We use a simple LED to output a state that is changed in every timer interval.
+
+![Timer 1 Blink](figures/Arduino-Digital-Output.png)
+
+
 
 ## Source Code
 
@@ -55,6 +60,51 @@ void setup()
   Timer1.attachInterrupt(ISR_blink_led); 
 }
 ```
+
+When programming an Interrupt Service Routine (ISR):
+
+* **Keep it short and fast**: 
+    While the ISR is running, other interrupts (like millis() incrementing 
+    or Serial data arrival) are blocked.
+    - Do: Set a flag (a boolean) or update a counter and exit.
+    - **Don't**: Perform complex math, use delay(), or execute long for loops.
+
+* **Avoid Serial.print()**: 
+    Never use `Serial.print()` inside an ISR. Serial communication relies 
+    on interrupts to send data. If we call it inside an ISR where interrupts 
+    are disabled, our code will likely hang or behave unpredictably.
+
+* **Use the volatile Keyword**:
+    Any variable that is shared between your ISR and your main `loop()` 
+    must be declared as `volatile`. This tells the compiler that the value 
+    can change at any moment, preventing it from incorrectly caching the 
+    value in a CPU register.
+
+* **Atomic Access for Multi-byte Variables**:
+    The Arduino Uno is an 8-bit microcontroller. This means it can only read 
+    one byte at a time. If you are sharing a 16-bit or 32-bit variable 
+    between the ISR and the main loop, an interrupt could trigger while the 
+    main loop is halfway through reading the variable.
+
+
+The **volatile** keyword is a type qualifier used to tell the compiler that 
+a variable's value can be changed by something outside the control of the 
+code currently executing.
+
+Because modern compilers are highly aggressive about optimization, they often 
+assume that a variable's value stays the same unless the code explicitly modifies 
+it. `volatile` prevents these optimizations.
+
+When we mark a variable as `volatile`, we are giving the compiler two specific 
+instructions:
+
+* **No Caching**: The compiler must read the value from the actual memory address 
+    every single time it is referenced, rather than reusing a value it previously 
+    loaded into a CPU register.
+
+* **No Reordering**: The compiler cannot optimize away or reorder read/write 
+    operations involving that variable.
+
 
 ## Library Operations
 

@@ -24,7 +24,7 @@ all the code so the code will be very hard to change.
 
 The **line between software and firmware** is typically not so well defined
 as the line between code and hardware.
-One of our jobs as an embedded software devloper is to firm up that line.
+One of our jobs as an embedded software developer is to firm up that line.
 
 ![Embedded Architecture Layers](figures/Embedded-Architecture-Layered.png)
 
@@ -61,5 +61,10 @@ Here are some key aspects of a HAL:
     at the hardware level can be contained within the HAL, reducing the risk to 
     the overall system.
 
+## References
+
+* Robert C. Martin. **Clean Architecture: A Craftsman's Guide to Software Structure and Design**.
+    Addison-Wesley, 2017
+    - Chapter 29: Clean Embedded Architecture
 
 *Egon Teiniker, 2020-2025, GPL v3.0*

@@ -1,4 +1,4 @@
-# Abstraction Techniques Usind in C Preprocessor
+# Abstraction Techniques Using the C Preprocessor
 
 By abstracting the hardware, application developers don't need to write code 
 for each specific piece of hardware. Instead, they write against a standardized 
