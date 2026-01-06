@@ -20,8 +20,8 @@ typedef enum
 
 typedef enum 
 {
-	GPIO_0 = 0,
-	GPIO_1 = 1,
+//	GPIO_0 = 0,
+//	GPIO_1 = 1,
 	GPIO_2 = 2,
 	GPIO_3 = 3,
 	GPIO_4 = 4,
