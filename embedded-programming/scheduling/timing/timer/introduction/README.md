@@ -18,7 +18,7 @@ three timers:
 
 * **Timer2 (8-bit)**: Used by `tone()`
 
-TimerOne exclusively controls Timer1, which means:
+**TimerOne** library exclusively controls Timer1, which means:
 * It does not interfere with `millis()` or `delay()`
 * It does override default PWM behavior on certain pins
 
@@ -33,6 +33,8 @@ Instead of continuously checking (polling) for events, the CPU
 is notified automatically.
 
 > Idea: Stop what you’re doing, handle this urgent task, then continue.
+
+![ISR](figures/Arduino-ISR.png)
 
 There are different **interrupt types** in Arduino:
 * **External Interrupts**: Triggered by pin changes (e.g., button press)
@@ -119,7 +121,7 @@ platforms like Arduino Uno (ATmega328P).
         }
     }    
     ```
-* Do Not Allocate Memory Inside ISR: Dynamic memory allocation is 
+* **Do Not Allocate Memory Inside ISR**: Dynamic memory allocation is 
     slow and unsafe inside ISRs.
 
     _Bad practice_: `malloc()`, `new`, `String` objects
