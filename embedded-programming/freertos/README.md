@@ -16,6 +16,7 @@ We use FreeRTOS on an [ESP32-C6 Microcontroller](../../introduction/setup-esp32/
     - Example: [task_led (version1)](tasks/task_led_version1/)
     - Example: [task_serial](tasks/task_serial/)
 
-* [Mutexes](mutexes/)
+* [Mutexes](mutexes/introduction/README.md)
+    - Example: [task_serial](mutexes/task_serial/)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
