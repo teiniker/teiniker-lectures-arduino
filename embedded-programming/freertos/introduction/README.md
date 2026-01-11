@@ -140,12 +140,8 @@ the Arduino Framework:
 
 ## References
 
-* [YouTube (Digi-Key Electronics): Part 1: What is a Real-Time Operating System (RTOS)?](https://youtu.be/F321087yYy4)
-
-* [YouTube (Digi-Key Electronics): Part 2: Getting Started with FreeRTOS](https://youtu.be/JIr7Xm_riRs)
-
-* [YouTube (Simply Explained): What is FreeRTOS?](https://youtu.be/kP-pP6FEu8I)
-    FreeRTOS can be used from within ESP IDF and Arduino.    
+* [YouTube (Digi-Key Electronics): Part 1 - What is a Real-Time Operating System (RTOS)?](https://youtu.be/F321087yYy4)
+* [YouTube (Digi-Key Electronics): Part 2 - Getting Started with FreeRTOS](https://youtu.be/JIr7Xm_riRs)
 
 * [RTOS Fundamentals](https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/01-RTOS-fundamentals)
 
