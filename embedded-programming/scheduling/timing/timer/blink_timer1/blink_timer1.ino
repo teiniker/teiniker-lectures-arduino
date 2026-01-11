@@ -8,7 +8,6 @@ volatile bool ledState = false;
 void ISR_blink_led() 
 {
   ledState = !ledState;
-  digitalWrite(ledPin, ledState);
 }
 
 
@@ -26,5 +25,5 @@ void setup()
 
 void loop() 
 {
-  // Nothing needed here, everything is handled in the ISR
+  digitalWrite(ledPin, ledState);
 }
