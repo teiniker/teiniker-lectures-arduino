@@ -1,13 +1,14 @@
 # Queues
 
-Queues are the primary form of intertask communications. They can be 
+Queues are the primary form of **intertask communications**. They can be 
 used to send messages between tasks, and between interrupts and tasks. 
-In most cases they are used as thread safe FIFO (First In First Out) 
-buffers with new data being sent to the back of the queue.
+In most cases they are used as thread safe **FIFO (First In First Out) 
+buffers** with new data being sent to the back of the queue.
 
 **Messages are sent** through queues **by copy**, meaning the data (which can 
 be a pointer to larger buffers) is itself copied into the queue rather 
 than the queue always storing just a reference to the data:
+
 * Small messages that are already contained in C variables (integers, 
     small structures, etc.) can be sent into a queue directly. 
 
