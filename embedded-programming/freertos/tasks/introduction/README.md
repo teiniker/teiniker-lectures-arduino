@@ -63,6 +63,85 @@ A task can exist in one of the following states:
     API calls respectively.
 
 
+## FreeRTOS API
+
+### Tasks  
+
+The following list includes the most important FreeRTOS functions for working with tasks:
+
+* **xTaskCreate()**: Create a new FreeRTOS task (thread).
+
+    ```C++
+    BaseType_t xTaskCreate( TaskFunction_t pvTaskCode,
+                            const char * const pcName,
+                            const configSTACK_DEPTH_TYPE uxStackDepth,
+                            void *pvParameters,
+                            UBaseType_t uxPriority,
+                            TaskHandle_t *pxCreatedTask
+                        );
+    ```
+
+    - `pvTaskCode`: The name of the function (function pointer) that implements 
+    the task. Tasks are normally implemented as an infinite loop. The function 
+    which implements the task must never attempt to return or exit. 
+
+    - `pcName`: A descriptive name for the task. 
+
+    - `uxStackDepth`: The number of words (not bytes!) to allocate for use as 
+        the task's stack. **Stack size in bytes on ESP32 Arduino**.
+
+    - `pvParameters`: A value that is passed as the paramater to the created 
+        task or `NULL` if there are no parameters. 
+
+    - `uxPriority`: The priority at which the created task will execute. 
+        Low priority numbers denote low priority tasks: higher number = 
+        higher priority.
+
+    - `pxCreatedTask`: Used to pass a handle to the created task out of the 
+        `xTaskCreate()` function. `pxCreatedTask` is optional and can be set 
+        to `NULL`.
+
+    - If the task was created successfully then `pdPASS` is returned.
+        Otherwise `errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY` is returned.
+
+
+### Timing
+
+* **vTaskDelay()**: Delay a task for a given number of ticks. 
+    This puts the current task into the Blocked state.
+
+    ```C++
+    void vTaskDelay( const TickType_t xTicksToDelay );
+    ```
+    
+    - `xTicksToDelay`: The amount of time, in tick periods, that the calling 
+        task should block. 
+
+* **pdMS_TO_TICKS(xTimeInMs)**: A macro that converts milliseconds to 
+        FreeRTOS ticks.
+
+* **xTaskGetTickCount()**: Returns the current RTOS tick count since system start.
+    Tick rate on ESP32 Arduino is typically 1000 Hz (1 ms per tick).
+
+* **vTaskDelayUntil()**: Delay a task until a specified time. This function 
+    can be used by periodic tasks to ensure a constant execution frequency.
+    It provides a **precise periodic delay** with no accumulated drift.
+
+    ```C++
+    void vTaskDelayUntil( TickType_t *pxPreviousWakeTime,
+                      const TickType_t xTimeIncrement );
+    ```
+
+    - `pxPreviousWakeTime`: Pointer to a variable that holds the time at which 
+    the task was last unblocked. The variable must be initialised with the 
+    current time prior to its first use.
+
+    - `xTimeIncrement`: The cycle time period. The task will be unblocked at 
+        time (*pxPreviousWakeTime + xTimeIncrement). Calling `vTaskDelayUntil`
+        with the same `xTimeIncrement` parameter value will cause the task 
+        to execute with a fixed interval period. 
+
+
 ## References
 
 * [YouTube (Digi-Key Electronics): Part 3: Task Scheduling](https://youtu.be/95yUbClyf3E?si=051YN9SgNIgvrAyq)
@@ -73,7 +152,6 @@ A task can exist in one of the following states:
 
 * [YouTube (Simply Explained): Manage FreeRTOS tasks - Suspend, Delay, Resume, Delete](https://youtu.be/jJaGRCgDo9s?si=1ZBI1Coe6A3cQmLx)
 
-* [RTOS Fundamentals](https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/01-RTOS-fundamentals)
 
 * [Tasks and Co-routines](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/00-Tasks-and-co-routines)
 
