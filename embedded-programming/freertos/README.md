@@ -19,8 +19,8 @@ We use FreeRTOS on an [ESP32-C6 Microcontroller](../../introduction/setup-esp32/
     - Example: [task_serial](mutexes/task_serial/)
 
 * [Queues](queues/introduction/README.md)
-    - Example: 
-
+    - Example: [task_serial](queues/task_serial/)
+    
 * [Semaphores](semaphores/introduction/README.md)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 

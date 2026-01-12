@@ -47,6 +47,19 @@ priority will be the task that is unblocked first.
 
 
 
+## FreeRTOS API 
+
+* QueueHandle_t: 
+
+* xQueueCreate(): 
+
+```C++
+ QueueHandle_t xQueueCreate( UBaseType_t uxQueueLength,
+                             UBaseType_t uxItemSize );
+```
+
+
+
 ## References
 
 * [YouTube (Digi-Key Electronics): Part 5 - Queue](https://youtu.be/pHJ3lxOoWeI?si=XhCTe3GFLu9p_Vv0)
