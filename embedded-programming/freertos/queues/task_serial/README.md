@@ -70,7 +70,7 @@ void task3(void *parameter)
 {
     serial_msg_t msg;
 
-    for (;;)
+    while(1) 
     {
         if (xQueueReceive(serialQueue, &msg, portMAX_DELAY) == pdTRUE)
         {

@@ -17,7 +17,7 @@ void task3(void *parameter)
 {
   serial_msg_t msg;
 
-  for (;;)
+  while(1) 
   {
     // Block until a message arrives, then print it
     if (xQueueReceive(serialQueue, &msg, portMAX_DELAY) == pdTRUE)
