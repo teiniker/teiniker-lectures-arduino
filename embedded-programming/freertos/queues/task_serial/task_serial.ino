@@ -3,7 +3,7 @@
 #include "freertos/queue.h"
 
 // Queue for Serial output
-QueueHandle_t serialQueue = nullptr;
+QueueHandle_t serialQueue = NULL;
 const size_t MSG_LEN = 128;          
 const UBaseType_t QUEUE_DEPTH = 10; 
 
