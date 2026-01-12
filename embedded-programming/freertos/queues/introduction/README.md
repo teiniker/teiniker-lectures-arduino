@@ -46,6 +46,32 @@ If more than one task block on the same queue then the task with the highest
 priority will be the task that is unblocked first.
 
 
+## Concurrent Access to a Queue
+
+FreeRTOS handles concurrent access to a queue inside the kernel, so user tasks 
+do not need to add any extra locking:
+
+* **Queues are thread-safe by design**:
+    Every `xQueueSend()` and `xQueueReceive()` operation is protected internally 
+    by critical sections and scheduler control, ensuring that only one task can 
+    modify the queue’s internal data structures at a time.
+
+* **Atomic operations**: 
+    send and receive operations are performed atomically, so partial updates 
+    cannot occur even when tasks are preempted.
+
+* **Task blocking and unblocking**:
+    If a task tries to send to a full queue or receive from an empty queue, 
+    FreeRTOS automatically:
+    - Blocks the task
+    - Places it on the queue’s waiting list
+    - Unblocks the highest-priority waiting task when the queue state changes
+
+Therefore, **multiple tasks can safely access the same queue concurrently** 
+because FreeRTOS serializes all queue operations inside the kernel and uses 
+blocking, priority-aware scheduling instead of user-level locks.
+
+
 ## FreeRTOS API 
 
 * **QueueHandle_t**: It is a pointer used by FreeRTOS to refer to a specific queue.
