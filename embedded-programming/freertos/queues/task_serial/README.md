@@ -120,6 +120,7 @@ void task1(void *parameter)
         }
         msg.text[1 + 80] = ']';
         msg.text[1 + 81] = '\n';
+        msg.text[1 + 82] = '\0';
 
         xQueueSend(serialQueue, &msg, portMAX_DELAY);
 
