@@ -52,6 +52,57 @@ For example, if a task successfully 'takes' the same mutex 5 times then the mute
 will not be available to any other task until it has also 'given' the mutex back 
 exactly five times.
 
+
+## FreeRTOS API
+
+* **SemaphoreHandle_t**: A FreeRTOS handle to a semaphore object.
+    Mutexes are implemented using the semaphore API, so the type is still 
+    `SemaphoreHandle_t`.
+
+* **xSemaphoreCreateMutex()**: Creates a mutex (mutual exclusion lock) and returns 
+    a handle by which the created mutex can be referenced. 
+
+    ```C++
+    SemaphoreHandle_t xSemaphoreCreateMutex(void);
+    ```
+
+    - If the mutex was created successfully then a handle to the 
+        created mutex is returned.
+
+    - If the mutex was not created because the memory required to hold the mutex 
+        could not be allocated then `NULL` is returned.
+
+* **xSemaphoreTake()**: Macro to obtain a semaphore or mutex. The mutex must have 
+    previously been created with a call to `xSemaphoreCreateMutex()`.
+
+    ```C++
+     xSemaphoreTake(SemaphoreHandle_t xSemaphore, TickType_t xTicksToWait);
+    ```
+
+    - `xSemaphore`: A handle to the mutex being taken (obtained when the 
+        mutex was created).
+
+    - `TicksToWait`: The time in ticks to wait for the mutex to become available. 
+        The macro `portTICK_PERIOD_MS` can be used to convert this to a real time.
+        Specifying the block time as `portMAX_DELAY` will cause the task to block 
+        indefinitely (without a timeout).
+        A block time of zero can be used to poll the mutex.
+     
+
+* **xSemaphoreGive()**: Macro to release a semaphore or mutex. The mutex must 
+    have previously been created with a call to `xSemaphoreCreateMutex()`.
+
+    ```C++
+    xSemaphoreGive(SemaphoreHandle_t xSemaphore);
+    ```
+    
+    - `xSemaphore`: A handle to the mutex being released. This is the handle 
+        returned when the mutex was created. 
+
+    - Returns `pdTRUE` if the mutex was released and `pdFALSE` if an error 
+        occurred.
+
+
 ## References
 
 * [YouTube (Digi-Key Electronics): Part 6: Mutex](https://youtu.be/I55auRpbiTs?si=57p6FpE6H6TNtaoJ)
