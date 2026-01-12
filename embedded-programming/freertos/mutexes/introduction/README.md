@@ -84,8 +84,10 @@ exactly five times.
 
     - `TicksToWait`: The time in ticks to wait for the mutex to become available. 
         The macro `portTICK_PERIOD_MS` can be used to convert this to a real time.
+        
         Specifying the block time as `portMAX_DELAY` will cause the task to block 
         indefinitely (without a timeout).
+        
         A block time of zero can be used to poll the mutex.
      
 
