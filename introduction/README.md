@@ -17,6 +17,8 @@
     - [Hello World - Serial](setup-esp32/hello_serial/)
     - [Hello World - Blink](setup-esp32/hello_blink/)
 
+  * [ESP32 Arduino Core](esp32-core/README.md)
+
 
 * **YouTube Tutorials** 
 
