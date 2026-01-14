@@ -73,6 +73,9 @@ resulting in interleaved output:
 ...
 ```
 
+Note that the scheduler performs time-based task switching every 1 millisecond on the 
+ESP32 Arduino Code setup (`configTICK_RATE_HZ = 1000`).
+
 
 ## References
 
