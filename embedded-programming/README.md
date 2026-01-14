@@ -1,8 +1,10 @@
 # Embedded Programming 
 
-This section provides an introduction to **embedded programming**
-using the **ATMega328P** microcontroller. The ATMega328P is a popular
-microcontroller used in many embedded systems, including the **Arduino**.
+This section provides an introduction to embedded programming using 
+the **Arduino Uno** and the **ESP32-C6** microcontroller boards. 
+While Arduino Uno uses an 8 bit (ATMega328P) microcontroller, 
+the ESP32-C6 uses a 32 bit (RISC V) core.
+
 
 * [Microcontroller Peripherals](peripherals/)
 
