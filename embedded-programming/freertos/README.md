@@ -6,7 +6,8 @@ and small microprocessors. Distributed freely under the MIT open source license.
 FreeRTOS includes a kernel and a growing set of IoT libraries suitable for use 
 across all industry sectors.
 
-We use FreeRTOS on an [ESP32-C6 Microcontroller](../../introduction/setup-esp32/README.md).
+In the following examples, we use FreeRTOS on the 
+[ESP32-C6 Microcontroller](../../introduction/setup-esp32/README.md).
 
 * [Introduction](introduction/README.md)
 
