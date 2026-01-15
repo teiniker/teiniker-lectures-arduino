@@ -14,10 +14,10 @@ void led1_task(void *pvParameter)
     while(1) 
     {
         digitalWrite(LED1_PIN, HIGH);           // LED ON
-        vTaskDelay(500 / portTICK_PERIOD_MS);   // Delay for 500ms
+        delay(500);                             // Delay for 500ms
 
         digitalWrite(LED1_PIN, LOW);            // LED OFF
-        vTaskDelay(500 / portTICK_PERIOD_MS);   // Delay for 500ms
+        delay(500);                             // Delay for 500ms
     }
 }
 ```
