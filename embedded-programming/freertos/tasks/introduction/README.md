@@ -12,6 +12,17 @@ within the system or the RTOS scheduler itself.
 Only one task within the application can be executing at any point in time and the real time 
 **RTOS scheduler** is responsible for deciding which task this should be. 
 
+Note that in FreeRTOS, a **task function must never return**.
+If a task function terminates (returns), the behavior depends on how the task was created 
+and the port configuration, but it is always a bug.
+
+If a task function returns, FreeRTOS treats it as if:
+
+```C++
+vTaskDelete(NULL);
+```
+was called internally.
+
 ![FreeRTOS Scheduling](figures/FreeRTOS-Scheduling.png)
 
 _Figure: FreeRTOS task Scheduling (Digi-Key Electronics)_
