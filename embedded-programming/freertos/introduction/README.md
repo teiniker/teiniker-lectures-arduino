@@ -99,7 +99,7 @@ On the ESP32-C6, we find the following software layers:
 * **FreeRTOS** (as an ESP-IDF component): Scheduler, tasks, queues, 
     semaphores, timers, ISR-to-task handoff, etc. 
 
-* **ESP32-C6 Hardware +Bootloader**: RISC-V core, Interrupt controller,
+* **ESP32-C6 Hardware + Bootloader**: RISC-V core, Interrupt controller,
      ROM startup code
 
 
