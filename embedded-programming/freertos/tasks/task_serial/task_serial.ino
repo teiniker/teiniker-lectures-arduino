@@ -7,7 +7,8 @@ void task1(void *parameter)
         for(int i = 0; i < 80; i++) 
         {
             Serial.print("A");
-            vTaskDelay(pdMS_TO_TICKS(5));            }
+            vTaskDelay(pdMS_TO_TICKS(5));            
+        }
         Serial.println("]");
         
         vTaskDelay(pdMS_TO_TICKS(500)); 
