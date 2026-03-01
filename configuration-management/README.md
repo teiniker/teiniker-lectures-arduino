@@ -4,6 +4,7 @@
 
 * Build Automation
     - [Project Layout](building/project-layout/README.md)
+    - [Library Management](building/library-management/README.md)
     - Arduino Uno
         - Example: [hello-blink](building/arduino-uno/hello-blink/)
         - Example: [hello-serial](building/arduino-uno/hello-serial/)
