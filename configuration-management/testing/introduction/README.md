@@ -1,87 +1,107 @@
-# Test Automation with PlatformIO 
+# Unit Testing with PlatformIO
 
-**PlatformIO Unit Testing** allows us to segregate each part of the application 
-and test that the individual parts are working correctly.
+PlatformIO supports unit testing with the **Unity framework**.  
+The idea is simple: test small, isolated parts of your firmware and execute 
+those tests automatically.
 
-PlatformIO builds the firmware on the host machine, uploads it into a target 
-device, starts tests and collects the test results into test reports. The final 
-information will be shown on the host side with informative output and statistics.
+In a typical embedded setup, PlatformIO will:
+1. Build the test firmware on your computer.
+2. Upload it to the target board.
+3. Run the tests on the board.
+4. Print the results in the terminal.
 
-We implement a **test class** in the test folder of a project:
+
+## Project Layout
+
+Place production code in `src/` and test code in `test/`:
+
+```text
+project/
+├── src/
+└── test/
+    └── test_file.cpp
 ```
-unit-test/ 
-      ├── src/
-      └── test/
-            └── test_file.c 
-```
 
-A test class uses the `unity.h` header file and implements **test cases** in 
-seperate `test_*()` functions.
+PlatformIO discovers test files inside `test/` automatically.
 
 
-_Example:_ Unity test cases 
+## Writing a Test
 
-```C++
+Each test case is usually a function named `test_*()`.  
+The file must include `unity.h` and call Unity's runner macros.
+
+```cpp
 #include <unity.h>
 
-void setUp(void) 
-{
-    // set stuff up here
+void setUp(void) {
+    // Called before each test function
 }
 
-void tearDown(void) 
-{
-    // clean stuff up here
+void tearDown(void) {
+    // Called after each test function
 }
 
-void test_int_size(void)
-{
+void test_int_size(void) {
     uint8_t size = sizeof(int);
     TEST_ASSERT_EQUAL(2, size);
 }
 
-int main( int argc, char **argv) 
-{
+int main(int argc, char **argv) {
     UNITY_BEGIN();
     RUN_TEST(test_int_size);
-    UNITY_END();
+    return UNITY_END();
 }
 ```
 
-Note that `setUp()` and `tearDown()` must be implemented as well.
+`setUp()` and `tearDown()` are part of the Unity interface and should 
+be present, even if empty.
 
-In order to run the tests, the test class must be compiled and uploaded to the device.
-We can do that with a simple command on the PlatformIO console:
+
+## Running Tests
+
+Run all tests for the default environment:
 
 ```bash
-$ pio test
+pio test
+```
 
+Run tests for a specific environment (for example `uno`):
+
+```bash
+pio test -e uno
+```
+
+Typical output:
+
+```text
 Testing...
 If you don't see any output for the first 10 secs, please reset board (press reset button)
-.c:23: test_int_size    [PASSED]
---- uno:* [PASSED] Took 3.62 seconds ------------------------------ 
+.pio/build/uno/test/test_main.c:23:test_int_size:PASS
+----------------------- uno:* [PASSED] Took 3.62 seconds -----------------------
 
-=== SUMMARY =======================================================
+=================================== SUMMARY ===================================
 Environment    Test    Status    Duration
 -------------  ------  --------  ------------
 uno            *       PASSED    00:00:03.620
-=== 1 test cases: 1 succeeded in 00:00:03.620 =====================
+================== 1 test cases: 1 succeeded in 00:00:03.620 ==================
 ```
 
-It should be pointed out once again that **the tests run on the device** and only 
-the results are displayed on the PC.
-With this setting we can test code parts directly on the target platform.
+Important: in this mode, tests run on the device, not on the host PC.  
+The PC only shows logs and a summary.
 
-In this context, the importance of a **modular implementation** (layered architectures) 
-must also be pointed out.
-Only in a modular design can individual parts be tested separately.
 
+## Design Recommendation
+
+Unit tests work best with modular code:
+- Keep hardware-independent logic in small functions/modules.
+- Separate business logic from hardware access where possible.
+- Test modules in isolation.
+
+This makes applications easier to verify, maintain, and evolve.
 
 ## References
 
-* [PlatformIO: Unit Testing](https://docs.platformio.org/en/latest/advanced/unit-testing/index.html)
-
-* [Unit Testing of a Blink Project](https://docs.platformio.org/en/latest/tutorials/core/unit_testing_blink.html)
-
+- [PlatformIO: Unit Testing](https://docs.platformio.org/en/latest/advanced/unit-testing/index.html)
+- [Unit Testing of a Blink Project](https://docs.platformio.org/en/latest/tutorials/core/unit_testing_blink.html)
 
 _Egon Teiniker, 2020-2026, GPL v3.0_
