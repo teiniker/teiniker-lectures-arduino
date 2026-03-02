@@ -1,56 +1,96 @@
 # PlatformIO CLI
 
-PlatformIO Core (CLI tool) is the heart of the entire PlatformIO ecosystem, it is written in Python,
-and provides a rich and documented Command Line Interface (CLI).
+PlatformIO Core (CLI) is the command-line engine of the PlatformIO ecosystem.
+It is Python-based and provides a consistent workflow for building, uploading,
+testing, and monitoring embedded applications.
 
+This README focuses on daily CLI usage in local development and automation.
 
-# Use the PlatformIO Terminal inside VS Code
+## Setup
 
-* Open VS Code
-
-* Open your PlatformIO project
-
-* Click [New Terminal] on the status bar
-
-On this command line, we can use the following commands:
+### Install PlatformIO CLI
 
 ```bash
-# build project
-$ pio run 
-
-# verbose build output
-$ pio run -v
-
-# clean build   		
-$ pio run -t clean && pio run 
-
-# Find the serial port:
-$ pio device list
-
-# Upload (deploy):
-$ pio run -t upload
-
-# Upload on a particular port
-$ pio run -t upload --upload-port /dev/ttyACM0
-
-# Serial monitor
-$ pio device monitor
-$ pio device monitor -p /dev/ttyACM0 -b 115200
-
-# Test (remote unit testing)
-$ pio test 
-$ pio test -e uno --upload-port /dev/ttyACM0
-
-# Static code analysis (cppcheck)
-$ pio check 
-
-# Size report
-$ pio run -t size
+$ pip install platformio
 ```
 
+Verify installation:
+
+```bash
+$ pio --version
+```
+
+### Use the PlatformIO Terminal in VS Code
+
+1. Open VS Code.
+2. Open your PlatformIO project folder.
+3. Open a new terminal (`Terminal -> New Terminal`).
+4. Run `pio` commands from the project root.
+
+
+## Common Commands
+
+```bash
+# Build
+pio run
+
+# Upload firmware
+pio run -t upload
+
+# Open serial monitor
+pio device monitor
+
+# Build project
+pio run
+
+# Verbose build output
+pio run -v
+
+# Clean and rebuild
+pio run -t clean
+pio run
+
+# List serial devices
+pio device list
+
+# Upload firmware
+pio run -t upload
+
+# Upload using explicit serial port
+pio run -t upload --upload-port /dev/ttyACM0
+
+# Serial monitor (default settings)
+pio device monitor
+
+# Serial monitor with explicit port and baud rate
+pio device monitor -p /dev/ttyACM0 -b 115200
+
+# Run tests
+pio test
+
+# Run tests for a specific environment
+pio test -e uno --upload-port /dev/ttyACM0
+
+# Static analysis (cppcheck)
+pio check
+
+# Show firmware size report
+pio run -t size
+```
+
+## Multi-Environment Usage
+
+If your `platformio.ini` defines multiple environments, target one explicitly:
+
+```bash
+pio run -e uno
+pio run -e esp32dev
+pio run -e uno -t upload
+```
 
 ## References
 
-* [PlatformIO Core (CLI)](https://docs.platformio.org/en/latest/core/index.html)
+- [PlatformIO Core (CLI)](https://docs.platformio.org/en/latest/core/index.html)
+- [PlatformIO CLI Command Reference](https://docs.platformio.org/en/latest/core/userguide/index.html)
 
-*Egon Teiniker, 2020-2026, GPL v3.0* 
+_Egon Teiniker, 2020-2026, GPL v3.0_
