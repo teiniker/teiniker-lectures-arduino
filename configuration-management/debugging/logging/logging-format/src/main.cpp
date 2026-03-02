@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <ArduinoLog.h>
 
 void printPrefix(Print* _logOutput, int logLevel) 
