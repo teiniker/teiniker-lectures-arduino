@@ -9,6 +9,8 @@
         - Example: [hello-blink](building/arduino-uno/hello-blink/)
         - Example: [hello-serial](building/arduino-uno/hello-serial/)
     - ESP32-C6 
+        - Example: [hello-blink](building/esp32-c6/hello-blink/)
+        - Example: [hello-serial](building/esp32-c6/hello-serial/)
 
 * Debugging 
     - [Introduction](debugging/introduction/README.md)

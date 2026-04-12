@@ -1,13 +1,12 @@
-# Using Arduino Uno with PlatformIO
+# Example: Hello - Blink (Arduino Uno)
 
-##  Project Configuration
+## Build Environment Configurations
 
 ```ini
 [env:uno]
 platform = atmelavr
 board = uno
 framework = arduino
-monitor_speed = 115200
 ```
 
 
