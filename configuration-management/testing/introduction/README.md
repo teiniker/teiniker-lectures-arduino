@@ -46,10 +46,16 @@ void test_int_size(void) {
     TEST_ASSERT_EQUAL(2, size);
 }
 
-int main(int argc, char **argv) {
+void setup() 
+{
     UNITY_BEGIN();
     RUN_TEST(test_int_size);
-    return UNITY_END();
+    UNITY_END();
+}
+
+void loop() 
+{
+    // Nothing to do here
 }
 ```
 
@@ -103,5 +109,7 @@ This makes applications easier to verify, maintain, and evolve.
 
 - [PlatformIO: Unit Testing](https://docs.platformio.org/en/latest/advanced/unit-testing/index.html)
 - [Unit Testing of a Blink Project](https://docs.platformio.org/en/latest/tutorials/core/unit_testing_blink.html)
+
+* [Unity Assertions Cheat Sheet](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsCheatSheetSuitableforPrintingandPossiblyFraming.pdf)
 
 _Egon Teiniker, 2020-2026, GPL v3.0_
