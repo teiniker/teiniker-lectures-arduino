@@ -25,9 +25,6 @@
     - Example: [Arduino Uno](testing/arduino-uno/integer-types/)
 
 
-* Static Code Analysis 
-
-
 ## References
 
 * [PlatformIO](https://platformio.org/)
