@@ -62,13 +62,13 @@ be present, even if empty.
 Run all tests for the default environment:
 
 ```bash
-pio test
+$ pio test
 ```
 
 Run tests for a specific environment (for example `uno`):
 
 ```bash
-pio test -e uno
+$ pio test -e uno
 ```
 
 Typical output:
