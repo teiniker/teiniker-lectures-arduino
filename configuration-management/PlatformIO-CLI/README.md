@@ -10,13 +10,13 @@ This README focuses on daily CLI usage in local development and automation.
 
 ### Install PlatformIO CLI
 
+When you install the **PlatformIO extension in VS Code**, PlatformIO CLI comes with it.
+
+Alternatively, you can install PlatformIO CLI standalone:
+
 ```bash
 $ pip install platformio
-```
 
-Verify installation:
-
-```bash
 $ pio --version
 ```
 

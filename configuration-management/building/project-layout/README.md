@@ -22,11 +22,11 @@ project/
     - Target **board(s)**
     - **Platform** (toolchain + vendor support package)
     - **Framework** (Arduino, ESP-IDF, STM32Cube, etc.)
-    - Library dependencies
+    - **Library dependencies**
     - Compiler flags
     - Upload settings
     - Debug configuration
-    - Serial monitor settings
+    - **Serial monitor** settings
     - Multiple build environments
 
     We can think of `platformio.ini` as the **build contract** for your project. 
