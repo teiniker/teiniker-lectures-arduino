@@ -1,7 +1,8 @@
 # Configuration Management
 
-* [Introduction to PlatformIO](PlatformIO/README.md)
-* [PlatformIO CLI](PlatformIO-CLI/README.md)
+* Introduction
+    - [VS Code + PlatformIO](PlatformIO/README.md)
+    - [PlatformIO CLI](PlatformIO-CLI/README.md)
 
 * Build Automation
     - [Project Layout](building/project-layout/README.md)
@@ -22,7 +23,9 @@
 
 * Test Automation
     - [Introduction](testing/introduction/README.md)
-    - Example: [Arduino Uno](testing/arduino-uno/integer-types/)
+    - Example (Uno): [integer-types](testing/arduino-uno/integer-types/)
+    - Example (ESP32-C6): [integer-types](testing/esp32-c6/integer-types/)
+    - Example (ESP32-C6): [base64-encoding](testing/esp32-c6/base64-encoding/)
 
 
 ## References
