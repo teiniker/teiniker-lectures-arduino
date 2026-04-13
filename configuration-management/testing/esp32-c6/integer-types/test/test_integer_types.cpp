@@ -1,10 +1,10 @@
-#include <Arduino.h>
 #include <unity.h>
 #include <stdbool.h>
+#include <Arduino.h>
 
 /**
  * The following test cases check the number of bytes used 
- * to represent different data types on the Arduino Uno board.
+ * to represent different data types on the ESP32-C6 board.
  */
 
 void setUp(void) 
@@ -32,7 +32,7 @@ void test_size_short(void)
 void test_size_int(void)
 {
     uint8_t size = sizeof(int);
-    TEST_ASSERT_EQUAL(2, size);
+    TEST_ASSERT_EQUAL(4, size); //!!!
 }
 
 void test_size_long(void)
@@ -49,6 +49,8 @@ void test_size_longlong(void)
 
 void setup() 
 {
+    delay(2000); // wait for the serial connection to be established
+
     UNITY_BEGIN();
     RUN_TEST(test_size_bool);
     RUN_TEST(test_size_short);
@@ -61,5 +63,5 @@ void setup()
 
 void loop() 
 {
-    // Nothing to do here
+    // nothing to do here
 }
