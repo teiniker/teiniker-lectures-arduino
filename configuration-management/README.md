@@ -10,8 +10,8 @@
         - Example (ESP32-C6): [hello-blink](building/esp32-c6/hello-blink/)
         - Example (ESP32-C6): [hello-serial](building/esp32-c6/hello-serial/)
 
-    - [Library Management](building/library-management/README.md)
-        - Example (Uno): [blink_timer1](building/library-management/blink_timer1/)
+    - [Library Management](building/library-management/introduction/README.md)
+        - Example (Uno): [blink_timer1](building/library-management/arduino-uno/blink_timer1/)
 
 * Debugging 
     - [Introduction](debugging/introduction/README.md)
