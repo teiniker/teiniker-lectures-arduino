@@ -30,7 +30,7 @@ framework = arduino
 monitor_speed = 115200
 
 debug_tool = avr-stub
-debug_port = COM5 
+debug_port = \\.\COM5 
 
 lib_deps = jdolinay/avr-debugger@1.5
 ```

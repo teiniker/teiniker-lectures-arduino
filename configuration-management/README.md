@@ -15,12 +15,12 @@
         - Example (Uno): [blink_timer1](building/library-management/arduino-uno/blink_timer1/)
 
 * Debugging 
-    - [Introduction](debugging/introduction/README.md)
-    
     - [ArduinoLog](debugging/logging/ArduinoLog/README.md)
-
-    - Example (Uno): [hello-blink](debugging/arduino-uno/hello-blink/)
-
+    
+    - Arduino Uno 
+        - [Introduction](debugging/introduction/README.md)
+        - Example (Uno): [hello-blink](debugging/arduino-uno/hello-blink/)
+    
 * Test Automation
     - [Introduction](testing/introduction/README.md)
     - Example (Uno): [integer-types](testing/arduino-uno/integer-types/)
