@@ -34,21 +34,14 @@ $ pio --version
 # Build
 $ pio run
 
-# Upload firmware
-$ pio run -t upload
-
-# Open serial monitor
-$ pio device monitor
-
-# Build project
-$ pio run
-
 # Verbose build output
 $ pio run -v
 
+# Show firmware size report
+$ pio run -t size
+
 # Clean and rebuild
 $ pio run -t clean
-$ pio run
 
 # List serial devices
 $ pio device list
@@ -59,7 +52,7 @@ $ pio run -t upload
 # Upload using explicit serial port
 $ pio run -t upload --upload-port /dev/ttyACM0
 
-# Serial monitor (default settings)
+# Open serial monitor
 $ pio device monitor
 
 # Serial monitor with explicit port and baud rate
@@ -73,9 +66,6 @@ $ pio test -e uno --upload-port /dev/ttyACM0
 
 # Static analysis (cppcheck)
 $ pio check
-
-# Show firmware size report
-$ pio run -t size
 ```
 
 ## Multi-Environment Usage
