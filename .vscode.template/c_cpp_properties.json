@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:HOME}/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "${env:HOME}/.platformio/packages/framework-arduino-avr/variants/standard",
+                "${env:HOME}/.platformio/packages/framework-arduinoespressif32/cores/esp32",
+                "${env:HOME}/.platformio/packages/toolchain-atmelavr/avr/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
