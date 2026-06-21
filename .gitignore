@@ -1,3 +1,4 @@
 /.idea/
 lab/
 .vscode/
+compile_commands.json

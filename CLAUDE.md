@@ -31,6 +31,9 @@ pio device list
 
 # Clean build artifacts
 pio run -t clean
+
+# Generate IntelliSense compilation database
+pio run --target compiledb
 ```
 
 ## Finding the Arduino Board via USB
@@ -63,6 +66,32 @@ Each example follows the standard PlatformIO layout:
 └── include/            # local headers (if any)
 ```
 
+
+## VS Code IntelliSense
+
+The preferred setup is plain VS Code with the clangd extension and pio
+on the command line. The PlatformIO VS Code extension is not used.
+
+Required VS Code extension: clangd (by LLVM, id:
+llvm-vs-code-extensions.vscode-clangd).
+
+The MS C/C++ IntelliSense engine is disabled in `.vscode/settings.json`
+to avoid conflicts with clangd.
+
+To enable IntelliSense for a project, generate its compilation database
+once from the project directory:
+
+```bash
+pio run --target compiledb
+```
+
+This creates `compile_commands.json` next to `platformio.ini`. clangd
+finds it automatically when editing any file in that project -- no
+path configuration needed. Re-run after adding libraries or changing
+the board.
+
+`compile_commands.json` files are excluded via `.gitignore` because
+they contain absolute paths.
 
 ## Repository Layout
 
