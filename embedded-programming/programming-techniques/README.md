@@ -6,12 +6,13 @@ of microcontroller programming:
 
 * [State Machines](state-machines/)
 
-* [Object-Oriented Programming](oop/)
-
+* Object-Oriented Programming
+    - [Arduino Applications](oop/arduino-apps/)
+    - [Arduino Libraries](oop/arduino-libs/README.md)
+    - [Arduino AVR Core](oop/arduino-core/README.md)
 
 ## References
 
 * Daniele Lacamera. **Embedded Systems Architecture**. Packt Publishing, 2023.
 
-
-*Egon Teiniker, 2020-2025, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
