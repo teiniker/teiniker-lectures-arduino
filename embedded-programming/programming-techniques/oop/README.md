@@ -254,17 +254,10 @@ These are then automatically taken into account during the build process.
 _Exaple:_ [Led class declaration and implementation](../../hardware-abstraction/arduino-library/led-version2/)
 
 
-## Examples and Exercises 
-
-_Example:_ [Port Extension (74HC595) - step-by-step to OOP](port-extension/README.md)
-
-_Example:_ [HC-SR04 Ultrasonic Sensor Library](../../../sensors-and-actuators/sensors/hc-sr04/lib/HC-SR04/)
-
-_Example:_ [Arduino Library: Wire](https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/Wire)
 
 
 ## References
 * Josh Lospinoso. **C++ Crash Course**. No Starch Press, 2019
 * Bjarne Stroustrup. **The C++ Programming Language**. Pearson 4th Edition 2017
 
-_Egon Teiniker, 2020-2024, GPL v3.0_
+_Egon Teiniker, 2020-2026, GPL v3.0_
