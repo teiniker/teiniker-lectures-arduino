@@ -1,30 +1,23 @@
-const int LATCH_PIN = 5;	
-const int CLOCK_PIN = 6;	
-const int DATA_PIN = 4;		
+#include "extension.h"
 
-void update_shift_register(uint8_t leds)
-{
-    digitalWrite(LATCH_PIN, LOW);
-    shiftOut(DATA_PIN, CLOCK_PIN, LSBFIRST, leds);
-    digitalWrite(LATCH_PIN, HIGH);
-}
+const int LATCH_PIN = 5;	// RCLK (Register Clock / Latch) Pin des 74HC595 ist verbunden mit dem digitalen Pin 5
+const int CLOCK_PIN = 6;	// SRCLK (Shit Register Clock) Pin des 74HC595 ist verbunden mit dem digitalen Pin 6
+const int DATA_PIN = 4;		// SER (Serial input) Pin des 74HC595 ist verbunden mit dem digitalen Pin 4
+
+PortExtension port(LATCH_PIN, CLOCK_PIN, DATA_PIN);
 
 void setup() 
 {
-    pinMode(LATCH_PIN, OUTPUT);
-    pinMode(DATA_PIN, OUTPUT);  
-    pinMode(CLOCK_PIN, OUTPUT);
 }
 
 void loop() 
 {
-    update_shift_register(0x00);
-    delay(500);
+  	port.writeByte(0x00);
+  	delay(500);
   
-    for (uint8_t i = 0; i < 0xff; i++)	
-    {
-        update_shift_register(i);
-        delay(500);
-    }
+  	for (int i = 0; i < 8; i++)	
+  	{
+    	port.setBit(i);
+    	delay(500);
+  	}
 }
-
