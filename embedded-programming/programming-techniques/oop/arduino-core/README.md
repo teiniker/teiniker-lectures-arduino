@@ -66,7 +66,7 @@ extern "C"{
 ### Constructor and Method Overloading
 
 
-_Example:_ [cores/arduino/IPAddress.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/IPAddress.h)
+_Example:_ [cores/arduino/WString.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/WString.h)
 
 ```C++
 class String
@@ -247,5 +247,10 @@ _Example:_ [Arduino Library: SPI](https://github.com/arduino/ArduinoCore-avr/blo
     - Static methods
     - Static fields
     - Object creation: `SPIClass SPI;`
+
+
+## References
+
+* [GitHub: ArduinoCore-avr](https://github.com/arduino/ArduinoCore-avr/)
 
 _Egon Teiniker, 2020-2026, GPL v3.0_
