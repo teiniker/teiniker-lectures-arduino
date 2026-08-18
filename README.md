@@ -10,7 +10,7 @@ For the introduction to embedded programming, we will use the
 use of peripheral components will be demonstrated using concrete 
 examples.
 
-We also look at how to program an **ESP32-C6** microcontroller 
+We also look at how to program an **XIAO ESP32-C3** microcontroller 
 (32-bit RISC V) using the Arduino framework. The use of a real-time 
 operating system for multitasking is a particular focus here.
 
