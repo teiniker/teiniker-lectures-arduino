@@ -19,8 +19,8 @@ In the following sections the basic mechanisms and components of computer archit
 * [Sequential Logic](sequential-logic/)
 
 * Microcontrollers
-    * [ATmega328p](microcontroller/atmega328p/datasheet-ATmega328P.pdf)
-    * [ATmega640](microcontroller/atmega2560/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf)
+    * [ATmega328p](microcontroller/atmega328p/)
+    * [ESP32-C3](microcontroller/esp32-c3/)
 
 ## References
 
