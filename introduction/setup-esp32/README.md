@@ -9,13 +9,11 @@ See: [Arduino Setup](https://docs.sparkfun.com/SparkFun_Thing_Plus_ESP32_C6/soft
 	https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json
 ```	
 
-* **Boards Manager** tool, search for "espressif ESP32"
+* **Boards Manager** seacrh for: **esp32 by Espressif**, Version 3.3.12 
 
-* **Board**: pick your C6 board (e.g. **ESP32C6 Dev Module**).
+* **Board**: pick **XIAO_ESP32C3** board.
 	- **Tools / USB CDC On Boot: Enabled** (this routes Serial to the USB port) - needed for the Serial Monitor.
-	- If available: Tools / USB Mode: “USB-Serial-JTAG (CDC)” or similar.
-	- Port: choose the one that mentions USB JTAG/Serial (or similar).
-	- Set the Serial Monitor baud to 115200.	
+	- Set the Serial Monitor baud to **115200**.	
 
 
 ## First Steps with Arduino
