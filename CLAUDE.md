@@ -49,7 +49,8 @@ To verify the connected device:
 ls /dev/ttyACM* /dev/ttyUSB*
 ```
 
-ESP32-C6 boards typically appear on `/dev/ttyUSB0` or `/dev/ttyACM0` depending on the USB-serial chip used.
+The XIAO ESP32C3 has no USB-serial chip; its native USB Serial/JTAG
+port appears as `/dev/ttyACM0`.
 
 ## Project Structure
 
@@ -95,7 +96,7 @@ they contain absolute paths.
 
 ## Repository Layout
 
-This is a teaching repository covering embedded programming with Arduino Uno (ATmega328P, 8-bit AVR) and ESP32-C6 (RISC-V 32-bit). Topics are organized into top-level sections:
+This is a teaching repository covering embedded programming with Arduino Uno (ATmega328P, 8-bit AVR) and XIAO ESP32C3 (ESP32-C3, RISC-V 32-bit). Topics are organized into top-level sections:
 
 - `introduction/` — board setup, first sketches for Uno and ESP32
 - `computer-architectures/` — combinatorial/sequential logic, microcontroller datasheets

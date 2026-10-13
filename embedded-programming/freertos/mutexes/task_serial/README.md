@@ -2,7 +2,7 @@
 
 ## Implementation
 
-On ESP32 (including ESP32-C6), `setup()` itself already runs inside a FreeRTOS 
+On ESP32 (including ESP32-C3), `setup()` itself already runs inside a FreeRTOS 
 task (the Arduino main task).
 
 ```C++

@@ -60,7 +60,7 @@ xTaskCreate(
 
 On **dual-core ESP32 chips**, we can pin a task to core 0 or 1.
 
-ESP32-C6 is single-core, so _pinning_ isn’t really useful there, 
+ESP32-C3 is single-core, so _pinning_ isn’t really useful there, 
 but the function may still exist in the Arduino core for compatibility 
 (it effectively ends up on the only core).
 

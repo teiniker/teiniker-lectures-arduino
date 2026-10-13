@@ -4,7 +4,7 @@ This example creates two tasks running concurrent using FreeRTOS.
 
 ## delay() vs vTaskDelay()
 
-When we are programming FreeRTOS on an ESP32-C6, the difference between 
+When we are programming FreeRTOS on an ESP32-C3, the difference between 
 `delay()` and `vTaskDelay()` inside a task is very important. 
 
 > Inside a FreeRTOS task, you should use `vTaskDelay()`, not `delay()`.

@@ -6,10 +6,10 @@
 
 * Build Automation
     - [Project Layout](building/project-layout/README.md)
-        - Example (Uno): [hello-blink](building/arduino-uno/hello-blink/)
-        - Example (Uno): [hello-serial](building/arduino-uno/hello-serial/)
-        - Example (ESP32-C6): [hello-blink](building/esp32-c6/hello-blink/)
-        - Example (ESP32-C6): [hello-serial](building/esp32-c6/hello-serial/)
+        - Example (Uno): [hello-blink](building/project-layout/arduino-uno/hello-blink/)
+        - Example (Uno): [hello-serial](building/project-layout/arduino-uno/hello-serial/)
+        - Example (XIAO ESP32C3): [hello-blink](building/project-layout/xiao-esp32c3/hello-blink/)
+        - Example (XIAO ESP32C3): [hello-serial](building/project-layout/xiao-esp32c3/hello-serial/)
 
     - [Library Management](building/library-management/introduction/README.md)
         - Example (Uno): [blink_timer1](building/library-management/arduino-uno/blink_timer1/)
@@ -20,12 +20,16 @@
     - Arduino Uno 
         - [Introduction](debugging/introduction/README.md)
         - Example (Uno): [hello-blink](debugging/arduino-uno/hello-blink/)
+
+    - XIAO ESP32C3
+        - [Introduction](debugging/xiao-esp32c3/README.md)
+        - Example (XIAO ESP32C3): [hello-blink](debugging/xiao-esp32c3/hello-blink/)
     
 * Test Automation
     - [Introduction](testing/introduction/README.md)
     - Example (Uno): [integer-types](testing/arduino-uno/integer-types/)
-    - Example (ESP32-C6): [integer-types](testing/esp32-c6/integer-types/)
-    - Example (ESP32-C6): [base64-encoding](testing/esp32-c6/base64-encoding/)
+    - Example (XIAO ESP32C3): [integer-types](testing/xiao-esp32c3/integer-types/)
+    - Example (XIAO ESP32C3): [base64-encoding](testing/xiao-esp32c3/base64-encoding/)
 
 
 ## References

@@ -41,13 +41,42 @@ JTAG pins.
 ![Connector](figures/ESP32-Prog-Connection.png)
 
 
-Unfortunately, **PlatformIO does not yet support debugging for the ESP32-C6 
-using the Arduino framework**.
-The ESP32-C6 is a relatively new chip (based on the RISC-V architecture), 
-and the ecosystem support often lags behind the hardware release.
+## Built-in USB JTAG on the XIAO ESP32C3
+
+The ESP32-C3 contains a **built-in USB Serial/JTAG controller**. On the
+XIAO ESP32C3, the USB-C connector is wired directly to it, so we can
+debug over the same USB cable that we use for upload and the serial
+monitor. **No ESP-Prog is needed.**
+
+In `platformio.ini`, we select the built-in adapter:
+
+```ini
+build_type = debug
+debug_tool = esp-builtin
+debug_init_break = tbreak setup
+```
+
+* `build_type = debug`: Build without optimizations and with debug
+    symbols.
+
+* `debug_tool = esp-builtin`: Use the chip's built-in USB JTAG instead
+    of an external probe such as the ESP-Prog.
+
+* `debug_init_break = tbreak setup`: Set a temporary breakpoint at
+    `setup()` when the debug session starts.
+
+Start a debug session from the project directory:
+
+```bash
+pio debug --interface=gdb -- -x .pioinit
+```
+
+Note that the ESP-Prog is still required for ESP32 chips without a
+built-in USB JTAG controller (for example, the classic ESP32).
 
 ## References
 
 * [ESP-Prog](https://docs.platformio.org/en/latest/plus/debug-tools/esp-prog.html)
+* [ESP Built-in JTAG](https://docs.platformio.org/en/latest/plus/debug-tools/esp-builtin.html)
 
 *Egon Teiniker, 2020-2026, GPL v3.0* 

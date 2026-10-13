@@ -7,7 +7,7 @@ FreeRTOS includes a kernel and a growing set of IoT libraries suitable for use
 across all industry sectors.
 
 In the following examples, we use FreeRTOS on the 
-[ESP32-C6 Microcontroller](../../introduction/setup-esp32/README.md).
+[XIAO ESP32C3 Microcontroller](../../introduction/setup-esp32/README.md).
 
 * [Introduction](introduction/README.md)
 

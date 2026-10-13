@@ -77,14 +77,14 @@ We must **assign the control task the highest priority** as:
     the key handler task.
 
 
-## FreeRTOS and the Arduino Framework on ESP32-C6
+## FreeRTOS and the Arduino Framework on ESP32-C3
 
 FreeRTOS is the OS kernel that **Espressif IoT Development Framework (ESP-IDF)** 
 boots and runs everything on, and the **Arduino framework is layered on top 
 of that**.
 
 
-On the ESP32-C6, we find the following software layers:
+On the ESP32-C3, we find the following software layers:
 
 ![ESP32 Software Stack](figures/ESP32-Stack.png)
 
@@ -99,7 +99,7 @@ On the ESP32-C6, we find the following software layers:
 * **FreeRTOS** (as an ESP-IDF component): Scheduler, tasks, queues, 
     semaphores, timers, ISR-to-task handoff, etc. 
 
-* **ESP32-C6 Hardware + Bootloader**: RISC-V core, Interrupt controller,
+* **ESP32-C3 Hardware + Bootloader**: RISC-V core, Interrupt controller,
      ROM startup code
 
 
@@ -133,7 +133,7 @@ the Arduino Framework:
     hooks) that many components use.
 
 * **Single-core scheduling still works the same way**:
-    ESP32-C6 is a single-core RISC-V chip, so there’s no "pin to core 0/1" 
+    ESP32-C3 is a single-core RISC-V chip, so there’s no "pin to core 0/1" 
     in the way classic dual-core ESP32 does—but FreeRTOS still multiplexes 
     all tasks on that one core via preemption/time slicing and priorities. 
 

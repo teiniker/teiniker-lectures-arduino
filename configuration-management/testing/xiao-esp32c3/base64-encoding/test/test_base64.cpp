@@ -5,7 +5,7 @@
 
 /**
  * The following test cases check the number of bytes used 
- * to represent different data types on the ESP32-C6 board.
+ * to represent different data types on the XIAO ESP32C3 board.
  */
 
 void setUp(void) 
