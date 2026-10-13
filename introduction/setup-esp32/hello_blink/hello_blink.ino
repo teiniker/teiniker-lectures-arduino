@@ -1,4 +1,4 @@
-const int LED_PIN = D2; // Define the LED pin
+const int LED_PIN = D2; // external LED pin (XIAO ESP32C3 has no built-in LED)
 
 void setup() 
 {
