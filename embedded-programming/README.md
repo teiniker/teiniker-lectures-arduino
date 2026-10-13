@@ -1,10 +1,17 @@
 # Embedded Programming 
 
 This section provides an introduction to embedded programming using 
-the **Arduino Uno** and the **ESP32-C6** microcontroller boards. 
+the **Arduino Uno** and the **XIAO ESP32C3** microcontroller boards. 
 While Arduino Uno uses an 8 bit (ATMega328P) microcontroller, 
-the ESP32-C6 uses a 32 bit (RISC V) core.
+the XIAO ESP32C3 uses a 32 bit (RISC V) core.
 
+* Microcontroller Boards
+    - [Arduino UNO R3](boards/avr/uno-r3/)
+    - [Arduino Nano](boards/avr/nano/)
+    - [XIAO ESP32C3](boards/esp32/XIAO-ESP32C3/)
+
+* [Arduino Core]
+    - [ESP32](arduino-core/esp32/)
 
 * [Microcontroller Peripherals](peripherals/)
 
