@@ -26,4 +26,4 @@ See: [Getting Started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.c
 
 * [ESP32 Arduino Core’s documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
 
-*Egon Teiniker, 2020-2025, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
