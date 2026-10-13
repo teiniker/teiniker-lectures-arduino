@@ -11,9 +11,12 @@ the XIAO ESP32C3 uses a 32 bit (RISC V) core.
     - [XIAO ESP32C3](boards/esp32/XIAO-ESP32C3/)
 
 * [Arduino Core]
+    - [AVR](arduino-core/avr/)
     - [ESP32](arduino-core/esp32/)
 
 * [Microcontroller Peripherals](peripherals/)
+
+* [Sensors and Actuators](sensors-and-actuators/)
 
 * [Hardware Abstraction](hardware-abstraction/)
 
@@ -24,8 +27,9 @@ the XIAO ESP32C3 uses a 32 bit (RISC V) core.
 * [Programming Techniques](programming-techniques/)
 
 
+
 ## References
 
 * Daniele Lacamera. **Embedded Systems Architecture**. Packt Publishing, 2023.
 
-*Egon Teiniker, 2020-2025, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 

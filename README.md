@@ -20,9 +20,7 @@ operating system for multitasking is a particular focus here.
 
 * [Configuration Management](configuration-management/)
   
-* [Sensors and Actuators](sensors-and-actuators/)
 
-  
 ## References
 * Michael Margolis, Brian Jepson, Nicholas Robert Weldin. **Arduino Cookbook**. O'Reilly, 2020
 * Norman Dunbar. **Arduino Software Internals**. APress, 2020
