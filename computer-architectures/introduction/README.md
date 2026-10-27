@@ -9,6 +9,8 @@ can **build or simulate digital circuits**.
 
 * [Simulations using TinkerCAD](UsingTinkercad.md)
 
+## Tutorials
+
 The following **YouTube tutorials** can be used to get an initial overview 
 of the computer architecture topics:
 
@@ -22,5 +24,4 @@ of the computer architecture topics:
 * [Advanced CPU Designs](https://youtu.be/rtAlC5J1U40)
 * [Early Programming](https://youtu.be/nwDq4adJwzM)
 
-
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
