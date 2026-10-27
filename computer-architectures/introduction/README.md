@@ -3,12 +3,11 @@
 Before we can talk about computer architecture, we need to look at how we 
 can **build or simulate digital circuits**.
 
-* [Simulations using TinkerCAD](UsingTinkercad.md)
-
 * Prototyping in Electronics
     * [Breadboard vs. Perfboard](Prototyping.md)
     * [Power Adapter](power-supply/)
 
+* [Simulations using TinkerCAD](UsingTinkercad.md)
 
 The following **YouTube tutorials** can be used to get an initial overview 
 of the computer architecture topics:
