@@ -111,3 +111,54 @@ This is a teaching repository covering embedded programming with Arduino Uno (AT
 * Use only 80 chars per line for documentation text.
 * Don't use —, ---, and emojis in generated text.
 
+
+## Figures
+
+Diagrams in README files are PNG images generated with Python and
+matplotlib, not ASCII art in code blocks. Only the PNGs are committed;
+the generator script stays outside the repository.
+
+Workflow:
+
+* matplotlib is not installed system-wide. Create a venv in the
+  scratchpad directory: `python3 -m venv venv` and
+  `venv/bin/pip install matplotlib`.
+* Write one script that generates all figures of a README and takes the
+  output directory as argument, e.g.
+  `venv/bin/python -I make_figures.py <example>/figures`.
+* Store images in `<example>/figures/` with lowercase snake_case names
+  prefixed by topic (e.g. `cpu_datapath.png`, `riscv_add_decoding.png`).
+* Reference them in the README with `![](figures/<name>.png)`.
+* After rendering, view every PNG with the Read tool and check for
+  overlapping labels, misaligned arrows and empty margins. Adjust the
+  axis limits and re-render until clean.
+* Verify technical content in figures with real tools where possible,
+  e.g. instruction encodings with `riscv32-esp-elf-as` and
+  `riscv32-esp-elf-objdump` from `~/.platformio/packages/`.
+
+Style (consistent across all figures):
+
+* `fig, ax = plt.subplots(figsize=(w, h))`, `ax.set_aspect("equal")`,
+  `ax.axis("off")`, drawing in data coordinates with `Rectangle`,
+  `Polygon` and `ax.annotate` arrows (`arrowstyle="-|>"`).
+* Save with `dpi=150`, `bbox_inches="tight"`, `pad_inches=0.25`,
+  `facecolor="white"`.
+* Default font (DejaVu Sans); title fontsize 15, labels 10 to 13,
+  monospace for assembly and hex values.
+* Edges `#222222`, line width 2.0, notes in grey `#555555`.
+* Pastel fill palette:
+
+| Color  | Hex       | Typical use                          |
+|:--     |:--        |:--                                   |
+| grey   | `#e0e0e0` | opcode, control fields, neutral      |
+| orange | `#f6dccb` | registers, destination fields        |
+| yellow | `#fbeac0` | multiplexers, decode stage           |
+| green  | `#d5ebd2` | ALU, immediates, constants           |
+| blue   | `#cfe0f1` | source registers, shifter, fetch     |
+| purple | `#e2d6ee` | status bits, flags                   |
+| red    | `#c0392b` | highlighted lines (e.g. buses)       |
+
+* Use the same color for the same concept in all figures of a README
+  and add a small legend when the colors carry meaning.
+* Text inside figures follows the documentation rules (no dashes or
+  emojis as separators).

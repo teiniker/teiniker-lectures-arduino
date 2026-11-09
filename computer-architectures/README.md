@@ -1,16 +1,8 @@
 # Computer Architectures
 
 The basic operational design of a computer system is called architecture.
-
-The von Neumann Architecture (VNA) described the principal architecture used today which has three major components:
-* **Central Processing Unit (CPU)**: performs all computations
-* **Memory**: stores data and instructions
-* **Input / Output Devices**: interact with the outside world
-
-Data and machine instructions reside in memory until the CPU requests them.
-To the CPU, most I/O devices look like memory.
-
-In the following sections the basic mechanisms and components of computer architectures are examined.
+In the following sections the basic mechanisms and components of computer 
+architectures are examined.
 
 * [Introduction](introduction/)
     
@@ -18,9 +10,14 @@ In the following sections the basic mechanisms and components of computer archit
 
 * [Sequential Logic](sequential-logic/)
 
-* Microcontrollers
-    * [ATmega328p](microcontroller/atmega328p/)
-    * [ESP32-C3](microcontroller/esp32-c3/)
+* [Processor Unit](processor-unit/README.md)
+
+* [Microcontrollers](microcontrollers/README.md)
+    * Example: [ATmega328p](microcontroller/atmega328p/)
+    * Example: [ESP32-C3](microcontroller/esp32-c3/)
+
+* [Specialized Processors](specialized-processors/README.md)
+
 
 ## References
 
@@ -32,4 +29,4 @@ In the following sections the basic mechanisms and components of computer archit
 * Andrew S. Tanenbaum. **Structured Computer Organization**. Pearson Education, International Edition, 2013
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
