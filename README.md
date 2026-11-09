@@ -18,10 +18,11 @@ architectures are examined.
 * [Microcontrollers](computer-architectures/microcontrollers/README.md)
     - Example: [ATmega328p](computer-architectures/microcontroller/atmega328p/)
     - Example: [ESP32-C3](computer-architectures/microcontroller/esp32-c3/)
-    - Microcontroller Boards
-        - [Arduino UNO R3](boards/avr/uno-r3/)
-        - [Arduino Nano](boards/avr/nano/)
-        - [XIAO ESP32C3](boards/esp32/XIAO-ESP32C3/)
+    
+* Microcontroller Boards
+    - [Arduino UNO R3](boards/avr/uno-r3/)
+    - [Arduino Nano](boards/avr/nano/)
+    - [XIAO ESP32C3](boards/esp32/XIAO-ESP32C3/)
 
 * [Specialized Processors](computer-architectures/specialized-processors/README.md)
 
