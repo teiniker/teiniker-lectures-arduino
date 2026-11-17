@@ -74,7 +74,7 @@ achieved using pre-processor instructions for conditional compilation.
 * Utilize `#ifdef`, `#ifndef`, `#if`, `#else`, and `#endif` to include or 
     exclude code based on hardware configurations.
 
-_Example_: [TinkerCAD - 7 Segment Output](https://www.tinkercad.com/things/fBEtVlXAG2W-arduino-7-segment-hardware-abstraction)
+_Example_: [Serial vs. 7-Segment](serial-vs-7segment/README.md)
 
 This example shows the use of conditional compilation (`#define`, `#ifdef` and `#endif`) 
 to allow variants of an implementation. We find this approach very often in Arduino 
