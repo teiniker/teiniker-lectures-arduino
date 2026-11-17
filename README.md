@@ -16,8 +16,8 @@ architectures are examined.
 * [Processor Unit](computer-architectures/processor-unit/README.md)
 
 * [Microcontrollers](computer-architectures/microcontrollers/README.md)
-    - Example: [ATmega328p](computer-architectures/microcontroller/atmega328p/)
-    - Example: [ESP32-C3](computer-architectures/microcontroller/esp32-c3/)
+    - Example: [ATmega328p](computer-architectures/microcontrollers/atmega328p/README.md)
+    - Example: [ESP32-C3](computer-architectures/microcontrollers/esp32-c3/)
     
 * Microcontroller Boards
     - [Arduino UNO R3](boards/avr/uno-r3/)
@@ -38,15 +38,12 @@ the XIAO ESP32C3 uses a 32 bit (RISC V) core.
 
 * [Hardware Abstraction](embedded-programming/hardware-abstraction/)
 
-* [Microcontroller Peripherals](embedded-programming/peripherals/)
-
-* [Sensors and Actuators](embedded-programming/sensors-and-actuators/)
-
-* [Timing and Scheduling](embedded-programming/scheduling/)
-
-* [FreeRTOS](embedded-programming/freertos/)
-
-* [Programming Techniques](embedded-programming/programming-techniques/)
+* Microcontroller Programming 
+    - [Peripherals](embedded-programming/peripherals/)
+    - [Sensors and Actuators](embedded-programming/sensors-and-actuators/)
+    - [Timing and Scheduling](embedded-programming/scheduling/)
+    - [FreeRTOS](embedded-programming/freertos/)    
+    - [Programming Techniques](embedded-programming/programming-techniques/)
 
 
 ## Configuration Management for Embedded Systems
