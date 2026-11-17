@@ -13,7 +13,8 @@ across **different hardware platforms**.
 * Abstraction Techniques    
     - [C Preprocessor](c-preprocessor/)
     - [Arduino Library](arduino-library/)
-    - [Arduino Framework (AVR Core)](../arduino-core/avr/)
+    - [Arduino Framework (AVR Core)](arduino-core/avr/)
+    - [Arduino Framework (ESP32 Core)](arduino-core/esp32/)
 
 
 *Egon Teiniker, 2020-2026, GPL v3.0* 

@@ -36,21 +36,17 @@ the XIAO ESP32C3 uses a 32 bit (RISC V) core.
 
 * [Setup](embedded-programming/setup/)
 
+* [Hardware Abstraction](embedded-programming/hardware-abstraction/)
+
 * [Microcontroller Peripherals](embedded-programming/peripherals/)
 
 * [Sensors and Actuators](embedded-programming/sensors-and-actuators/)
-
-* [Hardware Abstraction](embedded-programming/hardware-abstraction/)
 
 * [Timing and Scheduling](embedded-programming/scheduling/)
 
 * [FreeRTOS](embedded-programming/freertos/)
 
 * [Programming Techniques](embedded-programming/programming-techniques/)
-
-* Arduino Core Framework
-    - [AVR](arduino-core/avr/)
-    - [ESP32](arduino-core/esp32/)
 
 
 ## Configuration Management for Embedded Systems
