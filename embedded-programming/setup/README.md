@@ -1,26 +1,17 @@
-# Introduction
+# Setup
 
-* **Setup: Arduino Uno R3**
-  * [Arduino IDE](setup-uno/README.md)
+* [Arduino IDE](arduino-ide/README.md)
+* [Run an Arduino Sketch](run-sketch/README.md)
 
-  * First Steps
-    - [Run an Arduino Sketch](setup-uno/RunSketches.md)
-    - [Hello World - Serial](setup-uno/serial_hello/)
-    - [Hello World - Blink](setup-uno/blink_hello/)
+* Arduino Uno R3
+  - Demo: [blink_hello](setup-uno/blink_hello/)
+  - Demo: [serial_hello](setup-uno/serial_hello/)
 
+* XIAO ESP32C3
+  - Demo: [hello_serial](setup-esp32/hello_serial/)
+  - Demo: [hello_blink](setup-esp32/hello_blink/)
 
-* **Setup: XIAO ESP32C3**
-
-  * [Arduino IDE](setup-esp32/README.md)
-
-  * First Steps
-    - [Hello World - Serial](setup-esp32/hello_serial/)
-    - [Hello World - Blink](setup-esp32/hello_blink/)
-
-
-* **YouTube Tutorials** 
-
-  * [McWhorter - Arduino](tutorials/ArduinoTutorials-McWhorter.md) 
+* [YouTube Tutorials](tutorials/ArduinoTutorials-McWhorter.md) 
 
 
 *Egon Teiniker, 2020-2026, GPL v3.0* 

@@ -139,6 +139,43 @@ Good pin choices for custom UART:
 
 
 
+## PlatformIO
+
+```ini
+[env:seeed_xiao_esp32c3]
+platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+board = seeed_xiao_esp32c3
+framework = arduino
+
+monitor_speed = 115200
+
+build_flags =
+    -D ARDUINO_USB_CDC_ON_BOOT=1
+```
+
+* **platform**: The official `platform = espressif32` from the PlatformIO
+    registry still ships the Arduino ESP32 core 2.x. The community
+    maintained **pioarduino** platform provides the current core 3.x
+    (based on ESP-IDF 5.x).
+
+* **ARDUINO_USB_CDC_ON_BOOT=1**: The ESP32-C3 has no USB to serial chip.
+    With this flag, `Serial` is mapped to the native USB Serial/JTAG port
+    instead of UART0 (D6/D7), so the output appears in the serial
+    monitor. The board definition already sets this flag, but defining
+    it explicitly documents the behavior.
+
+* On Linux, the XIAO ESP32C3 appears as `/dev/ttyACM0`.
+
+* With the default partition table, 1.25 MB (1310720 bytes) of the
+    4 MB Flash are available for the sketch. The upload speed is
+    460800 baud.
+
+If the upload fails (e.g. because the sketch crashes or uses the USB
+pins), put the chip into **download mode**: hold the **BOOT** button,
+press and release **RESET**, then release BOOT. After the upload,
+press RESET to start the new firmware.
+
+
 ## References 
 
 * [Getting Started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
