@@ -1,4 +1,4 @@
-# Embedded Programming 
+# Embedded Systems Programming 
 
 An **embedded system** is a computer that is built into a larger device to
 perform a dedicated function. Examples are washing machines, car engine
