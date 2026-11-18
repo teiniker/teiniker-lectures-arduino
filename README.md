@@ -27,7 +27,7 @@ architectures are examined.
 * [Specialized Processors](computer-architectures/specialized-processors/README.md)
 
 
-## Embedded Programming 
+## Embedded Systems Programming 
 
 This section provides an introduction to embedded programming using 
 the **Arduino Uno** and the **XIAO ESP32C3** microcontroller boards. 
