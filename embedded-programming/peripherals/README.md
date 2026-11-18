@@ -8,9 +8,9 @@ perform specific tasks without constant CPU involvement.
 
 * [Serial Communication (UART)](serial/)
 
-* [Memory (Flash, SRAM, EEPROM)](memory/)
-
 * [I/O Ports](io-ports/)
+
+* [Memory (Flash, SRAM, EEPROM)](memory/)
 
 * [Interrupts and Timers](interrupts/)
 

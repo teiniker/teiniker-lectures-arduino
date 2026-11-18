@@ -1,4 +1,4 @@
-# Embedded Programming with Arduino
+# Embedded Systems
 
 
 ## Computer Architectures
