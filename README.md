@@ -34,7 +34,9 @@ the **Arduino Uno** and the **XIAO ESP32C3** microcontroller boards.
 While Arduino Uno uses an 8 bit (ATMega328P) microcontroller, 
 the XIAO ESP32C3 uses a 32 bit (RISC V) core.
 
-* [Setup](embedded-programming/setup/)
+* [Introduction](embedded-programming/introduction/README.md)
+
+* [Setup Development Environment](embedded-programming/setup/)
 
 * [Hardware Abstraction](embedded-programming/hardware-abstraction/)
 
