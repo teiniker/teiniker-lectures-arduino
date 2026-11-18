@@ -4,8 +4,6 @@ In a microcontroller, peripherals are **hardware modules integrated on the same 
 as the CPU that allow the microcontroller to interact with the outside world and 
 perform specific tasks without constant CPU involvement.
 
-* [Introduction](introduction/README.md)
-
 * [Serial Communication (UART)](serial/)
 
 * [I/O Ports](io-ports/)
